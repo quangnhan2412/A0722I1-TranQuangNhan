@@ -3,13 +3,10 @@ body{
 }
 table {
     border-collapse: collapse;
-    border: 10px #ffffff;
+    border: 5px #ffffff;
     background-clip: content-box;
+    text-align: center;
 }
 th {
     background-color: orange;
-}
-tr:nth-child(odd) .td:nth-child(odd),
-tr:nth-child(even) .td:nth-child(even){
-    background-color: black;
 }
