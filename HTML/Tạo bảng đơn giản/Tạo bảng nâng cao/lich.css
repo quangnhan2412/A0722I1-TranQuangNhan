@@ -1,0 +1,38 @@
+table {
+    border-collapse: collapse;
+}
+td , th {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: left;
+}
+.red {
+    color: red;
+}
+.yellow{
+    background-color: orange;
+}
+.blue{
+    background-color: blue;
+}
+th {
+    color: white;
+    }
+sub {
+    color: black;
+}
+h2 {
+    color: blue;
+}
+table {
+    text-align: center;
+}
+.bluea {
+    color: blue;
+}
+.khongvien {
+    border-top-width: 0px;
+    border-right-width: 0px;
+    border-bottom-width: 0px;
+    border-left-width: 0px;
+}
