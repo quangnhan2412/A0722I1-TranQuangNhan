@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Điểm trung bình 3 môn</title>
+</head>
+<body>
+    <script>
+        let inputVatly;
+        let inputHoahoc;
+        let inputSinhhoc;
+
+        inputVatly = prompt("Enter the Vật Lý");
+        inputHoahoc = prompt("Enter the Hóa Học");
+        inputSinhhoc = prompt("Enter the Sinh học");
+
+        let Vatly = parseInt(inputVatly);
+        let Hoahoc = parseInt(inputHoahoc);
+        let Sinhhoc = parseInt(inputSinhhoc);
+
+        let dtb = (Vatly + Hoahoc + Sinhhoc) / 3;
+        document.write("Điểm trung bình 3 môn có số điểm là : " + dtb);
+        document.write('<br/>')
+        let tong = Vatly + Hoahoc + Sinhhoc
+        document.write("Tổng điểm 3 môn là :" + tong)
+
+    </script>
+</body>
+</html>

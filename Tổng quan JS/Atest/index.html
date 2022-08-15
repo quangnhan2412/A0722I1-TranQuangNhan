@@ -5,17 +5,57 @@
     <title>JS</title>
 </head>
 <body>
-    <h2>What Can JavaScript Do?</h2>
-        <p>JavaScript can change HTML attributes.</p>
-        <p>In this case JavaScript changes the src (source) attribute of an image.</p>
-        <button onclick="document.getElementById('myImage').src='https://www.w3schools.com/js/pic_bulbon.gif'">Turn on the light</button>
-        <img id="myImage" src="https://www.w3schools.com/js/pic_bulboff.gif" style="width:100px">
-        <button onclick="document.getElementById('myImage').src='https://www.w3schools.com/js/pic_bulboff.gif'">Turn off the light</button>
-    <button onclick="alert('Xin chào bạn!');">Click me</button>
-
+<form action="#">
+    <label>Amount</label>
+    <input type="number" id="money">
+    <br> <br>
+    <label>From currency</label>
+    <select id="fromMoney" onchange="getFrMoney()">
+        <option value="VND">VND</option>
+        <option value="USD">USD</option>
+    </select>
+    <br> <br>
+    <label>To currency</label>
+    <select id="toMoney" onchange="getToMoney()">
+        <option value="USD">USD</option>
+        <option value="VND">VND</option>
+    </select>
+    <br> <br>
+    <button onclick="Calculate()">Convert</button>
+    <br> <br>
+    <span>Result: </span>
+    <p id="result"></p>
+    <script>
+        <!--  Có thể gộp chung 2 function này làm 1 đc không       -->
+        var fromMoney = "VND";
+        function getFrMoney(){
+            fromMoney = document.getElementById("fromMoney").value;
+        }
+        var toMoney ="USD";
+        function getToMoney(){
+            toMoney = document.getElementById("toMoney").value;
+        }
+        function Calculate(){
+            var money = parseInt(document.getElementById("money").value);
+            var calculatedMoney;
+            if(fromMoney == "VND" && toMoney=="USD"){
+                calculatedMoney=money/23000;
+                document.getElementById("result").innerText = calculatedMoney + " USD";
+            }
+            else if(fromMoney == "USD" && toMoney=="VND") {
+                calculatedMoney=money*23000;
+                document.getElementById("result").innerText = calculatedMoney + " VND";
+            }
+            else {
+                if(fromMoney == "VND" && toMoney=="VND"){
+                    document.getElementById("result").innerText = money + " VND";
+                }
+                else {
+                    document.getElementById("result").innerText = money + " USD";
+                }
+            }
+        }
+    </script>
+</form>
 </body>
 </html>
-<script>
-    document.get
-
-</script>

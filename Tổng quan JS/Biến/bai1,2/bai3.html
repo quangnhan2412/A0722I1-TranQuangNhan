@@ -7,14 +7,14 @@
 <body>
     <script>
         // Lấy giá trị từ người dùng
-        var a,b;
+        let a,b;
          a = prompt("Nhập số a");
          b = prompt("Nhập số b");
         // Đổi sang kiểu number
         a = parseInt(a);
         b = parseInt(b);
 
-        if ( a % b == 0 ) {
+        if ( a % b === 0 ) {
             alert('a là bội số của b')
         }else {
             alert('a là không bội số của b')
