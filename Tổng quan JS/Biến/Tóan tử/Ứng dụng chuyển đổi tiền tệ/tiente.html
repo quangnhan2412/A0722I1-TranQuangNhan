@@ -13,44 +13,39 @@
 <body>
 <form>
     <table>
-    <input type="text" id="dauvao">
-<select name="" id="select1">
-    <option value="VND">VNĐ</option>
-    <option value="USD">USD</option>
-</select>
-<select name="" id="select2">
-    <option value="USD">USD</option>
-    <option value="VND">VNĐ</option>
-</select>
-<button onclick="nhapvap()" class="btn">Convert</button>
+        <input type="text" id="dauvao">
+        <select name="" id="select1">
+            <option value="VND">VNĐ</option>
+            <option value="USD">USD</option>
+        </select>
+        <select name="" id="select2">
+            <option value="USD">USD</option>
+            <option value="VND">VNĐ</option>
+        </select>
+        <button onclick="nhapvap()" class="btn">Convert</button>
     </table>
     <br>
+    <span>Result: </span>
     <p id="result"></p>
 </form>
-    <script>
-  function nhapvap() {
-      let giatrivao = document.getElementById('dauvao').value;
-      let select1 = document.getElementById('select1').value;
-      let select2 = document.getElementById('select2').value;
+<script>
+    function nhapvap() {
+        let giatrivao = document.getElementById('dauvao').value;
+        let select1 = document.getElementById('select1').value;
+        let select2 = document.getElementById('select2').value;
 
-      if (select1 == select2) {
-          document.write(giatrivao);
-      }
-      if (select1 == "VND" && select2 == "USD") {
-          document.write(giatrivao / 24000);
-      }
-      else {
-      if (select1 == "VND" && select2 == "USD"){
-          document.write(giatrivao);
-      }
-          if (select1 == "USD" && select2 == "VND"){
-              document.write(giatrivao * 24000);
-          }
-  }
-  }
-  <!-- Đây là chú thích -->
-  //chưa làm được thanh resut
-        //muốn gán thêm ký tự
+        if (select1 == select2) {
+            document.write(giatrivao);
+        }
+        if (select1 == "VND" && select2 == "USD") {
+            document.write(giatrivao / 24000);
+        } else {
+            if (select1 == "USD" && select2 == "VND") {
+                document.write(giatrivao * 24000);
+            }
+        }
+    }
+
 </script>
 </body>
 </html>
