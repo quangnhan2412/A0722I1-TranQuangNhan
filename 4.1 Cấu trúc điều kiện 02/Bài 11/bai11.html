@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    /**
+     * Bài 11: Viết chương trình tính thuế thu nhập cá nhân.
+     */
+    let thunhap =parseFloat(prompt  ('vui lòng nhập thu nhập '));
+    let thue1 = 0.05,thue2 = 0.1;
+
+    if( thunhap < 0){
+        document.write("Bạn nhập sai vui lòng nhập lại");
+    }else if(thunhap > 100){
+        document.write(" Số tiền thuế bị trừ : " + thunhap*thue1);
+    }
+    else if(thunhap < 100){
+        document.write(" Số tiền thuế bị trừ : "+ thunhap*thue2);
+    }
+
+</script>
+</body>
+</html>

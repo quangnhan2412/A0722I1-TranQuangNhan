@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<script type="text/javascript" language="javascript">
+    function ptbh()
+    {
+        let a, b, c, delta, x, x1, x2;
+        a = document.nhap.a.value;
+        b = document.nhap.b.value;
+        c = document.nhap.c.value;
+        delta = b*b - 4*a*c;
+        if (delta < 0)
+        {
+            document.write(" Phương trình vô nghiệm ");
+        }
+        else if (delta ==0)
+        {
+            x = -b/2*a;
+            document.nhap.f.value =x;
+        }
+        else if (delta > 0)
+        {
+            x1 = (-b + Math.sqrt(delta))/(2*a);
+            document.nhap.d.value =x1;
+            x2 = (-b - Math.sqrt(delta))/(2*a);
+            document.nhap.e.value =x2;
+        }
+    }
+</script>
+<body>
+
+<form name="nhap">
+    <p>Nhập a:
+        <input name="a" type="text" />
+        x1:
+        <label>
+            <input type="text" name="d" />
+        </label>
+    </p>
+    <p>Nhập b:
+        <label>
+            <input type="text" name="b" />
+        </label>
+        x2:
+        <label>
+            <input type="text" name="e"/>
+        </label>
+    </p>
+    <p>Nhập c:
+        <label>
+            <input type="text" name="c"/>
+        </label>
+        Nghiệm kép:
+        <label>
+            <input type="text" name="f" />
+        </label>
+    </p>
+    <p>
+        <label>
+            <input type="button" value="Giải" onclick="ptbh()" />
+            <input type="button" value="reset" onclick="location.href='ptbh.htm'" />
+        </label>
+    </p>
+</form>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    /**
+     * Bài 4: Nhập 3 số nguyên và tìm giá trị lớn nhất của ba số nguyên đó
+     */
+    let a = parseInt(prompt("Nhập số nguyên dương 1 "));
+    let b = parseInt(prompt("Nhập số nguyên dương 2 "));
+    let c = parseInt(prompt("Nhập số nguyên dương 3 "));
+
+    if (a > b && a > c){
+        document.write("a Đây là số có giá trị lớn nhất " + a);
+    }else if (a < b && b > c){
+        document.write(" b Đây là số có giá trị lớn nhất " + b);
+    }else{
+        document.write(" c Đây là số có giá trị lớn nhất " + c);
+    }
+</script>
+</body>
+</html>

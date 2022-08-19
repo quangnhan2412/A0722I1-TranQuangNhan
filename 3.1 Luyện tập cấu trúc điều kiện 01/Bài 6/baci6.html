@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    /**
+     * Bài 6: Tính hoa hồng nhận được tuỳ theo mức doanh số bán hàng
+     * 5% nếu tổng doanh số nhỏ hơn hoặc bằng 100k.
+     10% nếu tổng doanh số nhỏ hơn hoặc bằng 300k
+     20 % nếu tổng doanh số là lớn hơn 300k
+     */
+    let doanhso = parseInt(prompt("Nhập doanh số bán hàng: "));
+
+    if (doanhso <= 100000){
+        document.writeln(" Với tổng doanh số là : " + doanhso );
+        document.writeln(" <br>");
+        document.writeln("Hoa hồng bạn nhận được là:" + doanhso * 5/100);
+    }else if(doanhso <= 300000){
+        document.writeln(" Với tổng doanh số là: " + doanhso );
+        document.writeln(" <br>");
+        document.writeln("Hoa hồng bạn nhận được là: " + doanhso * 10/100);
+    }
+    else if(doanhso > 300000){
+        document.writeln(" Với tổng doanh số là: " + doanhso );
+        document.writeln(" <br>");
+        document.writeln("Hoa hồng bạn nhận được là: " + doanhso * 20/100);
+    }
+</script>
+</body>
+</html>

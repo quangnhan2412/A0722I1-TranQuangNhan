@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    /**
+     * Bài 5: Xếp hạng học lực của học sinh dựa trên các điểm bài kiểm tra, điểm thi giữa kỳ, điểm thi cuối kỳ
+     */
+    let mark = parseInt(prompt("Nhập điểm vào cho học sinh: "));
+    if (isNaN(mark) || mark < 0 || mark > 10){
+        document.writeln("<h1>Bạn nhập điểm không hợp lệ</h1>");
+    }else {
+        if (mark > 8){
+            document.writeln("<h1>Học sinh đạt loại giỏi</h1>")
+        }else if(mark > 7){
+            document.writeln("<h1>Học sinh đạt loại khá</h1>")
+        }else if (mark > 6){
+            document.writeln("<h1>Học sinh đạt loại trung bình</h1>")
+        }else if (mark > 5){
+            document.writeln("<h1>Học sinh đạt loại yếu</h1>")
+        }else {
+            document.writeln("<h1>Học sinh đạt loại kém</h1>")
+        }
+    }
+
+
+</script>
+</body>
+</html>

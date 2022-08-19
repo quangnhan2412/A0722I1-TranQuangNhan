@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    /**
+     * Bài 8: Kiểm tra xem một số nhập vào có phải là tuổi của một người không.
+     * Một số nguyên là tuổi của một người khi nhỏ 120 và lơn hơn 0.
+     */
+    let mark = parseInt(prompt("Nhập số tuổi của một người: "));
+    if (isNaN(mark) || mark < 0 || mark > 120){
+        document.writeln("<h1>Bạn nhập tuổi không hợp lệ</h1>");
+    }else if (mark < 120 && mark > 0) {
+
+            document.writeln("<h1>Bạn có số tuổi là</h1>" + mark);
+    }else {
+            document.writeln("<h1>Bạn nhập sai</h1>");
+
+
+    }
+</script>
+</body>
+</html>
