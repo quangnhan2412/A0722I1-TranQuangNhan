@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form>
+<table>
+    <h2>Game Guess the Number</h2>
+    <input type="text" name="firstname"><br><br>
+<button onclick="start1()" value="" id="batdau">Start</button>&nbsp;
+<button onclick="reset1()" value="" id="choilai">reset</button>
+</table>
+</form>
+</body>
+</html>
+<script>
+
+        function start1() {
+            let a = Math.round(10 * Math.random());
+            let n
+            let count=0;
+            do{
+                n  = parseInt(prompt("Select the range of numbers you want to guess (0-10):"));
+
+            if (n == a) {
+                alert("Chúc mừng bạn đã đoán thành công ");
+                break;
+            }else if(n < a) {
+                alert("Giá trị bạn nhập bé hơn số radom : " + n + " < " + a)
+                count++;
+            }else{
+                alert("Giá trị bạn nhập lớn hơn số radom : " + n + " > " + a);
+                count++;
+            }
+            }while (a != n && count < 3)
+        }
+
+        /**
+         * chưa làm được nút reset chưa ấn nhập được text
+         */
+</script>

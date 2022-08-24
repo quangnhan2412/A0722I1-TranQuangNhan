@@ -2,13 +2,25 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Game guess a number</title>
 </head>
 <body>
+<input type="button" onclick="Choose_number()" value="Play">
 <script>
-    var a = 5;
-    var b = 6;
-    console.log(b);
+    function Choose_number(){
+        let number = parseInt(prompt("Select the range of numbers you want to guess (0-N):"))
+        a = Math.floor(Math.random()*number);
+        console.log(a)
+        let guess = parseInt(prompt("Guess a number!"))
+        while (true){
+            if (guess===a) {
+                alert("You guessed the right number")
+                break;
+            }else{
+                guess = parseInt(prompt("Wrong number, enter new number:"))
+            }
+        }
+    }
 </script>
 </body>
 </html>
