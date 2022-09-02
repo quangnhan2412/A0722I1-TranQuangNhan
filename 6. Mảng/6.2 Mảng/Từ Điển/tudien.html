@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dictionary</title>
+</head>
+<body>
+<h3>Dictionary</h3>
+<label>Nhập từ tiếng anh: </label>
+<input type="text" id="text">
+<button onclick="dich()">Dịch</button>
+<script>
+    function dich(){
+        let Vn = ['xin chào', 'lớp', 'thầy/cô giáo'];
+        let Eng = ['hello','class','teacher'];
+        let j=-1;
+        let inputText = document.getElementById('text').value;
+        for (let i = 0; i < Eng.length; i++) {
+            if(inputText === Eng[i]) {
+                j = i;
+                break;
+            }
+        }
+        if(j!==-1)
+            alert(Vn[j]);
+        else
+            alert("not found");
+    }
+</script>
+</body>
+</html>

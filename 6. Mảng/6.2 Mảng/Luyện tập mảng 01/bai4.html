@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 4</title>
+</head>
+<body>
+<button onclick="tao()" > Hàm đã tạo sẵn</button>
+<button onclick="nhap()" >Hàm nhập vào</button>
+<script>
+    /**
+     * bài 4 :Viết chương trình khởi tạo/nhập vào một mảng số nguyên và đảo ngược các phần tử trong mảng đó.
+     */
+    function tao(){
+    let A = [12,4,56,3,10,33,6,7,54,9];
+    document.write('Mảng là : ' + A);
+    document.write('</br>' + 'Sau khi đảo ngược là : ' + A.reverse());
+    }
+
+    function nhap(  ){
+
+        let arr = [];
+        while (true) {
+            let item = prompt("hãy nhập số vào đây và ấn chữ 'exit' khi nhập xong mảng : ");
+            if (item === "exit") break;
+            arr.push(item);
+        }
+        document.write(arr);
+        document.write('</br>' + 'Sau khi đảo ngược là : ' + arr.reverse());
+    }
+
+</script>
+</body>
+</html>

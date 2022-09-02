@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 7</title>
+</head>
+<body>
+<button onclick="tao()" > Hàm đã tạo sẵn</button>
+<button onclick="nhap()" >Hàm nhập vào</button>
+<script>
+    /**
+     * Bài 7- Viết chương trình khởi tạo/nhập vào một mảng số nguyên gồm 10 phần tử, nhập/tạo phần tử số nguyên V.
+     * Chương trình kiểm tra xem V có thuộc mảng đã cho không,
+     * nếu V thuộc mảng đã cho xoá V khỏi mảng (Bản chất việc xoá ở đây tức là dịch phần tử ở bên phải V sang vị trí của V,
+     * và gán 0 cho phần tử cuối cùng của mảng)
+     */
+    let arr = [];
+    while (true) {
+        let item = prompt("hãy nhập số vào đây và ấn chữ 'exit' khi nhập xong mảng : ");
+        if (item === "exit") break;
+        arr.push(item);
+    }
+    let V = parseInt(prompt("Enter the number V: "));
+    let check = false;
+    for (let i = 0; i < arr.length; i++){
+        if (V == arr[i]) {
+            document.write("V is in the array!");
+            check = true;
+            arr.splice(i,1)
+            document.write(arr);
+            break;
+        }
+    }
+    if (check == false){
+        document.write("V is not in the array!");
+
+    }
+
+</script>
+</body>
+</html>

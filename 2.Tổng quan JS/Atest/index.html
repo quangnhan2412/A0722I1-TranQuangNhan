@@ -2,60 +2,55 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>JS</title>
+    <title>bai 7</title>
 </head>
 <body>
-<form action="#">
-    <label>Amount</label>
-    <input type="number" id="money">
-    <br> <br>
-    <label>From currency</label>
-    <select id="fromMoney" onchange="getFrMoney()">
-        <option value="VND">VND</option>
-        <option value="USD">USD</option>
-    </select>
-    <br> <br>
-    <label>To currency</label>
-    <select id="toMoney" onchange="getToMoney()">
-        <option value="USD">USD</option>
-        <option value="VND">VND</option>
-    </select>
-    <br> <br>
-    <button onclick="Calculate()">Convert</button>
-    <br> <br>
-    <span>Result: </span>
-    <p id="result"></p>
-    <script>
-        <!--  Có thể gộp chung 2 function này làm 1 đc không       -->
-        var fromMoney = "VND";
-        function getFrMoney(){
-            fromMoney = document.getElementById("fromMoney").value;
+<script>
+    let V = parseInt(prompt("Enter the number V: "));
+    let arr = [0,2,34,31,76,9,8,10,23,54,12];
+
+    for (let i = 0; i < arr.length; i++){
+        if (V == arr[i]) {
+
+            arr.splice(i,1)
         }
-        var toMoney ="USD";
-        function getToMoney(){
-            toMoney = document.getElementById("toMoney").value;
-        }
-        function Calculate(){
-            var money = parseInt(document.getElementById("money").value);
-            var calculatedMoney;
-            if(fromMoney == "VND" && toMoney=="USD"){
-                calculatedMoney=money/23000;
-                document.getElementById("result").innerText = calculatedMoney + " USD";
-            }
-            else if(fromMoney == "USD" && toMoney=="VND") {
-                calculatedMoney=money*23000;
-                document.getElementById("result").innerText = calculatedMoney + " VND";
-            }
-            else {
-                if(fromMoney == "VND" && toMoney=="VND"){
-                    document.getElementById("result").innerText = money + " VND";
-                }
-                else {
-                    document.getElementById("result").innerText = money + " USD";
-                }
-            }
-        }
-    </script>
-</form>
+    }
+
+    document.write(arr);
+
+
+</script>
 </body>
 </html>
+<!--<!DOCTYPE html>-->
+<!--<html lang="en">-->
+<!--<head>-->
+<!--    <meta charset="UTF-8">-->
+<!--    <title>bai 8</title>-->
+<!--</head>-->
+<!--<body>-->
+<!--<script>-->
+<!--    let arr = [40, 100, 1, 5, 25, 10];-->
+<!--    arr.sort((a, b) => a - b);-->
+<!--    document.write(arr)-->
+<!--</script>-->
+<!--</body>-->
+<!--</html>-->
+<!--<!DOCTYPE html>-->
+<!--<html lang="en">-->
+<!--<head>-->
+<!--    <meta charset="UTF-8">-->
+<!--    <title>bai 9</title>-->
+<!--</head>-->
+<!--<body>-->
+<!--<script>-->
+<!--    let arrA = [1,2,3,4,5,6,7,8,9,10];-->
+<!--    let arrB = [11,12,13,14,15,16,17,18,19,20];-->
+<!--    let arrC = [];-->
+<!--    arrC.length = 20;-->
+<!--    arrC = arrA.concat(arrB);-->
+<!--    document.write(arrC + "<br>");-->
+<!--    document.write(arrC.length)-->
+<!--</script>-->
+<!--</body>-->
+<!--</html>-->

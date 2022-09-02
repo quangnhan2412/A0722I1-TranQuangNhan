@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    /**
+     * Bài 5: Viết một chương trình nhập vào 2 chuỗi, sau đó kiểm tra xem hai chuỗi có giống nhau hay không.
+     */
+    // let arr = [];
+    // while (true) {
+    //     let item = prompt("hãy nhập số vào đây và ấn chữ 'exit' khi nhập xong mảng : ");
+    //     if (item === "exit") break;
+    //     arr.push(item);
+    // }
+    // console.log(arr);
+    // let arr2 = [];
+    // while (true) {
+    //     let item = prompt("hãy nhập số vào đây và ấn chữ 'exit' khi nhập xong mảng : ");
+    //     if (item === "exit") break;
+    //     arr2.push(item);
+    // }
+    // console.log(arr2);
+    // if (arr === arr2) {
+    //     console.log('2 chuỗi bằng nhau ');
+    // } else if (arr > arr2) {
+    //     console.log(' chuỗi đầu lớn hơn ');
+    // } else if (arr < arr2){
+    //     console.log(' chuỗi sau lớn hơn ');
+    // }
+    let stra = prompt('Enter the first string: ');
+    let strb = prompt('Enter the second string: ');
+    if (stra.normalize() === strb.normalize()) {
+        alert('Two strings are equal');
+    } else {
+        alert('Two strings are not equal');
+    }
+</script>
+</body>
+</html>

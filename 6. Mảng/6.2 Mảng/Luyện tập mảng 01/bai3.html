@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài3</title>
+</head>
+<body>
+<script>
+    /**
+     * Bài 3- Viết chương trình khởi tạo mảng số nguyên.
+     * Hiển hiện giá trị lớn nhất trong mảng đó.
+     * In ra giá trị trung bình của các phần tử trong mảng.
+     */
+    let A = [10, 20, 30, 15, 17, 50, 22, 33, 29]
+    medium = 0;
+    average = 0;
+    max = 0;
+    for (let i = 0; i < A.length; i++) {
+            average = average + (A[i] / A.length);
+            // average += (A[i] / A.length);
+        if (max < A[i]) {
+            max = A[i];
+        }
+    }
+    console.log("Max trong mảng là " + max +' ,Giá trị trung trong mảng là : ' +average);
+
+</script>
+</body>
+</html>
