@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 3 </title>
+</head>
+<body>
+<form>
+    <!--    <label for="thamso1"></label><input type="text" id="thamso1">-->
+    <!--    <label for="thamso2"></label><input type="text" id="thamso2">-->
+    <!--    <br>-->
+    <!--    <br>-->
+    <!--    <button onclick="sum()">Kết quả</button>-->
+    <!--    <span id="result"></span>-->
+    <button onclick="sum(parseInt(prompt('Nhập số đầu:')),parseInt(prompt('Nhập số hai: ')))">Click me</button>
+</form>
+</body>
+</html>
+<script>
+    /**
+     * Bài 3: Tạo hàm nhận vào hai tham số. Nếu giá trị của tham số thứ nhất lớn hơn tham số thứ hai, hiển thị hộp thoại thông báo cho người dùng.
+     * Nếu giá trị của tham số thứ nhất nhỏ hơn hoặc bằng tham số thứ hai, trả về tổng của hai tham số.
+     */
+    function sum(thamso1, thamso2) {
+        if (thamso1 > thamso2) {
+            alert('tham số 1 lớn hơn tham số 2 ');
+        } else if ( thamso1 < thamso2) {
+            let tong = thamso1 + thamso2;
+            alert("Tổng của 2 tham số là : " + tong);
+        }else {
+            alert("2 số nhập vào bằng nhau");
+        }
+    }
+</script>

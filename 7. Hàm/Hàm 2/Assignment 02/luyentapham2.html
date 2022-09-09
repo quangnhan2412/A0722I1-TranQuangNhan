@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 1</title>
+</head>
+<body>
+<h4>Bài 1: Viết hàm tính bình phương của một số bất kỳ được đưa vào. Gọi hàm vừa xây dựng được</h4>
+<button onclick="square(parseInt(prompt('Enter the number you want to square')))">Click B1</button>
+
+<h4>Bài 2: Viết hàm tính diện tích, hàm tính chu vi hình tròn. Gọi hàm vừa xây dựng được</h4>
+<button onclick="AreaAndPerimeter(parseInt(prompt('Enter the number radius')))">Click B2</button>
+
+<h4>Bài 3: Viết hàm tính giai thừa của một số nguyên bất kỳ được đưa vào. Gọi hàm vừa xây dựng được.</h4>
+<button onclick="Factor(parseInt(prompt('Enter the number ')))">Click B3</button>
+
+<h4>Bài 4: Viết hàm kiểm tra xem ký tự nhập vào có phải là ký tự số không. Nếu là ký tự số hàm trả về true, ngược lại
+    trả về false.</h4>
+<button onclick="check(parseInt(prompt('Enter the number ')))">Click B4</button>
+
+<h4>Bài 5: Viết hàm nhận vào 3 số nguyên bất kỳ, trả về số nguyên có giá trị nhỏ nhất.</h4>
+<button onclick="minall(parseInt(prompt('enter integer for the first time')),parseInt(prompt('enter integer a second time')),parseInt(prompt('enter integer three times')))">
+    Click B5
+</button>
+
+<h4>Bài 6: Viết hàm nhận vào một số, kiểm tra xem nếu số đưa vào có phải là nguyên dương không. Nếu là nguyên dương trả
+    về true, ngược lại trả về false.</h4>
+<button onclick="nguyenduong(parseInt(prompt('Enter the number ')))">Click B6</button>
+
+<h4>Bài 7: Viết hàm truyền vào 2 số nguyên bất kì, thực hiện đổi chỗ hai số nguyên đó.</h4>
+<button onclick="input(parseInt(prompt('Enter the number one ')),parseInt(prompt('Enter the number two')))">Click B6
+</button>
+
+<h4>Bài 8: Viết hàm truyền vào mảng số nguyên bất kỳ, sau đó đảo ngược mảng số nguyên đó.</h4>
+<button onclick="bai8()">Click B7</button>
+
+
+<h4>Bài 9: Viết hàm truyền vào một mảng ký tự, và một ký tự bất kỳ, kiểm tra xem ký tự bất kỳ đó có nằm trong mảng
+    không.
+    Nếu có trả về số lần xuất hiện của ký tự đó, nếu không trả về -1. </h4>
+<button onclick="bai9(parseInt(prompt('Enter the number on Arrayy')))">Click B9
+</button>
+
+</body>
+</html>
+<script>
+    // Bài 1
+    function square(number) {
+        alert(Math.pow(number, 2));
+    }
+
+    // End
+
+    // Bài 2
+    function AreaAndPerimeter(radius) {
+        const Pi = 3.14;
+        let Area = (Math.pow(radius, 2)) * Pi;
+        let Perimeter = radius * 2 * Pi;
+        alert("Area of the circle : " + Area + "\nPerimeter of the circle " + Perimeter);
+    }
+
+    // End
+
+    // Bài 3
+    function Factor(number) {
+        let factor = 1;
+        for (let i = 1; i <= number; i++) {
+            factor *= i;
+        }
+        alert("Kết quả sau khi tính gia thừa là : " + factor)
+        // return factor;
+    }
+
+    // End
+    // Bài 4
+    //
+    function check(number) {
+        let characters = true;
+        if (isNaN(number)) {
+            characters = false;
+        }
+        if (characters) {
+            alert("Đây là number");
+        } else {
+            alert("Đây không phải là number");
+        }
+        return characters;
+    }
+
+    // End
+
+    // Bài 5
+    function minall(number1, number2, number3) {
+        let min = number1;
+        if (number2 < min) {
+            min = number2;
+
+        }
+        if (number3 < min) {
+            min = number3;
+        }
+        if (number1 === number2 && number2 === number3) {
+            alert('Ba số bằng nhau  ')
+        }
+        alert('Min của 3 số vừa nhập là ' + min);
+        return min;
+    }
+
+    // End
+
+    // Bài 6
+    function nguyenduong(number) {
+        // let count = 0 ;
+        if (number > 0) {
+            alert(number + " Là số nguyên dương ");
+            return true;
+        } else {
+            alert(number + " Không là số nguyên dương ");
+            return false;
+        }
+    }
+
+    // End
+    //     Bài 7
+    function input(num1, num2) {
+        num1 = num1 + num2;
+        num2 = num1 - num2;
+        num1 = num1 - num2;
+        alert(" Sau khi hoán đổi là số đầu tiên thành " + num1 + " AND " + num2);
+        return 0;
+    }
+
+    // End
+    //     Bài 8
+    function bai8() {
+        let arr = [];
+        while (true) {
+            let item = prompt("hãy nhập số vào đây và ấn chữ 'exit' khi nhập xong mảng : ");
+            if (item === "exit") break;
+            arr.push(item);
+        }
+        alert("Những số bạn đã nhập vào mảng là " + "[" + arr + "]");
+        arr.reverse();
+        alert("Sau khi đảo ngược mảng là  : " + "[" + arr + "]");
+        return 0;
+    }
+
+    // End
+    // Bài 9
+
+    function bai9(x) {
+        let arr = [12, 4, 56, 3, 10, 33, 6, 7, 56, 9, 12, 4];
+        let count = 0;
+
+        for (let i = 0; i <= arr.length; i++) {
+            if ( arr[i] === x)  {
+                count ++;
+            }
+        }
+            if (count === 0){
+            alert(--count);
+        }else {
+                alert("Số lần có trong mảng là : "+ count);
+            }
+    }
+
+</script>
+
+

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ứng dụng quản lý sản phẩm sử dụng hàm</title>
+</head>
+<body>
+<h4>Add New Product</h4>
+<form action="" method="">
+    <label for="newProduct"></label><input type="text" placeholder="New Product" id="newProduct" name="newProduct">
+    <button type="button" onclick="addData()" id="addbtn">Add</button>
+</form>
+<h4>Display All Product</h4>
+<button onclick="viewData()" id="viewProduct">View</button>
+<div id="database"></div>
+
+<script>
+    let data = ["iphone", "nokia", "oppo"];
+
+    // check trùng newProduct
+    function check(newProduct) {
+        for (let i = 0; i < data.length; i++) {
+            if (data[i] === newProduct) {
+                return true;
+            }
+        }
+    }
+    // Edit
+    function EditPerson() {
+        alert("You want edit ?");
+        document.getElementById('newProduct').id;
+
+
+    }
+        //Hiển thị
+    function viewData() {
+        let table = '<table border="1" cellpadding="5">\n' +
+            '    <thead>\n' +
+            '    <tr>\n' +
+            '        <th>Product Name\n' +
+            '        </th>\n' +
+            '    </tr>\n' +
+            '    </thead>\n' +
+            '    <tbody>\n';
+
+
+        for (let i = 0; i < data.length; i++) {
+            table += '<tr>'
+            table += '<td>' + data[i] + '</td>'
+            table += '<td><button id="Edit" onclick="EditPerson(\'' + data[i] + '\'     )">Edit</button></td>'
+            table += '<td><button onclick="deletePerson(\'' + data[i] + '\')">Delete</button></td>' // sử dụng dấu \'
+            // table += `<td><button onclick="deletePerson('${data[i]}')">Delete</button></td>`
+            table += '</tr>'
+        }
+        table += '</tbody></table>';
+        document.getElementById('database').innerHTML = table;
+    }
+    // Thêm
+    function addData() {
+        let newProduct = document.getElementById('newProduct').value;
+        if (!check(newProduct)) {
+            data.push(newProduct)
+            alert('Bạn đã thêm')
+            viewData();
+        } else {
+            alert('Tên bạn đã thêm đã bị trùng  ');
+        }
+
+
+    }
+    // Xoá
+    function deletePerson(product) {
+        alert("Bạn có thật sự muốn xoá không ? ")
+        for (let i = 0; i < data.length; i++) {
+            if (data[i] === product) {
+                data.splice(i, 1);
+                viewData();
+            }
+        }
+    }
+
+</script>
+</body>
+</html>

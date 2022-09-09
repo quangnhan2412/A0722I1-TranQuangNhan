@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ứng dụng quản lý sản phẩm sử dụng hàm</title>
+    <script src="themxoasua.js"></script>
+</head>
+<body>
+<!--<form>-->
+<table>
+    <h4>Add New Product</h4>
+
+    <label for="newProduct"></label><input type="text" placeholder="New Product" id="newProduct" name="newProduct">
+
+    <button onclick="addData()" id="addbtn">Add</button>
+</table>
+<!--</form>-->
+<!--<form>-->
+<h4>Display All Product</h4>
+<h5>Product Name</h5>
+<button onclick="viewData()" id="viewProduct">View</button>
+<span id="database"></span>
+
+<!--</form>-->
+
+</body>
+</html>
+<script>
+
+    let data = ['Sony', 'Samsung Galaxy', 'Nokia 6', 'Xiaomi 4', 'Apple iPhone 6', 'Xiaomi 5S', 'Fujitsu', 'MacBook','Oppo'];
+
+
+
+    // check trùng newProduct
+    function check(newProduct) {
+        let list = data;
+        for (let i = 0; i < list.length; i++) {
+            if (list[i].newProduct === newProduct) {
+                return true;
+            }
+        }
+    }
+
+    //Hiển thị
+    function viewData() {
+        let list = data;
+        let table = '<table border="1" cellpadding="5">\n' +
+            '    <thead>\n' +
+            '    <tr>\n' +
+            '        <th>\n' +
+            '        </th>\n' +
+            '    </tr>\n' +
+            '    </thead>\n' +
+            '    <tbody>\n';
+
+
+        for (let i = 0; i < list.length; i++) {
+            table += '<tr>'
+            // table += '<td> ' + list[i].id + '</td>'
+            table += '<td> ' + list[i].newProduct + '</td>'
+            table += '<td><button onclick="DeletePerson(' + list[i]+ ');">Delete</button></td>'
+            // table += '<td><button onclick="EditPerson(' + list[i]+ ');">Edit</button></td>'
+            table += '</tr>'
+
+        }
+        table += '</tbody></table>';
+        document.getElementById('database').innerHTML = table;
+    }
+// Edit
+    
+    function EditPerson() {
+
+    }
+    // Xoá
+    function DeletePerson(newProduct) {
+        for (let i = 0; i < data.length; i++) {
+            if (data[i].newProduct === newProduct) {
+                // Xoá
+                data.join('')
+                data.splice(i, 1);
+                viewData();
+            }
+        }
+    }
+
+    // Thêm
+
+    function addData() {
+        let newProduct = document.getElementById('newProduct').value;
+        //
+        // let item = {
+        //     newProduct: newProduct
+        // };
+
+        if (!check(newProduct)) {
+            data.push(data)
+            alert('Bạn đã thêm')
+            viewData();
+        } else {
+            alert('Tên bạn đã thêm đã bị trùng  ');
+        }
+
+        // data.push(item);
+        // viewData();
+        // alert("Bạn đã thêm")
+    }
+</script>
