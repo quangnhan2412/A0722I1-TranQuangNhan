@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mảng và Loop</title>
+</head>
+<body>
+<button onclick="prefix_sums()">Bài 1: Cho mảng a chỉ chứa các số nguyên
+    Xây dựng mảng b là prefix sums của mảng a cụ thể theo công thức:
+    b[0] = a[0]
+    b[1] = a[0] + a[1]
+    b[2] = a[0] + a[1] + a[2]
+    ...
+    b[n - 1] = a[0] + a[1] + ... + a[n - 1]
+    với n là độ dài của mảng a.
+    Ví dụ: Cho a = [1, 2, 3], thì kết quả prefixSums(a) = [1, 3, 6].
+    Mảng b được tạo ra: [1, 1 + 2, 1 + 2 + 3] = [1, 3, 6]
+</button>
+
+<button onclick="missingValue()">Bài 2: Cho 2 mảng A và B chứa số nguyên. Tìm ra một mảng đã được sắp xếp chứa các phần
+    tử xuất hiện trong mảng B nhưng lại không xuất hiện A
+    Chú ý các phần tử giống nhau chỉ tính là 1 lần xuất hiện
+    Ví dụ: A=[7,2,5,3,5,3] và B=[7,2,5,4,6,3,5,3] thì kết quả missingValue(A, B) = [4, 6]
+</button>
+</body>
+</html>
+<script>
+    // Bài 1
+    function prefix_sums(arr) {
+        let new_arr = [];
+        for (let i = 0; i < arr.length; i++) {
+            new_arr[i] = 0;
+            for (let j = 0; j < i + 1; j++) {
+                new_arr[i] += arr[j]
+            }
+        }
+        return new_arr;
+    }
+
+    alert("Bài 1 / " + prefix_sums([1, 2, 3, 4, 5, 6, 7, 8, 9]));
+    // end
+    // Bài2
+    function missingValue() {
+        let A = [7, 2, 5, 3, 5, 3];
+        let B = [7, 2, 5, 4, 6, 3, 5, 3];
+        let count = 0;
+        let AB = [];
+
+        for (let i = 0; i < B.length; i++) {
+            for (let j = 0; j < B.length; j++) {
+                count++;
+                break;
+            }
+        }
+
+    }
+
+
+</script>

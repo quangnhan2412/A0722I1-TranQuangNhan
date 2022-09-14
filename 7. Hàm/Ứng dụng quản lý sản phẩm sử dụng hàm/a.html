@@ -25,14 +25,19 @@
             }
         }
     }
+
     // Edit
-    function EditPerson() {
+    function EditPerson(Elemen,update) {
         alert("You want edit ?");
-        document.getElementById('newProduct').id;
+        for (let i = 0; i < data.length; i++) {
+            if (data[i] === Elemen) {
+                document.getElementById('newProduct').value = Elemen;
 
-
+            }
+        }
     }
-        //Hiển thị
+
+    //Hiển thị
     function viewData() {
         let table = '<table border="1" cellpadding="5">\n' +
             '    <thead>\n' +
@@ -42,12 +47,10 @@
             '    </tr>\n' +
             '    </thead>\n' +
             '    <tbody>\n';
-
-
         for (let i = 0; i < data.length; i++) {
             table += '<tr>'
             table += '<td>' + data[i] + '</td>'
-            table += '<td><button id="Edit" onclick="EditPerson(\'' + data[i] + '\'     )">Edit</button></td>'
+            table += '<td><button id="Edit" onclick="EditPerson(\'' + data[i] + '\')">Edit</button></td>'
             table += '<td><button onclick="deletePerson(\'' + data[i] + '\')">Delete</button></td>' // sử dụng dấu \'
             // table += `<td><button onclick="deletePerson('${data[i]}')">Delete</button></td>`
             table += '</tr>'
@@ -55,6 +58,7 @@
         table += '</tbody></table>';
         document.getElementById('database').innerHTML = table;
     }
+
     // Thêm
     function addData() {
         let newProduct = document.getElementById('newProduct').value;
@@ -65,7 +69,6 @@
         } else {
             alert('Tên bạn đã thêm đã bị trùng  ');
         }
-
 
     }
     // Xoá
@@ -78,7 +81,6 @@
             }
         }
     }
-
 </script>
 </body>
 </html>
