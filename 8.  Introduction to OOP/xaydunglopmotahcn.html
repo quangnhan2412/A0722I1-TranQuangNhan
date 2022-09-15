@@ -9,62 +9,34 @@
 </body>
 </html>
 <script>
-    // class Rectangle {
-    //     constructor(width, height) {
-    //         this.width = width;
-    //         this.height = height;
-    //     }
-    //
-    //     getArea() {
-    //         return this.width * this.height;
-    //     }
-    // }
-    //
-    // let rectangle = new Rectangle(2, 3);
-    // alert(rectangle.getArea())
-    function Rectangle(x, y, width, height) {
-        this.x = x;
-        this.y = y;
-        this.width = width;
-        this.height = height;
+    class Rectangle {
+        constructor(x, y, width, height) {
+            this.x = x;
+            this.y = y;
+            this.width = width;
+            this.height = height;
+        }
+
+        static getRandomRect() {
+            return Math.floor(Math.random() * 1000);
+        }
+
+        getPerimeter() {
+            return 2 * (this.width + this.height);
+        }
+
+        getArea() {
+            return this.width * this.height;
+        }
     }
 
-    function getRandomRect() {
-        return Math.floor(Math.random() * 100);
-
-    }
-
-    function Perimeter() {
-        alert(this.width)
-        return (this.width + this.height) * 2;
-    }
-
-    function Area() {
-        return this.width * this.height;
-    }
-
-    function createRectangle() {
-        let ctx = document.getElementById("myCanvas").getContext("2d");
-        let width = this.getRandomRect();
-        let height = this.getRandomRect();
-        // let perimeter = Perimeter;
-        // let area = Area;
-        let rectangle = new Rectangle(10, 40, width, height);
-        ctx.beginPath();
-        ctx.rect(rectangle.x, rectangle.y, rectangle.width, rectangle.height);
-        ctx.fill();
-        alert("Width " + width + " Height " + height)
-        alert("Chu Vi hình chữ nhật " + (width + height) * 2);
-        alert("Diện tích hình chữ nhật " + (width * height));
-    }
-
-    createRectangle();
-
-
-    // if (canvas.getContext) {
-    //     let ctx = canvas.getContext('2d');
-    //     ctx.lineWidth = "3";
-    //     ctx.strokeStyle = "black";
-    //     ctx.strokeRect(prompt("bạn nhập toạ độ"), prompt("bạn nhập toạ độ"), prompt("bạn nhập chiều cao"), prompt("bạn nhập chiều rộng"));
-    // }
+    let width = Rectangle.getRandomRect();
+    let height = Rectangle.getRandomRect();
+    let ctx = document.getElementById("myCanvas").getContext("2d");
+    let rectangle = new Rectangle(10, 40, width, height);
+    ctx.beginPath();
+    ctx.rect(rectangle.x, rectangle.y, rectangle.width, rectangle.height);
+    ctx.fill();
+    alert("Perimeter " + rectangle.getPerimeter());
+    alert("Area " + rectangle.getArea());
 </script>
