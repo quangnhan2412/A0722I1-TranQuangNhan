@@ -23,6 +23,13 @@
     Ví dụ: A=[7,2,5,3,5,3] và B=[7,2,5,4,6,3,5,3] thì kết quả missingValue(A, B) = [4, 6]
 </button>
 
+<button onclick="post3()">Bài 3: Cho một danh sách các phân số, hãy tìm chỉ số của phân số lớn nhất (đếm từ 0)
+    Giả định rằng không có các phân số bằng nhau trong tập đầu vào
+    Ví dụ: numerators = [5, 2, 5] và denominators = [6, 3, 4], thì kết quả maxFraction(numerators, denominators) = 2.
+    ⇨ 5/4 là phân số lớn nhất, có chỉ số là 2.
+
+</button>
+
 <button onclick="post4()">Bài 4: Viết một chương trình nhập một số từ bàn phím và in ra màn hình bằng chữ. Ví dụ 1234,
     kết quả in ra màn hình là một hai ba bốn.
 </button>
@@ -41,7 +48,9 @@
         return new_arr;
     }
 
-    alert("Bài 1 / " + prefix_sums([1, 2, 3, 4, 5, 6, 7, 8, 9]));
+    document.writeln("Post 1 / " + prefix_sums([1, 2, 3, 4, 5, 6, 7, 8, 9]));
+    document.writeln("<br>");
+
     // end
     // Bài2
     function missingValue() {
@@ -60,15 +69,28 @@
     }
 
     // end
+    // bài 3
+    let numerators = [5, 2, 5];
+    let denominator = [6, 3, 4];
+    let maxFraction = numerators[0] / denominator[0];
+    let indexMax = 0;
 
-    // bài4
+    for (let i = 0; i < numerators.length; i++) {
+        if (numerators[i] / denominator[i] > maxFraction) {
+            maxFraction = numerators[i] / denominator[i];
+            indexMax = i;
+        }
+    }
+    document.writeln("Post 3 :" + numerators[indexMax] + "/" + denominator[indexMax] + " Max fraction with index is: " + indexMax);
+    // end
+    // Bài4
     function post4() {
         let arr1 = ['1', '2', '3', '4', '5'];
         let arr2 = ['một', 'hai', 'ba', 'bốn', 'năm'];
         let index = -1;
-        let inputarr1 = prompt("Enter a number : ");
+        let inputArr = prompt("Enter a number : ");
         for (let i = 0; i < arr1.length; i++) {
-            if (arr1[i] === inputarr1) {
+            if (arr1[i] === inputArr) {
                 index = i;
                 break;
             }
@@ -79,5 +101,6 @@
             alert(arr2[index]);
         }
     }
+    
 
 </script>

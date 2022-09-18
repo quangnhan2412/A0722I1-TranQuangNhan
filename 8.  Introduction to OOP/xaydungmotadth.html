@@ -9,5 +9,27 @@
 </body>
 </html>
 <script>
+    class Mobile {
+        constructor(id, name) {
+            this.id = id;
+            this.name = name;
+        }
 
+        static setMessage(message) {
+            return message;
+        }
+
+        static getMessage() {
+            return message;
+        }
+
+        static sendMessage(message, mobile){
+            mobile.setMessage(message);
+        }
+    }
+    let iphone = new Mobile(1,"Iphone");
+    let android = new Mobile(2 , "Android")
+    iphone.sendMessage(prompt("Enter a Messenger : " ) ,android);
+    let message = Mobile.getMessage();
+    alert(message);
 </script>

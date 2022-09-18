@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+</html>
+<script>
+    let star = prompt("Nhập vào tên của ngôi sao: ");
+
+    //viết hàm có tham số truyền vào là "str"
+    function check(str) {
+        let arr1 = ["Polaris", "Aldebaran", "Deneb", "Vega", "Altair", "Dubhe", "Regulus"];
+        let arr2 = ["Ursa Minor", "Taurus", "Cygnus", "Lyra", "Aquila", "Ursa Major", "Leo"];
+        let flag = false;
+        let i;
+        for (i = 0; i < arr1.length; i++) {
+            if (arr1[i] === str) {
+                flag = true;
+                break;
+            }
+        }
+        if (flag) {
+            alert("Chòm sao tương ứng với ngôi sao vừa nhập: " + arr2[i]);
+        } else {
+            alert("Không tìm thấy ngôi sao vừa nhập.")
+        }
+    }
+    </script>
