@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h4>
+    Bài 2: Viết hàm liệt kê các số nguyên tố trong mảng 2 chiều, đếm các số nguyên tố có
+    trong mảng đó
+</h4>
+</body>
+</html>
+<script>
+
+
+    /*Tạo hàm kiểm tra số nguyên tố trong JavaScript*/
+    function isprime(n) {
+        //flag = 0 => không phải số nguyên tố
+        //flag = 1 => số nguyên tố
+
+        let flag = 1;
+
+        if (n < 2) return flag = 0; /*Số nhỏ hơn 2 không phải số nguyên tố => trả về 0*/
+
+        /*Sử dụng vòng lặp while để kiểm tra có tồn tại ước số nào khác không*/
+        let i = 2;
+        while (i < n) {
+            if (n % i == 0) {
+                flag = 0;
+                break; /*Chỉ cần tìm thấy 1 ước số là đủ và thoát vòng lặp*/
+            }
+            i++;
+        }
+
+        return flag;
+    }
+
+    let array = [[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
+        [11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 79],
+        [21, 22, 23, 24, 25, 26, 27, 28, 29, 30]
+    ];
+    let count = 0;
+    /*Tìm và liệt kê các số nguyên tố trong mảng 2 chiều */
+    for (let i = 0; i < array.length; i++) {
+        for (let j = 0; j < array[i].length; j++) {
+            if (isprime(array[i][j]) == 1) {
+                document.writeln(" " + array[i][j]);
+                count++;
+            }
+        }
+    }
+    document.writeln("<br>")
+    document.writeln("is Prime in Arr " + count);
+    // Hàm Nhâp mảng
+
+    // function inputArray() {
+    //
+    //     while (true) {
+    //         let item = prompt("hãy nhập số vào đây và ấn chữ 'exit' khi nhập xong mảng : ");
+    //         if (item === "exit") break;
+    //         array.push(item);
+    //     }
+    // }
+    //
+    // inputArray();
+</script>

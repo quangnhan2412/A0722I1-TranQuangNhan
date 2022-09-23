@@ -2,9 +2,42 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Title</title>
 </head>
 <body>
-$END$
+<h4>
+    Bài 1: Viết hàm tính tổng các số chẵn trong ma trận có kích thước m*n. Với m, n là các
+    số nhập từ bàn phím.
+</h4>
 </body>
 </html>
+<script>
+    //Tạo mảng kích thước mảng 2 chiều
+    let m = (parseInt(prompt('Enter number : ')))
+    let n = (parseInt(prompt('Enter number : ')))
+    let array1 = Array(m);
+    for (let i = 0; i < m; i++) {
+        array1[i] = Array(n);
+    }
+    for (let i = 0; i < array1.length; i++) {
+        for (let j = 0; j < array1[i].length; j++) {
+            array1[i][j] = parseInt(prompt('['+ i + ']'+ '.' +'['+ j + ']'));
+        }
+    }
+
+//Hàm Tổng các số chẵn trong mảng
+    function SumEven(arr) {
+        let sum = 0;
+        for (let i = 0; i < arr.length; i++) {
+            for (let j = 0; j < arr[i].length; j++) {
+                if (arr[i][j] % 2 === 0) {
+                    sum += arr[i][j];
+                }
+            }
+        }
+        return sum;
+    }
+
+    let A = SumEven(array1);
+    alert(A)
+</script>

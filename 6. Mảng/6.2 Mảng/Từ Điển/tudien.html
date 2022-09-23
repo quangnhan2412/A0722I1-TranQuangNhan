@@ -7,24 +7,28 @@
 <body>
 <h3>Dictionary</h3>
 <label>Nhập từ tiếng anh: </label>
-<input type="text" id="text">
-<button onclick="dich()">Dịch</button>
+<form action="" method="get">
+    <input type="text" name="input-word" id="input-word"/>
+    <input type="button" name="search-btn" id="search-btn" value="Tìm kiếm" onclick="trans()"/>
+</form>
+<p id="output-word"></p>
+
+
 <script>
-    function dich(){
-        let Vn = ['xin chào', 'lớp', 'thầy/cô giáo'];
-        let Eng = ['hello','class','teacher'];
-        let j=-1;
-        let inputText = document.getElementById('text').value;
-        for (let i = 0; i < Eng.length; i++) {
-            if(inputText === Eng[i]) {
-                j = i;
+    let engWords = ["hello", "world", "name", "address", "city", "country"];
+    let vieWords = ["xin chào", "thế giới", "tên", "địa chỉ", "công ty", "đất nước"];
+    let inputWord = document.getElementById("input-word");
+    let outputWord = document.getElementById("output-word");
+
+    function trans() {
+        for (let i = 0; i < engWords.length; i++) {
+            if (inputWord.value === engWords[i]) {
+                outputWord.innerHTML = vieWords[i];
                 break;
+            } else {
+                outputWord.innerHTML = "Không có trong từ điển";
             }
         }
-        if(j!==-1)
-            alert(Vn[j]);
-        else
-            alert("not found");
     }
 </script>
 </body>

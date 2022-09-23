@@ -2,9 +2,48 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Title</title>
 </head>
 <body>
-$END$
+<h4>Bài 1: Viết một hàm chuẩn hóa xâu ký tự:
+    biến đổi xâu ký tự thành xâu sao cho trong xâu không có 2 dấu cách liền nhau và bắt đầu mỗi từ phải in hoa.</h4>
+<h9>
+    Ví dụ tRuong TaN HAI => Truong Tan Hai.
+    Và một hàm tìm từ dài nhất trong 1 xâu ký tự.
+    Hàm main sử dụng các hàm này để nhập xâu ký tự từ bàn phím, in ra xâu trước và sau khi chuẩn hóa, 1 từ dài nhất
+    trong xâu đó.
+</h9>
 </body>
-</html>
+<script>
+    let inputStr = prompt("Enter String : ");
+
+    //Hàm vết Hoa chữ cái đầu
+    function titleCase(str) {
+        let convertToArray = str.toLowerCase().split(' ');
+        let result = convertToArray.map(function (let) {
+            return let.replace(let.charAt(0), let.charAt(0).toUpperCase());
+        });
+        return result.join(' ');
+    }
+    alert(titleCase(inputStr));
+//Hàm xử lý còn 1 dấu cách
+    function standardizedStr(str) {
+        let strStandard = "";
+        let strArr = str.split(' ');
+        for (let i = 0; i < strArr.length; i++) {
+            if (strArr[i] !== '') {
+                strArr[i] = strArr[i][0].toUpperCase() + strArr[i].slice(1).toLowerCase();
+                strStandard += strArr[i] + ' ';
+            }
+        }
+        return strStandard;
+    }
+    function longCharacter(){
+        for (let i = 0; i <  ; i++) {
+            
+        }
+    }
+    
+    alert(standardizedStr(titleCase(inputStr)));
+
+</script>
