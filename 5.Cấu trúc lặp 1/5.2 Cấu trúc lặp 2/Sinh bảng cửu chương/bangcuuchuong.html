@@ -9,13 +9,13 @@
     let sout;
     sout = "<table border='1' width='300' cellspacing='0' cellpadding='3'>"
     for (let i = 2 ;i <= 9 ; i++){
-        sout = sout + "</tr>";
+        sout +=  "</tr>";
         for (let  j = 2;j <= 9 ; j++){
-            sout = sout + "<td>" + j + "X" + i  + "=" + (i * j) + "</td>";
+            sout +=  "<td>" + j + "X" + i  + "=" + (i * j) + "</td>";
         }
-        sout = sout + "</tr>";
+        sout += "</tr>";
     }
-    sout = sout + "</table>";
+    sout += "</table>";
     document.write(sout);
 
 

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Câu 1</title>
+</head>
+<body>
+
+</body>
+</html>
+<script>
+    //  hàm kiểm tra số nguyên tố
+    function isPrime(number) {
+        if (number < 2)
+            return false;
+        let Count = 0;
+        for (let i = 1; i <= number; i++) {
+            if (number % i === 0)
+                Count++;
+        }
+        return Count <= 2;
+    }
+    let arr = [];
+    for (let i = 0; i <= 5; i++) {
+        arr.push(parseInt(prompt("enter 50 number : ")));
+    }
+    // những số nhập vào mảng
+    console.log(arr);
+
+    let arrPrime = [];
+    for (let i = 0; i <arr.length ; i++) {
+        if(isPrime(arr[i])){
+            arrPrime.push(arr[i]);
+        }
+    }
+    //những số nguyên tố trong mảng vừa nhập vào
+    console.log(arrPrime);
+</script>

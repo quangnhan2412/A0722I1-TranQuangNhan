@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p id="display"></p>
+</body>
+</html>
+<script>
+    class SOTIETKIEM {
+        constructor(maso, loaitietkiem, hotenkhachhang, cmnd, ngaymoso, sotiengui) {
+            this.maso = maso;
+            this.loaitietkiem = loaitietkiem;
+            this.hotenkhachhang = hotenkhachhang;
+            this.cmnd = cmnd;
+            this.ngaymoso = ngaymoso;
+            this.sotiengui = sotiengui;
+        }
+
+        getMaso() {
+            return this.maso;
+        }
+
+        getLoaitietkiem() {
+            return this.loaitietkiem;
+        }
+
+        getHotenkhachhang() {
+            return this.hotenkhachhang;
+        }
+
+        getCmnd() {
+            return this.cmnd;
+        }
+
+        getNgaymoso() {
+            return this.ngaymoso;
+        }
+
+        getSotiengui() {
+            return this.sotiengui;
+        }
+
+        setMaso(newMaso) {
+            this.maso = newMaso;
+        }
+
+        setLoaitietkiem(newLoaitietkiem) {
+            this.loaitietkiem = newLoaitietkiem;
+        }
+
+        setHotenkhachhang(newHotenkhachhang) {
+            this.hotenkhachhang = newHotenkhachhang;
+        }
+
+        setCmnd(newCmnd) {
+            this.cmnd = newCmnd;
+        }
+
+        setNgaymoso(newNgaymoso) {
+            this.ngaymoso = newNgaymoso;
+        }
+
+        setSotiengui(newSotiengui) {
+            this.sotiengui = newSotiengui;
+        }
+    }
+
+    let sotietkiemA = new SOTIETKIEM(1, '01', 'Trần Quang Nhân', '201821774', '05', 5000);
+    let sotietkiemB = new SOTIETKIEM(2, '02', 'Nguyễn Mai Huyền Linh', '201821775', '05', 6000);
+    let arr = [sotietkiemA, sotietkiemB];
+
+    function display() {
+        str = '<table border="1px">\n' +
+            '<tr>\n' +
+            '<th>Mã số</th>\n' +
+            '<th>Loại tiết kiệm</th>\n' +
+            '<th>Họ tên Khách hàng</th>\n' +
+            '<th>Chứng minh nhân dân</th>\n' +
+            '<th>Ngày mở sổ</th>\n' +
+            '<th>Số tiền gửi</th>\n' +
+            '<th>More</th>\n' +
+            '</tr>\n';
+        for (let i = 0; i < arr.length; i++) {
+            str +=
+                '<tr>\n' +
+                '<td>' + arr[i].getMaso() + '</td>\n' +
+                '<td>' + arr[i].getLoaitietkiem() + '</td>\n' +
+                '<td>' + arr[i].getHotenkhachhang() + '</td>\n' +
+                '<td>' + arr[i].getCmnd() + '</td>\n' +
+                '<td>' + arr[i].getNgaymoso() + '</td>\n' +
+                '<td>' + arr[i].getSotiengui() + '</td>\n' +
+                '<td>' +
+                '<button onclick="edit(' + i + ')">Edit</button>' +
+                '<button onclick="remove(' + i + ')">Remove</button>' +
+                '</td>\n' +
+                '</tr>\n'
+
+        }
+        str += '</table>' +
+            '<td>\n' +
+            '<button onclick="addArr()">ADD</button>' +
+            '</td>\n'
+        document.getElementById('display').innerHTML = str;
+    }
+
+
+    display();
+
+    function edit(value) {
+        alert(value);
+        let newMaso = prompt('Vui lòng nhập Mã số');
+        let newLoaitietkiem = prompt('Vui lòng nhập Loại tiết kiệm ');
+        let newHotenkhachhang = prompt('Vui lòng nhập  Họ tên KH');
+        let newCmnd = prompt('Vui lòng nhập CMND');
+        let newNgaymoso = prompt('Vui lòng nhập  Ngày mở sổ');
+        let newSotiengui = prompt('Vui lòng nhập Số Tiền gửi');
+
+        let newSOTIETKIEM = new SOTIETKIEM(newMaso, newLoaitietkiem, newHotenkhachhang, newCmnd, newNgaymoso, newSotiengui);
+        arr[value] = newSOTIETKIEM;
+        display();
+    }
+
+    function remove(value) {
+        if (confirm('do you want remove it')) {
+            arr.splice(value, 1);
+        }
+        display();
+    }
+
+    function addArr(add) {
+        if (confirm('Do you want add it ?')) {
+            let newMaso, newLoaitietkiem, newHotenkhachhang,newCmnd,newNgaymoso,newSotiengui;
+            do {
+                newMaso = prompt('Vui lòng nhập Mã số ');
+            } while (!validateMaso(newMaso));
+            do {
+                newLoaitietkiem = prompt('Vui lòng nhập Loại tiết kiệm ');
+            } while (!validateLoaiTK(newLoaitietkiem));
+            do {
+                newHotenkhachhang = prompt('Vui lòng nhập  Họ tên KH');
+            } while (!validateHoTenKH(newHotenkhachhang));
+            do {
+                newCmnd = prompt('Vui lòng nhập CMND');
+            }while (!validateCMND(newCmnd));
+            do {
+                newNgaymoso = prompt('Vui lòng nhập  Ngày mở sổ');
+            }while (!validateNgayMoSo(newNgaymoso))
+
+            do {
+                newSotiengui = prompt('Vui lòng nhập Số Tiền gửi');
+            }while (!validateSoTienGui(newSotiengui));
+
+            let newSOTIETKIEM = new SOTIETKIEM(newMaso, newLoaitietkiem, newHotenkhachhang, newCmnd, newNgaymoso, newSotiengui);
+            arr[add] = newSOTIETKIEM;
+            arr.push(newSOTIETKIEM);
+        }
+        display();
+    }
+
+    function validateMaso(maso) {
+        if (maso.length <= 10 && maso.length >0) return true;
+        return false;
+    }
+    function validateLoaiTK(loaitietkiem) {
+        if (loaitietkiem.length <= 10) return true;
+        return false;
+    }
+    function validateHoTenKH(Hotenkhachhang) {
+        if (Hotenkhachhang.length <= 30) return true;
+        return false;
+    }
+    function validateCMND(cmnd) {
+        if (isNaN(cmnd)) return false;
+        return true;
+    }
+    function validateNgayMoSo(ngayMoSo) {
+        return true;
+    }
+    function validateSoTienGui(soTienGui) {
+        if (isNaN(soTienGui)) return false;
+        return true;
+    }
+</script>

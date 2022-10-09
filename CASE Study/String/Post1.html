@@ -38,12 +38,21 @@
         }
         return strStandard;
     }
-    function longCharacter(){
-        for (let i = 0; i <  ; i++) {
-            
+    // Số chuỗi dài nhất là
+    function findLongestWord (str) {
+        let words = str.split(' ');
+        let maxLength = 0;
+        for (let i = 0; i < words.length; i++) {
+            if (words[i].length > maxLength) {
+                maxLength = words[i].length;
+            }
         }
+        return maxLength;
     }
+
+
     
     alert(standardizedStr(titleCase(inputStr)));
+    alert(findLongestWord(inputStr))
 
 </script>

@@ -45,12 +45,18 @@
 </body>
 </html>
 <script>
-     let arr = [];
-    function order(){
-            while (true) {
-                let item = prompt("Order ghi stt trên menu tại đây : ");
-                if (item === "exit") break;
-                // arr.push(item);
-            }
-        }
+    let a;
+    let cost = [5,8,10,9,4,11,0]
+    let total =0
+    do {
+        a= parseInt(prompt("(1)Cafe:                         5$ \n " +
+            "(2)Cam vắt:                  8$ \n " +
+            "(3)Nước ép cà rốt:     10$ \n " +
+            "(4)Nước ép cà chua:   9$ \n " +
+            "(5)Nước lọc:                 4$ \n " +
+            "(6)Nước dừa:                11$ \n " +
+            "(7)Thoát gọi món "))
+        total += cost[a-1]
+    } while (a!==7)
+    alert("Total: " +total)
 </script>
