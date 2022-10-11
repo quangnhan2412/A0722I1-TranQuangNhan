@@ -17,6 +17,6 @@ public class Main2 {
         height = scanner.nextFloat();//Nhập chiều dài
 
         float area = width * height;
-        System.out.println("Area iss : " + area);
+        System.out.println("Area is : " + area);
     }
 }
