@@ -2,7 +2,7 @@ package ss1_Introduction_to_Java;
 
 import java.util.Scanner;
 
-public class A3_Currency_converter_app {
+public class A3CurrencyConverterApp {
     public static void main(String[] args) {
         double vnd = 23000;
         double usd;

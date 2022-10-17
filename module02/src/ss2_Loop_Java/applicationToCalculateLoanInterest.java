@@ -2,7 +2,7 @@ package ss2_Loop_Java;
 
 import java.util.Scanner;
 
-public class Application_to_calculate_loan_interest {
+public class applicationToCalculateLoanInterest {
     public static void main(String[] args) {
         double money = 1.0;
         int month = 1;

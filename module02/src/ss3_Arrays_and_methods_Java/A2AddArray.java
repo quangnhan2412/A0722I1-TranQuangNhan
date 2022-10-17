@@ -2,7 +2,7 @@ package ss3_Arrays_and_methods_Java;
 
 import java.util.Scanner;
 
-public class A2_Add_Array {
+public class A2AddArray {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         int[] array = {10, 4, 6, 7, 8, 6, 0, 0, 0};

@@ -2,7 +2,7 @@ package ss1_Introduction_to_Java;
 
 import java.util.Scanner;
 
-public class Else_If {
+public class ElseIf {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         double weight, height, bmi;

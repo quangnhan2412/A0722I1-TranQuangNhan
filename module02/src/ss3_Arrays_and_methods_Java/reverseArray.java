@@ -2,7 +2,7 @@ package ss3_Arrays_and_methods_Java;
 
 import java.util.Scanner;
 
-public class reverse_array {
+public class reverseArray {
     public static void main(String[] args) {
 //        Khai báo các biến, nhập và kiểm tra kích thước mảng
         int[] array;

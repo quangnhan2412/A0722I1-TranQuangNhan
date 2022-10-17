@@ -1,6 +1,6 @@
 package ss3_Arrays_and_methods_Java;
 
-public class find_minimum {
+public class findMinimum {
     public static int minValue(int[] array) {
         int index = 0;
         for (int i = 0; i < array.length; i++) {

@@ -2,7 +2,7 @@ package ss1_Introduction_to_Java;
 
 import java.util.Scanner;
 
-public class A2_ReadANumber {
+public class A2ReadANumber {
     public static void main(String[] args) {
         System.out.println("Enter a Number:");
         Scanner scanner = new Scanner(System.in);

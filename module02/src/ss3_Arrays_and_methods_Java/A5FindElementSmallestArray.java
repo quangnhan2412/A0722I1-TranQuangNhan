@@ -2,7 +2,7 @@ package ss3_Arrays_and_methods_Java;
 
 import java.util.Scanner;
 
-public class A5_Find_ElementSmallest_Array {
+public class A5FindElementSmallestArray {
     public static void main(String[] args) {
         int[] arr;
         Scanner scanner = new Scanner(System.in);

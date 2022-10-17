@@ -2,7 +2,7 @@ package ss3_Arrays_and_methods_Java;
 
 import java.util.Scanner;
 
-public class find_max_element {
+public class findMaxElement {
     public static void main(String[] args) {
         //Khai báo các biến, nhập và kiểm tra kích thước mảng
         int size;

@@ -2,7 +2,7 @@ package ss3_Arrays_and_methods_Java;
 
 import java.util.Scanner;
 
-public class A3_Merge_Array {
+public class A3MergeArray {
     public static void main(String[] args) {
         int[] array1;
         int[] array2;

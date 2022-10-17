@@ -2,7 +2,7 @@ package ss2_Loop_Java;
 
 import java.util.Scanner;
 
-public class A2_20Prime {
+public class A2Is20Prime {
     private static Scanner scanner = new Scanner(System.in);
 
     public static void main(String[] args) {

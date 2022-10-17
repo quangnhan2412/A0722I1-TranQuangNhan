@@ -2,7 +2,7 @@ package ss3_Arrays_and_methods_Java;
 
 import java.util.Scanner;
 
-public class A6_Total_ASpecifiedColumn_ArrayTwo {
+public class A6TotalASpecifiedColumnArrayTwo {
     public static void main(String[] args) {
         int column, row;
         Scanner scanner = new Scanner(System.in);

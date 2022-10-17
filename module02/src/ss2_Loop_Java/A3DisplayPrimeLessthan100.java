@@ -1,6 +1,6 @@
 package ss2_Loop_Java;
 
-public class A3_DisplayPrimeLessthan100 {
+public class A3DisplayPrimeLessthan100 {
 
     public static void main(String[] args) {
         for (int i = 2; i < 100; i++) {

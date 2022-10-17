@@ -2,7 +2,7 @@ package ss3_Arrays_and_methods_Java;
 
 import java.util.Scanner;
 
-public class Count_Student_passing {
+public class CountStudentPassing {
     public static void main(String[] args) {
         int size;
         int[] arr;

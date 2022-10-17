@@ -2,7 +2,7 @@ package ss3_Arrays_and_methods_Java;
 
 import java.util.Scanner;
 
-public class A7_Sum_Diagonal_OfA_SquareMatrix {
+public class A4FindElementLargestArrayTwo {
     public static void main(String[] args) {
         int column, row;
         Scanner scanner = new Scanner(System.in);
@@ -23,12 +23,15 @@ public class A7_Sum_Diagonal_OfA_SquareMatrix {
                 System.out.print(array[i][j] + "\t");
             }
         }
-        System.out.println("Total Matrix");
-        int Total = 0;
+        double largest = array[0][0];
         for (int i = 0; i < array.length; i++) {
-            Total += array[i][i];
+            for (int j = 0; j <= array.length; j++) {
+                if (largest < array[i][j]) {
+                    largest = array[i][j];
+                }
+            }
         }
         System.out.println();
-        System.out.println("Total Matrix: " + Total );
+        System.out.println(largest + " Largest");
     }
 }

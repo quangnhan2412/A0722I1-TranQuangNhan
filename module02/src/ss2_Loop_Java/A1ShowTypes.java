@@ -2,7 +2,7 @@ package ss2_Loop_Java;
 
 import java.util.Scanner;
 
-public class A1_Show_types {
+public class A1ShowTypes {
     public static void main(String[] args) {
         int choice = -1;
         Scanner input = new Scanner(System.in);

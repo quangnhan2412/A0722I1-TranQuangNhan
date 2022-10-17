@@ -2,7 +2,7 @@ package ss3_Arrays_and_methods_Java;
 
 import java.util.Scanner;
 
-public class A8_Count_CharacterOfString {
+public class A8CountCharacterOfString {
     public static void main(String[] args) {
         //Hàm str.length() trả về tổng số ký tự trong một chuỗi str
         //

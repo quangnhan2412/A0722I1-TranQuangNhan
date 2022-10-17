@@ -2,7 +2,7 @@ package ss3_Arrays_and_methods_Java;
 
 import java.util.Scanner;
 
-public class Program_temperature_conversion {
+public class programTemperatureConversion {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         double fahrenheit, celsius;

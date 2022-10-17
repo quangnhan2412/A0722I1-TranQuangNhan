@@ -2,7 +2,7 @@ package ss3_Arrays_and_methods_Java;
 
 import java.util.Scanner;
 
-public class A1_Delete_Array {
+public class A1DeleteArray {
     public static void main(String[] args) {
         int[] array = {10, 4, 6, 7, 8, 6};
         // Hiển thị mảng

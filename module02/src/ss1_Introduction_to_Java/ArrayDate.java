@@ -3,7 +3,7 @@ package ss1_Introduction_to_Java;
 
 import java.util.Scanner;
 
-public class Array_Date {
+public class ArrayDate {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
