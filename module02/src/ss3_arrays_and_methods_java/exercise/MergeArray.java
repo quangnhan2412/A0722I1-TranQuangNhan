@@ -4,44 +4,44 @@ import java.util.Scanner;
 
 public class MergeArray {
     public static void main(String[] args) {
-        int[] array1;
-        int[] array2;
-        int size1, size2;
+        int[] arrayA;
+        int[] arrayB;
+        int sizeOne, sizeTwo;
         Scanner scanner = new Scanner(System.in);
         System.out.print("Enter size array one: ");
-        size1 = scanner.nextInt();
-        array1 = new int[size1];
+        sizeOne = scanner.nextInt();
+        arrayA = new int[sizeOne];
         int i = 0;
 
-        while (i < array1.length) {
+        while (i < arrayA.length) {
             System.out.print("Enter element " + (i + 1) + " of array 1 ");
-            array1[i] = scanner.nextInt();
+            arrayA[i] = scanner.nextInt();
             i++;
         }
         System.out.print("Enter size array two: ");
-        size2 = scanner.nextInt();
-        array2 = new int[size2];
+        sizeTwo = scanner.nextInt();
+        arrayB = new int[sizeTwo];
         int j = 0;
-        while (j < array2.length) {
+        while (j < arrayB.length) {
             System.out.print("Enter element " + (j + 1) + " of array 2 ");
-            array2[j] = scanner.nextInt();
+            arrayB[j] = scanner.nextInt();
             j++;
         }
         System.out.print("Array once : ");
-        for (int k : array1) {
+        for (int k : arrayA) {
             System.out.print(k + " \t");
 
         }
         System.out.print("Array Two : ");
-        for (int t : array2) {
+        for (int t : arrayB) {
             System.out.print(t + " \t");
         }
-        int[] arrayTotal = new int[array1.length + array2.length];
+        int[] arrayTotal = new int[arrayA.length + arrayB.length];
         for (int k = 0; k < arrayTotal.length; k++) {
-            if (k < array1.length) {
-                arrayTotal[k] = array1[k];
+            if (k < arrayA.length) {
+                arrayTotal[k] = arrayA[k];
             } else {
-                arrayTotal[k] = array2[k - array1.length];
+                arrayTotal[k] = arrayB[k - arrayA.length];
             }
         }
         System.out.print("New array: ");
