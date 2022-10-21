@@ -1,5 +1,7 @@
 package ss5_accessmodifier_static_method_property.exercise.accessmodifier.one;
 
+import org.w3c.dom.ls.LSOutput;
+
 public class Circle {
     private double radius = 1.0;
     private String color = "Red";

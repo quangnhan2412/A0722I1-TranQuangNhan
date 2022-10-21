@@ -5,12 +5,12 @@ public class MainFain {
         Fan fanOne = new Fan();
         Fan fanTwo = new Fan();
 
-        fanOne.setSpeed(fanOne.Fast);
+        fanOne.setSpeed(fanOne.fast);
         fanOne.setRadius(10);
         fanOne.setColor("yellow");
         fanOne.setOn(true);
 
-        fanTwo.setSpeed(fanTwo.Medium);
+        fanTwo.setSpeed(fanTwo.medium);
         fanTwo.setRadius(5);
         fanTwo.setColor("blue");
         fanTwo.setOn(false);

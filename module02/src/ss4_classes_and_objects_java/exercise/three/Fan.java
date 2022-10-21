@@ -1,24 +1,24 @@
 package ss4_classes_and_objects_java.exercise.three;
 
 public class Fan {
-    int Slow = 1;
-    int Medium = 2;
-    int Fast = 3;
-    private int Speed = Slow;
+    int slow = 1;
+    int medium = 2;
+    int fast = 3;
+    private int Speed = slow;
     private boolean isOn = false;
     private double radius = 5;
     private String color = "blue";
 
     public int getSlow() {
-        return Slow;
+        return slow;
     }
 
     public int getMedium() {
-        return Medium;
+        return medium;
     }
 
     public int getFast() {
-        return Fast;
+        return fast;
     }
 
     public int getSpeed() {
@@ -57,9 +57,9 @@ public class Fan {
     public String toString() {
         if (this.isOn) {
             return "Fan is On{" +
-                    "Slow=" + Slow +
-                    ", Medium=" + Medium +
-                    ", Fast=" + Fast +
+                    "Slow=" + slow +
+                    ", Medium=" + medium +
+                    ", Fast=" + fast +
                     ", Speed=" + Speed +
                     ", isOn=" + isOn +
                     ", radius=" + radius +
@@ -67,9 +67,9 @@ public class Fan {
                     '}';
         } else {
             return "Fan is Off{" +
-                    "Slow=" + Slow +
-                    ", Medium=" + Medium +
-                    ", Fast=" + Fast +
+                    "Slow=" + slow +
+                    ", Medium=" + medium +
+                    ", Fast=" + fast +
                     ", Speed=" + Speed +
                     ", isOn=" + isOn +
                     ", radius=" + radius +

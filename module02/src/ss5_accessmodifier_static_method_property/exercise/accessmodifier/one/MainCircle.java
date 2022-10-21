@@ -12,6 +12,7 @@ public class MainCircle {
         Circle circleTwo = new Circle(10);
         System.out.println(circleTwo.getRadius());
         System.out.println(circleTwo.getArea());
+
     }
 
 }

@@ -24,11 +24,11 @@ public class SumDiagonalOfASquareMatrix {
             }
         }
         System.out.println("Total Matrix");
-        int Total = 0;
+        int total = 0;
         for (int i = 0; i < array.length; i++) {
-            Total += array[i][i];
+            total += array[i][i];
         }
         System.out.println();
-        System.out.println("Total Matrix: " + Total );
+        System.out.println("Total Matrix: " + total );
     }
 }
