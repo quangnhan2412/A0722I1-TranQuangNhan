@@ -3,11 +3,12 @@ package ss5_accessmodifier_static_method_property.exercise.accessmodifier.one.tw
 public class MainStudent {
     public static void main(String[] args) {
         Student studentOne = new Student();
-
+        Student student =new Student();
         studentOne.setName("Nhan");
         studentOne.setClassA("A07");
 
         System.out.println(studentOne.getName());
         System.out.println(studentOne.getClassA());
+        System.out.println(student.getName());
     }
 }
