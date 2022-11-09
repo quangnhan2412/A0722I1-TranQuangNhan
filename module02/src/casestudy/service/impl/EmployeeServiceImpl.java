@@ -10,13 +10,15 @@ import java.util.Scanner;
 public class EmployeeServiceImpl implements EmployeeService {
     private static ArrayList<Employee> employeeList = new ArrayList<Employee>();
     private static int size = 0;
+    Scanner scanner = new Scanner(System.in);
+
 
     static {
         employeeList.add(new Employee("Tran Quang Nhan", "24-12-2000", true,
                 "201821774", "0777368452", "tranquangnhan24122000@gmail.com", "NV001",
                 "Intern", 1, "normal"));
         employeeList.add(new Employee("Tran Quang Nhan2", ("24-12-2000"), false,
-                "201821774", "0777368452", "tranquangnhan24122000@gmail.com", "NV001",
+                "201821774", "0777368452", "tranquangnhan24122000@gmail.com", "NV002",
                 "Intern", 1, "normal"));
         size = 2;
     }
@@ -30,7 +32,35 @@ public class EmployeeServiceImpl implements EmployeeService {
 
     @Override
     public void addNewEmployee() {
-        Scanner scanner = new Scanner(System.in);
+        employeeList.add(inputEmployeeInfo());
+        for (int i = 0; i < employeeList.size(); i++) {
+            System.out.println(employeeList.get(i));
+        }
+    }
+
+
+    @Override
+    public List findAll() {
+        return employeeList;
+    }
+
+    @Override
+    public void updateEmployee(String employeeID) {
+        boolean check = false;
+        for (int i = 0; i < employeeList.size(); i++) {
+            if (employeeID == employeeList.get(i).getEmployeeID()) {
+                check = true;
+                Employee NewEmployee = inputEmployeeInfo();
+                employeeList.remove(i);
+                employeeList.add(i, NewEmployee);
+            } else {
+                System.out.println("Not found");
+            }
+        }
+    }
+
+    @Override
+    public Employee inputEmployeeInfo() {
         System.out.println("Enter first and last name : ");
         String fullName = scanner.nextLine();
         System.out.println("Enter date of birth : ");
@@ -52,24 +82,7 @@ public class EmployeeServiceImpl implements EmployeeService {
         System.out.println("Enter Level ");
         String newLevel = scanner.nextLine();
 
-        Employee newEmployee = new Employee(fullName, birthDay, newGender, newIDCard, newNumberPhone,
+        return new Employee(fullName, birthDay, newGender, newIDCard, newNumberPhone,
                 newEmail, newEmployeeID, newPosition, newSalary, newLevel);
-
-        employeeList.add(newEmployee);
-        for (int i = 0; i < employeeList.size(); i++) {
-            System.out.println(employeeList.get(i));
-        }
     }
-
-
-    @Override
-    public List findAll() {
-        return employeeList;
-    }
-
-    @Override
-    public void updateEmployee(String employeeID) {
-
-    }
-
 }

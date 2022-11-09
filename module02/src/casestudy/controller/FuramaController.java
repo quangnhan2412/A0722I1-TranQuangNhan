@@ -61,7 +61,12 @@ public class FuramaController {
                 employeeServiceImpl.addNewEmployee();
                 break;
             case 3:
-                System.out.println("3");
+                employeeServiceImpl.disPlayAll();
+                System.out.println("Enter id Employee : ");
+                Scanner scanner = new Scanner(System.in);
+                String employeeID = scanner.nextLine();
+                employeeServiceImpl.updateEmployee(employeeID);
+                employeeServiceImpl.disPlayAll();
                 break;
             case 4:
                 displayMainMenu();
