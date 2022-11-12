@@ -33,9 +33,7 @@ public class EmployeeServiceImpl implements EmployeeService {
     @Override
     public void addNewEmployee() {
         employeeList.add(inputEmployeeInfo());
-        for (int i = 0; i < employeeList.size(); i++) {
-            System.out.println(employeeList.get(i));
-        }
+        disPlayAll();
     }
 
 
@@ -46,18 +44,20 @@ public class EmployeeServiceImpl implements EmployeeService {
 
     @Override
     public void updateEmployee(String employeeID) {
-        boolean check = false;
+//        boolean check = false;
         for (int i = 0; i < employeeList.size(); i++) {
-            if (employeeID == employeeList.get(i).getEmployeeID()) {
-                check = true;
-                Employee NewEmployee = inputEmployeeInfo();
-                employeeList.remove(i);
-                employeeList.add(i, NewEmployee);
-            } else {
-                System.out.println("Not found");
-            }
+          if (employeeList.get(i).getEmployeeID().equals(employeeID)) {
+//                check = true;
+            Employee NewEmployee = inputEmployeeInfo();
+            employeeList.set(i,NewEmployee);
+            break;
+        } else {
+            System.out.println("Not found");
+            break;
+        }
         }
     }
+
 
     @Override
     public Employee inputEmployeeInfo() {
@@ -78,7 +78,8 @@ public class EmployeeServiceImpl implements EmployeeService {
         System.out.println("Enter Position  ");
         String newPosition = scanner.nextLine();
         System.out.println("Enter salary  ");
-        double newSalary = scanner.nextDouble();
+        double newSalary = Double.parseDouble(scanner.nextLine());
+        //nhập number rồi nhập String là phải có type.parseDouble
         System.out.println("Enter Level ");
         String newLevel = scanner.nextLine();
 

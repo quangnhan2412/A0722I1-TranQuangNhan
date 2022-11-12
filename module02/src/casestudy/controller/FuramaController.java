@@ -65,6 +65,7 @@ public class FuramaController {
                 System.out.println("Enter id Employee : ");
                 Scanner scanner = new Scanner(System.in);
                 String employeeID = scanner.nextLine();
+                System.out.println(employeeID);
                 employeeServiceImpl.updateEmployee(employeeID);
                 employeeServiceImpl.disPlayAll();
                 break;
