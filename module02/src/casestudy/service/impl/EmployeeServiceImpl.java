@@ -20,7 +20,9 @@ public class EmployeeServiceImpl implements EmployeeService {
         employeeList.add(new Employee("Tran Quang Nhan2", ("24-12-2000"), false,
                 "201821774", "0777368452", "tranquangnhan24122000@gmail.com", "NV002",
                 "Intern", 1, "normal"));
-        size = 2;
+        employeeList.add(new Employee("Tran Quang Nhan3", ("24-12-2000"), false,
+                "201821774", "0777368452", "tranquangnhan24122000@gmail.com", "NV003",
+                "Intern", 1, "normal"));
     }
 
     @Override
@@ -44,18 +46,14 @@ public class EmployeeServiceImpl implements EmployeeService {
 
     @Override
     public void updateEmployee(String employeeID) {
-//        boolean check = false;
         for (int i = 0; i < employeeList.size(); i++) {
-          if (employeeList.get(i).getEmployeeID().equals(employeeID)) {
-//                check = true;
-            Employee NewEmployee = inputEmployeeInfo();
-            employeeList.set(i,NewEmployee);
-            break;
-        } else {
-            System.out.println("Not found");
-            break;
+            if (employeeList.get(i).getEmployeeID().equals(employeeID)) {
+                Employee NewEmployee = inputEmployeeInfo();
+                employeeList.set(i, NewEmployee);
+                return;
+            }
         }
-        }
+        System.out.println("Not found");
     }
 
 

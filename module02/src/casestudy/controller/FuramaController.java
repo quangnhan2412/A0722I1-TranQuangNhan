@@ -1,5 +1,6 @@
 package casestudy.controller;
 
+import casestudy.service.impl.CustomerServiceImpl;
 import casestudy.service.impl.EmployeeServiceImpl;
 
 import java.util.Scanner;
@@ -79,6 +80,7 @@ public class FuramaController {
     }
 
     static void CustomerManagement() {
+        CustomerServiceImpl  customerServiceImpl = new CustomerServiceImpl();
         System.out.println("1.\tDisplay list customers");
         System.out.println("2.\tAdd new customer");
         System.out.println("3.\tEdit customer");
@@ -86,13 +88,19 @@ public class FuramaController {
         choice = input.nextInt();
         switch (choice) {
             case 1:
-                System.out.println("1");
+                customerServiceImpl.disPlayAll();
                 break;
             case 2:
-                System.out.println("2");
+                customerServiceImpl.addCustomer();
                 break;
             case 3:
-                System.out.println("3");
+                customerServiceImpl.disPlayAll();
+                System.out.println("Enter id Customer : ");
+                Scanner scanner =new Scanner(System.in);
+                String customerID = scanner.nextLine();
+                System.out.println(customerID);
+                customerServiceImpl.updateCustomer(customerID);
+                customerServiceImpl.disPlayAll();
                 break;
             case 4:
                 displayMainMenu();

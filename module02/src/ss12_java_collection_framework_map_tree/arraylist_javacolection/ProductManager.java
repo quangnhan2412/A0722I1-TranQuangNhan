@@ -10,8 +10,8 @@ public class ProductManager {
     private static ArrayList<Product> productList = new ArrayList<>();
     static Scanner scanner = new Scanner(System.in);
 
-  static   ProductComparatorAscending productComparatorAscending = new ProductComparatorAscending();
-   static   ProductComparatorDescending productComparatorDescending = new ProductComparatorDescending();
+    static ProductComparatorAscending productComparatorAscending = new ProductComparatorAscending();
+    static ProductComparatorDescending productComparatorDescending = new ProductComparatorDescending();
 
     static {
         productList.add(new Product(01, "My tom", 10.000));
@@ -42,15 +42,18 @@ public class ProductManager {
     }
 
     public static void update(int ID) {
+
+        boolean check = false;
         for (int i = 0; i < productList.size(); i++) {
             if (productList.get(i).getId() == (ID)) {
+                check = true;
                 Product newProduct = inputProduct();
                 productList.set(i, newProduct);
                 break;
-            } else {
-                System.out.println("Not Found ! ");
-                break;
             }
+        }
+        if (!check) {
+            System.out.println("Not Found ! ");
         }
     }
 
@@ -84,14 +87,16 @@ public class ProductManager {
             System.out.println("Not found ! ");
         }
     }
+
     //Giá tăng dần
-    public static void sortAscendingOrder(){
-        Collections.sort(productList,productComparatorAscending);
+    public static void sortAscendingOrder() {
+        Collections.sort(productList, productComparatorAscending);
         displayALL();
     }
+
     //Giá giảm dần
-    public static void sortDescendingOrder(){
-        Collections.sort(productList,productComparatorDescending);
+    public static void sortDescendingOrder() {
+        Collections.sort(productList, productComparatorDescending);
         displayALL();
     }
 }
