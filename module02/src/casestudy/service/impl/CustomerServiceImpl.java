@@ -51,7 +51,7 @@ public class CustomerServiceImpl implements CustomerService {
     @Override
     public void addCustomer() {
         customerLinkedList.add(CustomerInfo());
-        disPlayAll();
+        displayAll();
     }
 
     @Override
@@ -68,7 +68,7 @@ public class CustomerServiceImpl implements CustomerService {
 
 
     @Override
-    public void disPlayAll() {
+    public void displayAll() {
         for (Customer customer : customerLinkedList) {
             System.out.println(customer);
         }

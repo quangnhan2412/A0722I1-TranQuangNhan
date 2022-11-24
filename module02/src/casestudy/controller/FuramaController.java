@@ -2,11 +2,12 @@ package casestudy.controller;
 
 import casestudy.service.impl.CustomerServiceImpl;
 import casestudy.service.impl.EmployeeServiceImpl;
+import casestudy.service.impl.FacilityServiceImpl;
 
 import java.util.Scanner;
 
 public class FuramaController {
-    public static void main(String[] args) {
+        public static void main(String[] args) {
         displayMainMenu();
     }
 
@@ -56,19 +57,19 @@ public class FuramaController {
         choice = input.nextInt();
         switch (choice) {
             case 1:
-                employeeServiceImpl.disPlayAll();
+                employeeServiceImpl.displayAll();
                 break;
             case 2:
                 employeeServiceImpl.addNewEmployee();
                 break;
             case 3:
-                employeeServiceImpl.disPlayAll();
+                employeeServiceImpl.displayAll();
                 System.out.println("Enter id Employee : ");
                 Scanner scanner = new Scanner(System.in);
                 String employeeID = scanner.nextLine();
                 System.out.println(employeeID);
                 employeeServiceImpl.updateEmployee(employeeID);
-                employeeServiceImpl.disPlayAll();
+                employeeServiceImpl.displayAll();
                 break;
             case 4:
                 displayMainMenu();
@@ -88,19 +89,19 @@ public class FuramaController {
         choice = input.nextInt();
         switch (choice) {
             case 1:
-                customerServiceImpl.disPlayAll();
+                customerServiceImpl.displayAll();
                 break;
             case 2:
                 customerServiceImpl.addCustomer();
                 break;
             case 3:
-                customerServiceImpl.disPlayAll();
+                customerServiceImpl.displayAll();
                 System.out.println("Enter id Customer : ");
                 Scanner scanner =new Scanner(System.in);
                 String customerID = scanner.nextLine();
                 System.out.println(customerID);
                 customerServiceImpl.updateCustomer(customerID);
-                customerServiceImpl.disPlayAll();
+                customerServiceImpl.displayAll();
                 break;
             case 4:
                 displayMainMenu();
@@ -112,6 +113,7 @@ public class FuramaController {
     }
 
     static void FacilityManagement() {
+        FacilityServiceImpl facilityService = new FacilityServiceImpl();
         System.out.println("1\tDisplay list facility");
         System.out.println("2\tAdd new facility");
         System.out.println("3\tDisplay list facility maintenance");
@@ -119,13 +121,13 @@ public class FuramaController {
         choice = input.nextInt();
         switch (choice) {
             case 1:
-                System.out.println("1");
+                facilityService.displayList();
                 break;
             case 2:
-                System.out.println("2");
+                facilityService.addNewFacility();
                 break;
             case 3:
-                System.out.println("3");
+                facilityService.displayListUsed();
                 break;
             case 4:
                 displayMainMenu();

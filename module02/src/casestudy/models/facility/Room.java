@@ -12,7 +12,8 @@ public class Room extends Facility {
         this.freeServiceIncluded = freeServiceIncluded;
     }
 
-    public Room(String serviceName, double usableArea, double rentalCost, int maxCapacity, String rentalType, String freeServiceIncluded) {
+    public Room(String serviceName, double usableArea, double rentalCost, int maxCapacity, String rentalType,
+                String freeServiceIncluded) {
         super(serviceName, usableArea, rentalCost, maxCapacity, rentalType);
         this.freeServiceIncluded = freeServiceIncluded;
     }

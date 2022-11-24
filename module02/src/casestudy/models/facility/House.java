@@ -14,7 +14,8 @@ public House(){
         this.floors = floors;
     }
 
-    public House(String serviceName, double usableArea, double rentalCost, int maxCapacity, String rentalType, String roomStandard, int floors) {
+    public House(String serviceName, double usableArea, double rentalCost, int maxCapacity,
+                    String rentalType, String roomStandard, int floors) {
         super(serviceName, usableArea, rentalCost, maxCapacity, rentalType);
         this.roomStandard = roomStandard;
         this.floors = floors;

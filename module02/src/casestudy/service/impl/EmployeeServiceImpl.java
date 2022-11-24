@@ -26,7 +26,7 @@ public class EmployeeServiceImpl implements EmployeeService {
     }
 
     @Override
-    public void disPlayAll() {
+    public void displayAll() {
         for (int i = 0; i < employeeList.size(); i++) {
             System.out.println(employeeList.get(i));
         }
@@ -35,7 +35,7 @@ public class EmployeeServiceImpl implements EmployeeService {
     @Override
     public void addNewEmployee() {
         employeeList.add(inputEmployeeInfo());
-        disPlayAll();
+        displayAll();
     }
 
 
