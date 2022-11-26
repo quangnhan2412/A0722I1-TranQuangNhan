@@ -7,7 +7,8 @@ import java.util.List;
 
 public class Main {
 
-    private static final String URL = "D:\\CodeGym\\Source Code\\A0722I1-TranQuangNhan\\module02\\src\\ss16_java_io_textfile\\file_csv\\country.csv";
+    private static final String URL = "D:\\CodeGym\\Source Code\\A0722I1-TranQuangNhan\\" +
+            "module02\\src\\ss16_java_io_textfile\\file_csv\\country.csv";
 
 
     public static List<Country> readCSV(String url) {
