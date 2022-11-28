@@ -35,6 +35,7 @@ public class Main {
 
         } catch (FileNotFoundException e) {
             e.printStackTrace();
+            System.out.println("Err read File!");
         } catch (IOException e) {
             e.printStackTrace();
         }
