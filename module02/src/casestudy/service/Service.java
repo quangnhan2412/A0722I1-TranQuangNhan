@@ -1,5 +1,6 @@
 package casestudy.service;
 
 public interface Service {
-    void displayAll();
+    void displayAll() ;
+
 }

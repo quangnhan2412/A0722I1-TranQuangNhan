@@ -3,6 +3,7 @@ package casestudy.models.facility;
 
 public class Room extends Facility {
     private String freeServiceIncluded;
+    //dịch vụ miễn phí đi kèm
 
     public Room() {
 
@@ -12,9 +13,9 @@ public class Room extends Facility {
         this.freeServiceIncluded = freeServiceIncluded;
     }
 
-    public Room(String serviceName, double usableArea, double rentalCost, int maxCapacity, String rentalType,
-                String freeServiceIncluded) {
-        super(serviceName, usableArea, rentalCost, maxCapacity, rentalType);
+    public Room(String serviceName, double usableArea, double rentalCost, int maxCapacity,
+                String rentalType, String serviceCode, String freeServiceIncluded) {
+        super(serviceName, usableArea, rentalCost, maxCapacity, rentalType, serviceCode);
         this.freeServiceIncluded = freeServiceIncluded;
     }
 
@@ -29,7 +30,17 @@ public class Room extends Facility {
     @Override
     public String toString() {
         return "Room{" +
+                "serviceName='" + getServiceName() + '\'' +
+                "usableArea='" + getUsableArea() + '\'' +
+                "rentalCost='" + getRentalCost() + '\'' +
+                "maxCapacity='" + getMaxCapacity() + '\'' +
+                "rentalType='" + getRentalType() + '\'' +
                 "freeServiceIncluded='" + freeServiceIncluded + '\'' +
+                ", ServiceCode='" + getServiceCode() + '\'' +
                 '}';
+    }
+    public String getInfoRoomToCSV() {
+        return getServiceName() + "," + getUsableArea() + "," + getRentalCost() + "," + getMaxCapacity() + "," +
+                getRentalType() + "," + getServiceCode() + "," +getFreeServiceIncluded();
     }
 }

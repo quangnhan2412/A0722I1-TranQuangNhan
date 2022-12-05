@@ -11,15 +11,18 @@ public abstract class Facility {
     //Số lượng người tối đa
     private String rentalType;
     //Kiểu thuê (bao gồm thuê theo năm, tháng, ngày, giờ.)
+    private String ServiceCode;
+    //Mã dịch vụ
     public Facility() {
     }
 
-    public Facility(String serviceName, double usableArea, double rentalCost, int maxCapacity, String rentalType) {
+    public Facility(String serviceName, double usableArea, double rentalCost, int maxCapacity, String rentalType, String serviceCode) {
         this.serviceName = serviceName;
         this.usableArea = usableArea;
         this.rentalCost = rentalCost;
         this.maxCapacity = maxCapacity;
         this.rentalType = rentalType;
+        this.ServiceCode = serviceCode;
     }
 
     public String getServiceName() {
@@ -62,14 +65,12 @@ public abstract class Facility {
         this.rentalType = rentalType;
     }
 
-    @Override
-    public String toString() {
-        return "Facility{" +
-                "serviceName='" + serviceName + '\'' +
-                ", usableArea=" + usableArea +
-                ", rentalCost=" + rentalCost +
-                ", maxCapacity=" + maxCapacity +
-                ", rentalType='" + rentalType + '\'' +
-                '}';
+    public String getServiceCode() {
+        return ServiceCode;
     }
+
+    public void setServiceCode(String serviceCode) {
+        ServiceCode = serviceCode;
+    }
+
 }

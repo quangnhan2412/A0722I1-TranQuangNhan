@@ -1,4 +1,6 @@
-package casestudy.models;
+package casestudy.models.person;
+
+import java.time.LocalDate;
 
 public class Employee extends Person {
     private String employeeID;
@@ -19,10 +21,9 @@ public class Employee extends Person {
         this.salary = salary;
         this.level = level;
     }
-
-    public Employee(String fullName, String dateOfBirth, boolean gender, String identityCard,
+    public Employee(String fullName, LocalDate dayOfBirth, boolean gender, String identityCard,
                     String phoneNumber, String email, String employeeID, String position, double salary, String level) {
-        super(fullName, dateOfBirth, gender, identityCard, phoneNumber, email);
+        super(fullName, dayOfBirth, gender, identityCard, phoneNumber, email);
         this.employeeID = employeeID;
         this.position = position;
         this.salary = salary;
@@ -61,12 +62,13 @@ public class Employee extends Person {
         this.level = level;
     }
 
+
     @Override
     public String toString() {
         if (isGender()) return
                 "Employee{" +
                         "fullName='" + getFullName() + '\'' +
-                        ", dateOfBirth=" + getDateOfBirth() +
+                        ", dateOfBirth=" + getDayOfBirth() +
                         ", gender=" + "male" +
                         ", identityCard='" + getIdentityCard() + '\'' +
                         ", phoneNumber='" + getPhoneNumber() + '\'' +
@@ -80,7 +82,7 @@ public class Employee extends Person {
             return
                     "Employee{" +
                             "fullName='" + getFullName() + '\'' +
-                            ", dateOfBirth=" + getDateOfBirth() +
+                            ", dateOfBirth=" + getDayOfBirth() +
                             ", gender=" + "female" +
                             ", identityCard='" + getIdentityCard() + '\'' +
                             ", phoneNumber='" + getPhoneNumber() + '\'' +
@@ -91,5 +93,10 @@ public class Employee extends Person {
                             ", salary=" + salary +
                             '}';
         }
+    }
+
+    public String getInfoEmployeeToCSV() {
+        return getFullName() + "," + getDayOfBirth() + "," + isGender() + "," + getIdentityCard() + "," +
+                getPhoneNumber() + "," + getEmail() + "," + getEmployeeID() + "," + getPosition() + "," + getSalary() + "," + getLevel();
     }
 }

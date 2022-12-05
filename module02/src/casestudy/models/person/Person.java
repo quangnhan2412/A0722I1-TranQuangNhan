@@ -1,8 +1,12 @@
-package casestudy.models;
+package casestudy.models.person;
+
+import java.time.LocalDate;
+
 
 public abstract class Person {
+
     private String fullName;
-    private String dateOfBirth;
+    private LocalDate dayOfBirth;
     private boolean gender;
     //True = nam,False = nữ;
     private String identityCard;
@@ -10,17 +14,17 @@ public abstract class Person {
     private String email;
 
     public Person() {
-
     }
 
-    public Person(String fullName, String dateOfBirth, boolean gender, String identityCard, String phoneNumber, String email) {
+    public Person(String fullName, LocalDate dayOfBirth, boolean gender, String identityCard, String phoneNumber, String email) {
         this.fullName = fullName;
-        this.dateOfBirth = dateOfBirth;
+        this.dayOfBirth = dayOfBirth;
         this.gender = gender;
         this.identityCard = identityCard;
         this.phoneNumber = phoneNumber;
         this.email = email;
     }
+
 
     public String getFullName() {
         return fullName;
@@ -30,12 +34,12 @@ public abstract class Person {
         this.fullName = fullName;
     }
 
-    public String getDateOfBirth() {
-        return dateOfBirth;
+    public LocalDate getDayOfBirth() {
+        return dayOfBirth;
     }
 
-    public void setDateOfBirth(String dateOfBirth) {
-        this.dateOfBirth = dateOfBirth;
+    public void setDayOfBirth(LocalDate dayOfBirth) {
+        this.dayOfBirth = dayOfBirth;
     }
 
     public boolean isGender() {
@@ -74,7 +78,7 @@ public abstract class Person {
     public String toString() {
         return "Person{" +
                 "fullName='" + fullName + '\'' +
-                ", dateOfBirth='" + dateOfBirth + '\'' +
+                ", dayOfBirth=" + dayOfBirth +
                 ", gender=" + gender +
                 ", identityCard='" + identityCard + '\'' +
                 ", phoneNumber='" + phoneNumber + '\'' +

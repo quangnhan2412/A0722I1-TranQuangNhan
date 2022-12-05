@@ -1,4 +1,6 @@
-package casestudy.models;
+package casestudy.models.person;
+
+import java.time.LocalDate;
 
 public class Customer extends Person {
     private String customerID;
@@ -15,9 +17,9 @@ public class Customer extends Person {
         this.address = address;
     }
 
-    public Customer(String fullName, String dateOfBirth, boolean gender, String identityCard, String phoneNumber,
-                    String email, String customerID, String customerType, String address) {
-        super(fullName, dateOfBirth, gender, identityCard, phoneNumber, email);
+    public Customer(String fullName, LocalDate dayOfBirth, boolean gender,
+                    String identityCard, String phoneNumber, String email, String customerID, String customerType, String address) {
+        super(fullName, dayOfBirth, gender, identityCard, phoneNumber, email);
         this.customerID = customerID;
         this.customerType = customerType;
         this.address = address;
@@ -52,7 +54,7 @@ public class Customer extends Person {
         if (isGender()) {
             return "Customer{" +
                     "fullName='" + getFullName() + '\'' +
-                    ", dateOfBirth=" + getDateOfBirth() +
+                    ", dateOfBirth=" + getDayOfBirth() +
                     ", gender=" + "male" +
                     ", identityCard='" + getIdentityCard() + '\'' +
                     ", phoneNumber='" + getPhoneNumber() + '\'' +
@@ -64,7 +66,7 @@ public class Customer extends Person {
         } else {
             return "Customer{" +
                     "fullName='" + getFullName() + '\'' +
-                    ", dateOfBirth=" + getDateOfBirth() +
+                    ", dateOfBirth=" + getDayOfBirth() +
                     ", gender=" + "female" +
                     ", identityCard='" + getIdentityCard() + '\'' +
                     ", phoneNumber='" + getPhoneNumber() + '\'' +
@@ -74,5 +76,10 @@ public class Customer extends Person {
                     ", address='" + address + '\'' +
                     '}';
         }
+    }
+
+    public String getInfoCustomerToCSV() {
+        return getFullName() + "," + getDayOfBirth() + "," + isGender() + "," + getIdentityCard() + "," +
+                getPhoneNumber() + "," + getEmail() + "," + getCustomerID() + "," + getCustomerType() + "," + getAddress();
     }
 }

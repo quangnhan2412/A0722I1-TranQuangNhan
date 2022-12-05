@@ -1,7 +1,7 @@
 package casestudy.service;
 
 
-import casestudy.models.Customer;
+import casestudy.models.person.Customer;
 
 import java.util.List;
 
