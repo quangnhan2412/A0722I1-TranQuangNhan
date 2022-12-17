@@ -2,7 +2,7 @@ package casestudy.models.person;
 
 import java.time.LocalDate;
 
-public class Customer extends Person {
+public class Customer extends Person  {
     private String customerID;
     private String customerType;
     private String address;
@@ -78,8 +78,12 @@ public class Customer extends Person {
         }
     }
 
-    public String getInfoCustomerToCSV() {
+    @Override
+    public String getInfo() {
         return getFullName() + "," + getDayOfBirth() + "," + isGender() + "," + getIdentityCard() + "," +
                 getPhoneNumber() + "," + getEmail() + "," + getCustomerID() + "," + getCustomerType() + "," + getAddress();
     }
+
+
+
 }

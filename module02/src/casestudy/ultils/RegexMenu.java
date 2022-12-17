@@ -11,7 +11,7 @@ public class RegexMenu {
                 System.out.println("Enter Number");
                 return Integer.parseInt(scanner.nextLine());
             }catch (NumberFormatException e){
-                System.out.println("Enter a number !!!");
+                System.err.println("Enter a number !!!");
             }
 
         }

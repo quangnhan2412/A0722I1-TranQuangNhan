@@ -1,5 +1,7 @@
 package casestudy.ultils;
 
+import casestudy.validate.AgeException;
+
 import java.io.IOException;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
@@ -24,7 +26,7 @@ public class RegexPerson {
     private static final String REGEX_ADDRESS = "[0-9]+ ([A-Z][a-z ]*)+";
 
 
-    public static LocalDate inputBirthday() {
+    public static LocalDate inputBirthday()  throws AgeException{
         LocalDate birthday;
         DateTimeFormatter dateFormat = DateTimeFormatter.ofPattern("yyyy-MM-dd");
         while (true) {
@@ -37,9 +39,10 @@ public class RegexPerson {
                 }
                 return birthday;
             } catch (NumberFormatException | DateTimeParseException e) {
-                System.out.println("Date of Birth Incorrect Format (yyyy-MM-dd)");
+                System.err.println("Date of Birth Incorrect Format (yyyy-MM-dd)");
             } catch (IOException e) {
-                System.out.println("Age You must be over 18 years old and less than 100 years old");
+//                System.out.println("Age You must be over 18 years old and less than 100 years old");
+                throw new AgeException("Age You must be over 18 years old and less than 100 years old");
             }
 
         }
@@ -49,7 +52,7 @@ public class RegexPerson {
         System.out.println("Enter first and last name : ");
         String fullName = scanner.nextLine();
         while (!fullName.matches(REGEX_NAME)) {
-            System.out.println("You input bad format, please please get back !");
+            System.err.println("You input bad format, please please get back !");
             fullName = scanner.nextLine();
         }
         return fullName;
@@ -65,7 +68,7 @@ public class RegexPerson {
         System.out.println("Enter identification card : ");
         String newIDCard = scanner.nextLine();
         while (!newIDCard.matches(REGEX_ID_CARD)) {
-            System.out.println("You input bad format, please please get back !");
+            System.err.println("You input bad format, please please get back !");
             newIDCard = scanner.nextLine();
         }
         return newIDCard;
@@ -75,7 +78,7 @@ public class RegexPerson {
         System.out.println("Enter Number Phone : ");
         String newNumberPhone = scanner.nextLine();
         while (!newNumberPhone.matches(REGEX_NUMBER_PHONE)) {
-            System.out.println("You input bad format, please please get back !");
+            System.err.println("You input bad format, please please get back !");
             newNumberPhone = scanner.nextLine();
         }
         return newNumberPhone;
@@ -85,7 +88,7 @@ public class RegexPerson {
         System.out.println("Enter Email : ");
         String newEmail = scanner.nextLine();
         while (!newEmail.matches(REGEX_EMAIL)) {
-            System.out.println("You input bad format, please please get back !");
+            System.err.println("You input bad format, please please get back !");
             newEmail = scanner.nextLine();
         }
         return newEmail;
@@ -95,7 +98,7 @@ public class RegexPerson {
         System.out.println("Enter Employee ID : ");
         String newEmployeeID = scanner.nextLine();
         while (!newEmployeeID.matches(REGEX_ID_EMPLOYEE)) {
-            System.out.println("You input bad format, please please get back !");
+            System.err.println("You input bad format, please please get back !");
             newEmployeeID = scanner.nextLine();
         }
         return newEmployeeID;
@@ -105,7 +108,7 @@ public class RegexPerson {
         System.out.println("Enter Position : ");
         String newPosition = scanner.nextLine();
         while (!newPosition.matches(REGEX_POSITION)) {
-            System.out.println("You input bad format, please please get back !");
+            System.err.println("You input bad format, please please get back !");
             newPosition = scanner.nextLine();
         }
         return newPosition;
@@ -117,7 +120,7 @@ public class RegexPerson {
                 System.out.println("Enter salary  ");
                 return Double.parseDouble(scanner.nextLine());
             } catch (NumberFormatException e) {
-                System.out.println("Enter a number and !!!");
+                System.err.println("Enter a number and !!!");
             }
         }
     }
@@ -126,7 +129,7 @@ public class RegexPerson {
         System.out.println("Enter Level ");
         String newLevel = scanner.nextLine();
         while (!newLevel.matches(REGEX_LEVEL)) {
-            System.out.println("You input bad format, please please get back !");
+            System.err.println("You input bad format, please please get back !");
             newLevel = scanner.nextLine();
         }
         return newLevel;
@@ -136,7 +139,7 @@ public class RegexPerson {
         System.out.println("Enter customer ID ");
         String newCustomerID = scanner.nextLine();
         while (!newCustomerID.matches(REGEX_ID_CUSTOMER)) {
-            System.out.println("You input bad format, please please get back !");
+            System.err.println("You input bad format, please please get back !");
             newCustomerID = scanner.nextLine();
         }
         return newCustomerID;
@@ -146,7 +149,7 @@ public class RegexPerson {
         System.out.println("Enter customer Type ");
         String newCustomerType = scanner.nextLine();
         while (!newCustomerType.matches(REGEX_TYPE_CUSTOMER)) {
-            System.out.println("You input bad format, please please get back !");
+            System.err.println("You input bad format, please please get back !");
             newCustomerType = scanner.nextLine();
         }
         return newCustomerType;
@@ -156,7 +159,7 @@ public class RegexPerson {
         System.out.println("Enter Address ");
         String newAddress = scanner.nextLine();
         while (!newAddress.matches(REGEX_ADDRESS)) {
-            System.out.println("You input bad format, please please get back !");
+            System.err.println("You input bad format, please please get back !");
             newAddress = scanner.nextLine();
         }
         return newAddress;

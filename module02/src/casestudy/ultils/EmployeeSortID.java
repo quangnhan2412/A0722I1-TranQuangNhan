@@ -7,6 +7,6 @@ import java.util.Comparator;
 public class EmployeeSortID implements Comparator<Employee> {
     @Override
     public int compare(Employee o1, Employee o2) {
-        return o1.getEmployeeID().compareTo(o2.getEmployeeID());
+        return o1.getDayOfBirth().compareTo(o2.getDayOfBirth());
     }
 }

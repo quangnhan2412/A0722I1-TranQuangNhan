@@ -1,4 +1,5 @@
-package ss19_string_regex;
+package ss19_string_regex.th_regex_account;
+
 
 public class AccountExampleTest {
     private static AccountExample accountExample;

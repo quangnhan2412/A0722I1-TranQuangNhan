@@ -12,7 +12,6 @@ public abstract class Person {
     private String identityCard;
     private String phoneNumber;
     private String email;
-
     public Person() {
     }
 
@@ -85,4 +84,7 @@ public abstract class Person {
                 ", email='" + email + '\'' +
                 '}';
     }
+    public abstract String getInfo();
+
+
 }

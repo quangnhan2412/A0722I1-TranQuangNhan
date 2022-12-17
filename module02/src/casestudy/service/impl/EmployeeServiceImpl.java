@@ -5,6 +5,7 @@ import casestudy.service.EmployeeService;
 import casestudy.ultils.EmployeeSortID;
 import casestudy.ultils.RegexMenu;
 import casestudy.ultils.RegexPerson;
+import casestudy.validate.AgeException;
 
 import java.time.LocalDate;
 import java.util.ArrayList;
@@ -158,7 +159,15 @@ public class EmployeeServiceImpl implements EmployeeService {
     @Override
     public Employee inputEmployeeInfo() {
         String fullName = RegexPerson.inputFullName();
-        LocalDate birthDay = RegexPerson.inputBirthday();
+        LocalDate dayOfBirth;
+        do {
+            try {
+                dayOfBirth = RegexPerson.inputBirthday();
+                break;
+            } catch (AgeException e) {
+                System.out.println("AAA");
+            }
+            } while (true) ;
         boolean newGender = RegexPerson.inputGender();
         String newIDCard = RegexPerson.inputNewIDCard();
         String newNumberPhone = RegexPerson.inputNewNumberPhone();
@@ -168,7 +177,7 @@ public class EmployeeServiceImpl implements EmployeeService {
         double newSalary = RegexPerson.inputNewSalary();
         String newLevel = RegexPerson.inputNewLevel();
 
-        return new Employee(fullName, birthDay, newGender, newIDCard, newNumberPhone,
+        return new Employee(fullName, dayOfBirth, newGender, newIDCard, newNumberPhone,
                 newEmail, newEmployeeID, newPosition, newSalary, newLevel);
 
     }

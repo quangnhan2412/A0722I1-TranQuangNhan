@@ -23,10 +23,10 @@ public class InsertionSort {
                 pos--;
             }
             array[pos] = x;
-            System.out.println("Array after this turn:");
-            for (int item : array) {
-                System.out.print(item + "\t");
-            }
+//            System.out.println("Array after this turn:");
+//            for (int item : array) {
+//                System.out.print(item + "\t");
+//            }
         }
     }
 }

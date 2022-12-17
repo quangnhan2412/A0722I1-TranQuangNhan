@@ -15,7 +15,7 @@ public class Employee extends Person {
     public Employee() {
     }
 
-    public Employee(String employeeID, String position, double salary, String level) {
+    public  Employee(String employeeID, String position, double salary, String level) {
         this.employeeID = employeeID;
         this.position = position;
         this.salary = salary;
@@ -95,8 +95,11 @@ public class Employee extends Person {
         }
     }
 
-    public String getInfoEmployeeToCSV() {
+    @Override
+    public String getInfo() {
         return getFullName() + "," + getDayOfBirth() + "," + isGender() + "," + getIdentityCard() + "," +
                 getPhoneNumber() + "," + getEmail() + "," + getEmployeeID() + "," + getPosition() + "," + getSalary() + "," + getLevel();
     }
+
+
 }

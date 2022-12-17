@@ -1,8 +1,6 @@
 package casestudy.ultils;
 
 
-import casestudy.models.facility.Facility;
-import casestudy.models.facility.*;
 import casestudy.models.person.Customer;
 import casestudy.models.person.Employee;
 
@@ -35,7 +33,7 @@ public class ReadAndWriteToCSV {
     public static void writeListEmployeeTOCSV(List<Employee> employeeList, String pathFile, boolean append) {
         List<String> stringList = new ArrayList<>();
         for (Employee employee : employeeList) {
-            stringList.add(employee.getInfoEmployeeToCSV());
+            stringList.add(employee.getInfo());
         }
         writeListStringTOCSV(stringList, pathFile, append);
     }
@@ -44,7 +42,7 @@ public class ReadAndWriteToCSV {
     public static void writeListCustomerToCSV(List<Customer> customersList, String pathFile, boolean append) {
         List<String> stringList = new LinkedList<>();
         for (Customer customer : customersList) {
-            stringList.add(customer.getInfoCustomerToCSV());
+            stringList.add(customer.getInfo());
         }
         writeListStringTOCSV(stringList, pathFile, append);
     }

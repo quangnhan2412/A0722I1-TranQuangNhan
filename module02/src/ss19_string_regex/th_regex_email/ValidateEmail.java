@@ -1,4 +1,4 @@
-package ss19_string_regex;
+package ss19_string_regex.th_regex_email;
 
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;

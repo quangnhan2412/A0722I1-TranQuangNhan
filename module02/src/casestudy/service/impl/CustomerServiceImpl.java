@@ -3,6 +3,7 @@ package casestudy.service.impl;
 import casestudy.models.person.Customer;
 import casestudy.service.CustomerService;
 import casestudy.ultils.RegexPerson;
+import casestudy.validate.AgeException;
 
 import java.time.LocalDate;
 import java.util.LinkedList;
@@ -26,7 +27,13 @@ public class CustomerServiceImpl implements CustomerService {
     @Override
     public Customer CustomerInfo() {
         String fullName = RegexPerson.inputFullName();
-        LocalDate dayOfBirth = RegexPerson.inputBirthday();
+        LocalDate dayOfBirth = null;
+        try{
+            dayOfBirth = RegexPerson.inputBirthday();
+        }catch (AgeException e){
+            System.out.println("AAA");
+        }
+        
         boolean gender = RegexPerson.inputGender();
         String identityCard = RegexPerson.inputNewIDCard();
         String phoneNumber = RegexPerson.inputNewNumberPhone();

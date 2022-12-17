@@ -1,4 +1,5 @@
-package ss19_string_regex;
+package ss19_string_regex.th_regex_email;
+
 
 public class ValidateEmailTest {
     private static ValidateEmail validateEmail;
