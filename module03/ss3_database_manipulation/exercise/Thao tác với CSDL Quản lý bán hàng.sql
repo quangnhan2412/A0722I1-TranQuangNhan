@@ -41,7 +41,7 @@ join product
 
 -- Hiển thị tên những khách hàng không mua bất kỳ một sản phẩm nào
 select *
-from customer left join `order`
+from `order` right join `customer`
 using(cID)
 where oID is null;
 
