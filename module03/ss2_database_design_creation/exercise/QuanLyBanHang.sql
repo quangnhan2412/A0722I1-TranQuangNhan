@@ -5,12 +5,12 @@ use QuanLyBanHang ;
 create table Customer(
 cID int not null primary key,
 cName varchar(50) ,
-cAge varchar(20)
+cAge tinyint(20)
 );
-create table Oder(
+create table `Order`(
 oID int not null primary key,
 oDate datetime ,
-oTotalPrice varchar(20),
+oTotalPrice int ,
 cID int not null,
 foreign key (cID) references Customer(cID)
 );
@@ -18,12 +18,12 @@ foreign key (cID) references Customer(cID)
 create table Product(
 pID int not null primary key,
 pName varchar(50) ,
-pPrice varchar(20)
+pPrice int
 );
 create table OrderDetail(
-odQTY varchar (20),
+odQTY int,
 oID int,
 pID int,
-foreign key (oID) references Oder(oID),
+foreign key (oID) references `Order`(oID),
 foreign key (pID) references Product(pID)
 );
