@@ -16,25 +16,26 @@
 <p>
     <a href="/products">Back to product list</a>
 </p>
-<form method="post">
+<form method="post" action="products">
+    <input type="hidden" name="action" value="create">
     <fieldset>
         <legend>Information Product</legend>
         <table>
             <tr>
                 <td>Product Name:</td>
-                <td><input type="text" name="name" id="name"></td>
+                <td><input class="text-bg-warning" type="text" name="productName" id="productName"></td>
             </tr>
             <tr>
                 <td>Product Price:</td>
-                <td><input type="text" name="price" id="price"></td>
+                <td><input type="text" name="productPrice" id="productPrice"></td>
             </tr>
             <tr>
                 <td>Product Description:</td>
-                <td><input type="text" name="description" id="description"></td>
+                <td><input type="text" name="productDescription" id="productDescription"></td>
             </tr>
             <tr>
                 <td>Product Manufacture:</td>
-                <td><input type="text" name="manufacture" id="manufacture"></td>
+                <td><input type="text" name="productManufacture" id="productManufacture"></td>
             </tr>
             <tr>
                 <td></td>

@@ -1,4 +1,4 @@
-package com.example.product_jsp.repository.impl;
+package com.example.product_jsp.repository;
 
 import com.example.product_jsp.model.Product;
 

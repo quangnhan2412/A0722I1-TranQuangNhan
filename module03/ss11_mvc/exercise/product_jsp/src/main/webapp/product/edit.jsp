@@ -11,22 +11,23 @@
     <a href="/products">Back to product list</a>
 </p>
 <form method="post" action="/products">
-    <input type="hidden" name="action" value="update">
+    <input type="hidden" name="action" value="edit">
+    <input type="hidden" name="id" value="${product.getId()}">
     <fieldset>
         <legend>Product Information</legend>
         <table>
             <tr>
                 <td>Product Name:</td>
                 <td>
-                    <input type="text" name="productName" id="productName" value="${requestScope["products"].getProductName()}">
+                    <input type="text" name="productsName" id="productsName" value="${requestScope["product"].getProductName()}">
                 </td>
             </tr>
             <td>Product Price:</td>
-            <td><input type="text" name="productPrice" id="productPrice" value="${requestScope["products"].getProductPrice()}"></td>
+            <td><input type="text" name="productPrice" id="productPrice" value="${requestScope["product"].getProductPrice()}"></td>
             </tr>
             <tr>
                 <td>Product Description:</td>
-                <td><input type="text" name="productDescription" id="productDescription" value="${requestScope["products"].getProductDescription()}">
+                <td><input type="text" name="productDescription" id="productDescription" value="${requestScope["product"].getProductDescription()}">
                 </td>
             </tr>
             <tr>
