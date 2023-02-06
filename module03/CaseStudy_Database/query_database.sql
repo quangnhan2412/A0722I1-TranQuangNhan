@@ -43,7 +43,7 @@ select kh.ma_khach_hang,
     hd.ngay_ket_thuc,
     if (hdct.ma_hop_dong is null, dv.chi_phi_thue, (dv.chi_phi_thue + sum(hdct.so_luong * dvdk.gia ))) AS tong_tien			
 from
-	khach_hang kh
+	khach_hang kh	
 		join
 	loai_khach lk
 	using(ma_loai_khach)
