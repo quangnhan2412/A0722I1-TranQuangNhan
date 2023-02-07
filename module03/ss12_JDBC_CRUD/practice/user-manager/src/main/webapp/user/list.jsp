@@ -10,35 +10,35 @@
   <h2>
     <a href="/users?action=create">Add new User</a>
   </h2>
+  <h2>
+    <a href="/users?action=search">Search User by Country</a>
+  </h2>
+  <h2>
+    <a href="/users?action=sort" value="search">Sort by Name</a>
+  </h2>
+
 </center>
 <div align="center">
   <table border="1" cellpadding="5">
-    <caption>
-      <h2>List of Users</h2>
-    </caption>
+    <caption><h2>List of Users</h2></caption>
     <tr>
-      <td>ID</td>
-      <td>Name</td>
-      <td>Email</td>
-      <td>Country</td>
-
+      <th>ID</th>
+      <th>Name</th>
+      <th>Email</th>
+      <th>Country</th>
+      <th>Actions</th>
     </tr>
-    <tr>  <td>Actions</td></tr>
     <c:forEach var="user" items="${listUser}">
       <tr>
-        <td>${user.id}</td>
-        <td>${user.name}</td>
-        <td>${user.email}</td>
-        <td>${user.country}</td>
-
-      </tr>
-      <tr>
+        <td><c:out value="${user.id}"/></td>
+        <td><c:out value="${user.name}"/></td>
+        <td><c:out value="${user.email}"/></td>
+        <td><c:out value="${user.country}"/></td>
         <td>
-          <a href="/users?action=edit&id=${user.getId()}">Edit</a>
-          <a href="/users?action=delete&id=${user.getId()}">Delete</a>
+          <a href="/users?action=edit&id=${user.id}">Edit</a>
+          <a href="/users?action=delete&id=${user.id}">Delete</a>
         </td>
       </tr>
-
     </c:forEach>
   </table>
 </div>

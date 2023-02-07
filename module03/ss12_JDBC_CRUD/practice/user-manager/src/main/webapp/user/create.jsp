@@ -13,7 +13,8 @@
     </h2>
 </center>
 <div align="center">
-    <form method="post">
+    <form method="post" action="/users">
+        <input type="hidden" name="action" value="create">
         <table border="1" cellpadding="5">
             <caption>
                 <h2>Add New User</h2>

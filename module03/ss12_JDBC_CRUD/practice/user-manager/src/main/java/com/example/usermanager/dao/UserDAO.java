@@ -4,6 +4,8 @@ import com.example.usermanager.model.User;
 
 import java.sql.*;
 import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Collections;
 import java.util.List;
 
 public class UserDAO implements IUserDAO {
@@ -17,6 +19,9 @@ public class UserDAO implements IUserDAO {
     private static final String SELECT_ALL_USERS = "select * from users";
     private static final String DELETE_USERS_SQL = "delete from users where id = ?;";
     private static final String UPDATE_USERS_SQL = "update users set name = ?,email= ?, country =? where id = ?;";
+
+    private static final String SEARCH_USERS_BY_COUNTRY = "select * from users where country = ?;";
+    private static final String SORT_USERS_BY_NAME = "select * from users  order by name;";
 
     public UserDAO() {
     }
@@ -51,28 +56,30 @@ public class UserDAO implements IUserDAO {
     }
 
     @Override
-    public User selectUser(int id) {
-        User user = null;
-//        Bước 1: Thiết lập kết nối
+    public List<User> sortByName() {
+        //Bước 1: Thiết lập kết nối
+        List<User> users = new ArrayList<>();
         try (Connection connection = getConnection();
-//        Bước 2: Tạo câu lệnh bằng đối tượng kết nối
-             PreparedStatement preparedStatement = connection.prepareStatement(SELECT_USER_BY_ID);) {
-            preparedStatement.setInt(1, id);
+             // Step 2:Tạo câu lệnh bằng đối tượng kết nối
+             PreparedStatement preparedStatement = connection.prepareStatement(SORT_USERS_BY_NAME);) {
             System.out.println(preparedStatement);
-//        Bước 3: Thực hiện truy vấn hoặc truy vấn cập nhật
+            // Step 3:Thực hiện truy vấn hoặc truy vấn cập nhật
             ResultSet rs = preparedStatement.executeQuery();
-//        Bước 4: Xử lý đối tượng resultset.
+
+            // Step 4: Xử lý đối tượng resultset.
             while (rs.next()) {
+                int id = rs.getInt("id");
                 String name = rs.getString("name");
                 String email = rs.getString("email");
                 String country = rs.getString("country");
-                user = new User(id, name, email, country);
+                users.add(new User(id, name, email, country));
             }
         } catch (SQLException e) {
             printSQLException(e);
         }
-        return user;
+        return users;
     }
+
 
     private void printSQLException(SQLException ex) {
         for (Throwable e : ex) {
@@ -140,4 +147,59 @@ public class UserDAO implements IUserDAO {
         }
         return rowUpdated;
     }
+
+    @Override
+    public List<User> searchUserByCountry(String inputCountry) {
+        List<User> result = new ArrayList<>();
+        //Bước 1: Thiết lập kết nối
+        try (Connection connection = getConnection();
+//        Bước 2: Tạo câu lệnh bằng đối tượng kết nối
+             PreparedStatement preparedStatement = connection.prepareStatement(SEARCH_USERS_BY_COUNTRY);) {
+            preparedStatement.setString(1, inputCountry);
+            System.out.println(preparedStatement);
+//        Bước 3: Thực hiện truy vấn hoặc truy vấn cập nhật
+            ResultSet rs = preparedStatement.executeQuery();
+//        Bước 4: Xử lý đối tượng resultset.
+            while (rs.next()) {
+                System.err.println(rs.getInt("id"));
+                System.err.println(rs.getString(rs.getInt("id")));
+                int id=  rs.getInt("id");
+                String name = rs.getString("name");
+                String email = rs.getString("email");
+                String country = rs.getString("country");
+
+              User user = new User(id, name, email, country);
+              result.add(user);
+            }
+        } catch (SQLException e) {
+            printSQLException(e);
+        }
+        System.out.println("test: " + result.size());
+        return result;
+    }
+    @Override
+    public User selectUser(int id) {
+        User user = null;
+//        Bước 1: Thiết lập kết nối
+        try (Connection connection = getConnection();
+//        Bước 2: Tạo câu lệnh bằng đối tượng kết nối
+             PreparedStatement preparedStatement = connection.prepareStatement(SELECT_USER_BY_ID);) {
+            preparedStatement.setInt(1, id);
+            System.out.println(preparedStatement);
+//        Bước 3: Thực hiện truy vấn hoặc truy vấn cập nhật
+            ResultSet rs = preparedStatement.executeQuery();
+//        Bước 4: Xử lý đối tượng resultset.
+            while (rs.next()) {
+                String name = rs.getString("name");
+                String email = rs.getString("email");
+                String country = rs.getString("country");
+                user = new User(id, name, email, country);
+            }
+        } catch (SQLException e) {
+            printSQLException(e);
+        }
+        return user;
+    }
+
+
 }

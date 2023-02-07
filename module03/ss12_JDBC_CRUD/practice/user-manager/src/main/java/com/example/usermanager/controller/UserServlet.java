@@ -36,6 +36,12 @@ public class UserServlet extends HttpServlet {
                 case "delete":
                     deleteUser(request, response);
                     break;
+                case "search":
+                    searchUserByCountry(request, response);
+                    break;
+                case "sort":
+                    sortByName(request, response);
+                    break;
                 default:
                     listUser(request, response);
                     break;
@@ -45,7 +51,23 @@ public class UserServlet extends HttpServlet {
         }
     }
 
-    private void deleteUser(HttpServletRequest request, HttpServletResponse response) throws SQLException, IOException, ServletException{
+    private void sortByName(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException {
+        List<User> result;
+        result = userDAO.sortByName();
+        request.setAttribute("listUser", result);
+        RequestDispatcher dispatcher = request.getRequestDispatcher("user/sort.jsp");
+        dispatcher.forward(request, response);
+    }
+
+    private void searchUserByCountry(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException {
+        response.sendRedirect("user/search.jsp");
+//        RequestDispatcher dispatcher = request.getRequestDispatcher("user/search.jsp");
+//        dispatcher.forward(request,response);
+
+//        lưu ý : khi chuyển sendRedirect <a href=" / users?action=users">List All Users</a> thì dấu xiệc
+    }
+
+    private void deleteUser(HttpServletRequest request, HttpServletResponse response) throws SQLException, IOException, ServletException {
         int id = Integer.parseInt(request.getParameter("id"));
         userDAO.deleteUser(id);
 
@@ -59,20 +81,22 @@ public class UserServlet extends HttpServlet {
         int id = Integer.parseInt(request.getParameter("id"));
         User existingUser = userDAO.selectUser(id);
         RequestDispatcher dispatcher = request.getRequestDispatcher("user/edit.jsp");
-        request.setAttribute("user",existingUser);
-        dispatcher.forward(request,response);
+        request.setAttribute("user", existingUser);
+        dispatcher.forward(request, response);
     }
 
     private void showNewForm(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         RequestDispatcher dispatcher = request.getRequestDispatcher("user/create.jsp");
-        dispatcher.forward(request,response);
+        dispatcher.forward(request, response);
+//        dùng 1 trong 2 cái
+//        response.sendRedirect("user/create.jsp");
     }
 
     private void listUser(HttpServletRequest request, HttpServletResponse response) throws SQLException, ServletException, IOException {
         List<User> listUser = userDAO.selectAllUsers();
-        request.setAttribute("listUser",listUser);
+        request.setAttribute("listUser", listUser);
         RequestDispatcher dispatcher = request.getRequestDispatcher("user/list.jsp");
-        dispatcher.forward(request,response);
+        dispatcher.forward(request, response);
     }
 
     @Override
@@ -89,13 +113,31 @@ public class UserServlet extends HttpServlet {
                 case "edit":
                     updateUser(request, response);
                     break;
+                case "search":
+                    searchCountry(request, response);
+                    break;
             }
         } catch (SQLException e) {
             throw new ServletException(e);
         }
     }
 
-    private void updateUser(HttpServletRequest request, HttpServletResponse response) throws  SQLException ,ServletException,IOException {
+    private void searchCountry(HttpServletRequest request, HttpServletResponse response) {
+        String country = request.getParameter("country");
+        System.out.println(country);
+        List<User> userList = userDAO.searchUserByCountry(country);
+        RequestDispatcher dispatcher;
+        request.setAttribute("listUser", userList);
+        dispatcher = request.getRequestDispatcher("user/list.jsp");
+        try {
+            dispatcher.forward(request, response);
+        } catch (ServletException | IOException e) {
+            e.printStackTrace();
+        }
+
+    }
+
+    private void updateUser(HttpServletRequest request, HttpServletResponse response) throws SQLException, ServletException, IOException {
         int id = Integer.parseInt(request.getParameter("id"));
         String name = request.getParameter("name");
         String email = request.getParameter("email");
@@ -105,22 +147,20 @@ public class UserServlet extends HttpServlet {
         userDAO.updateUser(book);
 //        RequestDispatcher dispatcher = request.getRequestDispatcher("user/edit.jsp");
 //        dispatcher.forward(request, response);
-
         response.sendRedirect("/users");
 
 
-        }
-
+    }
 
 
     private void insertUser(HttpServletRequest request, HttpServletResponse response) throws SQLException, ServletException, IOException {
         String name = request.getParameter("name");
         String email = request.getParameter("email");
         String country = request.getParameter("country");
-        User newUser   = new User(name ,email,country);
+        User newUser = new User(name, email, country);
         userDAO.insertUser(newUser);
         RequestDispatcher dispatcher = request.getRequestDispatcher("user/create.jsp");
-        dispatcher.forward(request,response);
+        dispatcher.forward(request, response);
     }
 
 }
