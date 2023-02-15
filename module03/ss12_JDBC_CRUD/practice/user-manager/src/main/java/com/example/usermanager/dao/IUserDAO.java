@@ -37,3 +37,20 @@ public interface IUserDAO {
 
 
 }
+
+ public Map<Integer, String> selectAllPosition() {
+        Map<Integer, String> positionMap = new LinkedHashMap<>();
+        try {
+            Connection connection = BaseRepository.getConnectDB();
+            PreparedStatement preparedStatement = connection.prepareStatement(SELECT_POSITION);
+            ResultSet resultSet = preparedStatement.executeQuery();
+            while (resultSet.next()) {
+                int id = resultSet.getInt("id");
+                String name = resultSet.getString("name");
+                positionMap.put(id, name);
+            }
+        } catch (SQLException throwables) {
+            throwables.printStackTrace();
+        }
+        return positionMap;
+    }

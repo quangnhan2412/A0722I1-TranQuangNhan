@@ -12,12 +12,12 @@ import java.util.List;
 
 @WebServlet(name = "UserServlet", urlPatterns = {"/users"})
 public class UserServlet extends HttpServlet {
-    private static final long serialVersionUID = 1L;
-    private UserDAO userDAO;
+        private static final long serialVersionUID = 1L;
+        private UserDAO userDAO;
 
-    public void init() {
-        userDAO = new UserDAO();
-    }
+        public void init() {
+            userDAO = new UserDAO();
+        }
 
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {

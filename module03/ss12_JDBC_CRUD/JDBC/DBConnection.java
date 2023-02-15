@@ -1,35 +1,7 @@
-package vn.codegym.repository;
-
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.SQLException;
-
-public class DBConnection {
-    private static final String USER_NAME = "root";
-    private static final String PASSWORD = "12345678";
-    private static final String HOST = "localhost";
-    private static final String DATABASE = "a07_student";
-    private static final String PORT = "3306";
-
-    private static Connection connection;
-
-    public static Connection getConnection () {
-        try {
-            Class.forName("com.mysql.cj.jdbc.Driver"); //nap driver
-            connection = DriverManager.getConnection("jdbc:mysql://"+HOST+":"+PORT+"/"+DATABASE, USER_NAME, PASSWORD);
-        } catch (ClassNotFoundException | SQLException e) {
-            e.printStackTrace();
+  boolean rowDeleted;
+        try (Connection connection = BaseRepository.getConnectDB();
+             PreparedStatement statement = connection.prepareStatement(DELETE_EMPLOYEE_BY_ID);) {
+            statement.setInt(1, id);
+            rowDeleted = statement.executeUpdate() > 0;
         }
-        return connection;
-    }
-
-    public static void close(){
-        try {
-            if(connection != null){
-                connection.close();
-            }
-        } catch (SQLException throwables) {
-            throwables.printStackTrace();
-        }
-    }
-}
+        return rowDeleted;
