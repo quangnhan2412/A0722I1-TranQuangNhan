@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="64ecea99-0a07-41e2-907a-d5551c511345" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../../../../module03/off_module3/baithimodule3/src/main/java/Controller/TComplexServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../module03/off_module3/baithimodule3/src/main/java/bean/model/ToaNhaTComplex.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../module03/off_module3/baithimodule3/src/main/java/bean/repository/ToaNhaRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../module03/off_module3/baithimodule3/src/main/java/bean/repository/ToaNhaRepositoryImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../module03/off_module3/baithimodule3/src/main/java/bean/service/ToaNhaService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../module03/off_module3/baithimodule3/src/main/java/bean/service/ToaNhaServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../module03/off_module3/baithimodule3/src/main/webapp/toanha/create.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../module03/off_module3/baithimodule3/src/main/webapp/toanha/list.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../module01/asađas.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../module03/CaseStudy_DB_JSTL/Module2_AccountName_WBE/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../module03/CaseStudy_DB_JSTL/Module2_AccountName_WBE/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../module03/CaseStudy_DB_JSTL/Module2_AccountName_WBE/src/main/java/Controller/CustomerServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../module03/CaseStudy_DB_JSTL/Module2_AccountName_WBE/src/main/java/Controller/CustomerServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../module03/CaseStudy_DB_JSTL/Module2_AccountName_WBE/src/main/java/bean/repository/person/CustomerRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../module03/CaseStudy_DB_JSTL/Module2_AccountName_WBE/src/main/java/bean/repository/person/CustomerRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../module03/CaseStudy_DB_JSTL/Module2_AccountName_WBE/src/main/java/bean/repository/person/CustomerRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../module03/CaseStudy_DB_JSTL/Module2_AccountName_WBE/src/main/java/bean/repository/person/CustomerRepositoryImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../module03/CaseStudy_DB_JSTL/Module2_AccountName_WBE/src/main/java/bean/service/CustomerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../module03/CaseStudy_DB_JSTL/Module2_AccountName_WBE/src/main/java/bean/service/CustomerService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../module03/CaseStudy_DB_JSTL/Module2_AccountName_WBE/src/main/java/bean/service/CustomerServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../module03/CaseStudy_DB_JSTL/Module2_AccountName_WBE/src/main/java/bean/service/CustomerServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../module03/CaseStudy_DB_JSTL/Module2_AccountName_WBE/src/main/webapp/CSS_HomePage/img/[A0722I1] TKB Web backend Develop with Jsp &amp; Servlet.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../module03/CaseStudy_DB_JSTL/Module2_AccountName_WBE/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../module03/CaseStudy_DB_JSTL/Module2_AccountName_WBE/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../module03/CaseStudy_DB_JSTL/Module2_AccountName_WBE/src/main/webapp/customer/list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../module03/CaseStudy_DB_JSTL/Module2_AccountName_WBE/src/main/webapp/customer/list.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../module03/CaseStudy_DB_JSTL/Module2_AccountName_WBE/src/main/webapp/customer/search.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../module03/CaseStudy_DB_JSTL/Module2_AccountName_WBE/src/main/webapp/customer/update.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../module03/CaseStudy_DB_JSTL/Module2_AccountName_WBE/src/main/webapp/customer/update.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../module03/CaseStudy_DB_JSTL/Module2_AccountName_WBE/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../module03/CaseStudy_DB_JSTL/Module2_AccountName_WBE/src/main/webapp/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../module03/CaseStudy_DB_JSTL/create_db_furama_jstl.sql" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../module03/CaseStudy_DB_JSTL/create_db_furama_jstl.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../module03/ss12_JDBC_CRUD/practice/user-manager/src/main/java/config/CharsetFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../module03/ss12_JDBC_CRUD/practice/user-manager/src/main/java/config/CharsetFilter.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Tag Library Descriptor" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../../.." />
+  </component>
+  <component name="ProjectId" id="2MVNLIVus3RPIhaleTnu1uD7HD0" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "jdk.selected.JAVA_MODULE": "18",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.2",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\CodeGym\Source Code\A0722I1-TranQuangNhan\module04\ss01_spring_mvc_overview\practice\spring-greeting\src\main\resources" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="64ecea99-0a07-41e2-907a-d5551c511345" name="Changes" comment="" />
+      <created>1677848743538</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1677848743538</updated>
+      <workItem from="1677848744784" duration="647000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
