@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="/layout :: head"></head>
+<head>
+    <meta charset="UTF-8">
+    <title>Information Product</title>
+</head>
+<body>
+<h3>View Product</h3>
+<p>
+    <a th:href="@{/product}">
+        Back to customer List
+    </a>
+</p>
+<div id="detail" th:object="${product}">
+    <div class="cusdetail">
+        <label>Product ID:</label>
+        <label th:text="*{idProduct}"></label>
+    </div>
+    <div class="cusdetail">
+        <label>Product Name:</label>
+        <label th:text="*{nameProduct}"></label>
+    </div>
+    <div class="cusdetail">
+        <label>Product Calo:</label>
+        <label th:text="*{caloProduct}"></label>
+    </div>
+    <div class="cusdetail">
+        <label>Product dairyIngredients:</label>
+        <label th:text="*{dairyIngredientsProduct}"></label>
+    </div>
+    <div class="cusdetail">
+        <label>Product Exp:</label>
+        <label th:text="*{expProduct}"></label>
+    </div>
+</div>
+<footer th:replace="/layout :: footer"></footer>
+</body>
+</html>
