@@ -1,8 +1,9 @@
-package com.codegym.service;
+package service;
 
-import com.codegym.model.ContactAddress;
-import com.codegym.model.Symptom;
-import com.codegym.model.UserInf;
+
+import org.example.model.ContactAddress;
+import org.example.model.Symptom;
+import org.example.model.UserInf;
 
 public class MedicalDeclarationService implements IMedicalDeclarationService {
     private UserInf[] list1={new UserInf()};

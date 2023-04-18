@@ -1,8 +1,8 @@
 package org.example.controller;
 
-import model.ContactAddress;
-import model.Symptom;
-import model.UserInf;
+import org.example.model.ContactAddress;
+import org.example.model.Symptom;
+import org.example.model.UserInf;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -12,7 +12,7 @@ import service.MedicalDeclarationService;
 
 import java.util.ArrayList;
 
-@Controller("/")
+@Controller
 public class MedicalDeclarationController {
     private final static IMedicalDeclarationService medicalDeclaration=new MedicalDeclarationService();
     private final static ArrayList years=new ArrayList();
@@ -36,7 +36,7 @@ public class MedicalDeclarationController {
         }
     }
 
-    @GetMapping("/")
+    @GetMapping("home")
     public String home(Model model){
 
         model.addAttribute("years",years);
@@ -51,7 +51,7 @@ public class MedicalDeclarationController {
         model.addAttribute("userInf",medicalDeclaration.findUserInf());
         model.addAttribute("symptom",medicalDeclaration.findSymptom());
         model.addAttribute("contact",medicalDeclaration.findContactAddress());
-        return "index";
+        return "form-medical";
     }
     @PostMapping("/save")
     public String save(ContactAddress contact, Symptom symptom, UserInf userInf){

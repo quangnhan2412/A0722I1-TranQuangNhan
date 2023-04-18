@@ -1,32 +1,36 @@
-package config;
-
-import javax.servlet.*;
-import java.io.IOException;
-
-public class CharsetFilter implements Filter {
-
-    private String encoding;
-
-    public void init(FilterConfig config) throws ServletException {
-        encoding = config.getInitParameter("requestEncoding");
-        if (encoding == null) encoding = "UTF-8";
-    }
-
-    public void doFilter(ServletRequest request, ServletResponse response, FilterChain next)
-            throws IOException, ServletException {
-        // Respect the client-specified character encoding
-        // (see HTTP specification section 3.4.1)
-        if (null == request.getCharacterEncoding()) {
-            request.setCharacterEncoding(encoding);
-        }
-
-        // Set the default response content type and encoding
-        response.setContentType("text/html; charset=UTF-8");
-        response.setCharacterEncoding("UTF-8");
-
-        next.doFilter(request, response);
-    }
-
-    public void destroy() {
-    }
-}
+public ArrayList<NhanVien> getItems() {
+   ArrayList<NhanVien> nhanViens = new ArrayList<>();
+   conn = DBConnectionUtil.getConnection();
+   String query = "SELECT * , nhanvien.id AS nvid FROM nhanvien "
+         + "INNER JOIN taikhoan "
+         + "ON nhanvien.id_taikhoan = taikhoan.id "
+         + "INNER JOIN luongcb "
+         + "ON nhanvien.id_luongcb = luongcb.id;";
+   try {
+      st = conn.createStatement();
+      rs = st.executeQuery(query);
+      while(rs.next()){
+         int id = rs.getInt("nvid");
+         String gioitinh = rs.getString("gioitinh");
+         String address = rs.getString("address");
+         TaiKhoan taiKhoan = new TaiKhoan(rs.getInt("id_taikhoan"), rs.getString("username"), rs.getString("password"), rs.getString("fullname"), rs.getString("picture"), rs.getString("position"));
+         LuongCB luongCB = new LuongCB(rs.getInt("id_luongcb"), rs.getString("job"), rs.getInt("money"));
+         NhanVien item = new NhanVien(id, gioitinh, address, luongCB, taiKhoan);
+         nhanViens.add(item);
+      }
+   } catch (SQLException e) {
+      // TODO Auto-generated catch block
+      e.printStackTrace();
+   } finally{
+      if(rs != null && st != null && conn != null){
+         try {
+            rs.close();
+            st.close();
+            conn.close();
+         } catch (SQLException e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+         }
+      }
+   }
+   return nhanViens;

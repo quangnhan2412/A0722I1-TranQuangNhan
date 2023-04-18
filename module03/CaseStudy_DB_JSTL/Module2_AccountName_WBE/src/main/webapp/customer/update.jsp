@@ -7,11 +7,10 @@
 <body>
 <center>
     <h2>Customer Manager</h2>
-
 </center>
 <div align="center">
-    <form method="post" >
-        <table border="1" cellpadding="5">
+    <form method="post"  >
+        <table border="1" cellpadding="5" >
             <caption>
                 <h2>
                     Update Customer
@@ -93,7 +92,9 @@
             <tr>
                 <td colspan="2" align="center">
                     <input type="submit"value="update"/>
-                    <a class="btn btn-danger" href="customers?action=customers" role="button">Back to list Customer</a>
+                    <button class="btn btn-danger" >
+                        <a href="customers?action=customers">Hủy</a></button>
+                    <%--                    <a class="btn btn-danger" href="customers?action=customers" role="button">Back to list Customer</a>--%>
                 </td>
             </tr>
         </table>

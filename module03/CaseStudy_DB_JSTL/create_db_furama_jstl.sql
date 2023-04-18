@@ -58,6 +58,10 @@ create table `customer_type`(
 `customer_type_name` 	varchar(45)
 );
 
+insert into `customer_type`(`customer_type_id`,`customer_type_name`)
+values(1,'vip'),
+(2,'cui');
+
 create table `customer`(
 `customer_id` 		int 	not null primary key auto_increment,
 `customer_type_id` 	int,
@@ -70,6 +74,23 @@ create table `customer`(
 `customer_adress` 	varchar(45),
 foreign key(`customer_type_id`)		references`customer_type`(`customer_type_id`) on delete cascade
 );
+
+insert into customer(`customer_id`,`customer_type_id`,`customer_name`,`customer_birthday`,`customer_gender`,`customer_id_card`,`customer_phone`,`customer_email`,`customer_adress`)
+values(3,1,'Nguyễn Thị Hào','1970-11-07',1,'643431213','077736452','tranquangnhan24122000@gmail.com','DN'),
+		(4,1,'Trương Đình Nghệ','1984-10-07',1,'4545454545','0777472452','nguyenthib@gmail.com','HN'),
+		(5,1,'Trương Đình Hào','1984-09-07',1,'2312323122','0777472452','nguyenthib@gmail.com','HN'),
+		(6,1,'Trương Đình Nghệ','1985-08-07',1,'4545454545','0777472452','nguyenthib@gmail.com','HN'),
+		(7,1,'Trương Đình Nguyễn','1985-11-07',1,'1234567890','0777472452','nguyenthib@gmail.com','HN'),
+		(8,1,'Trương Thị Nghệ','1985-07-07',1,'1221131232','0777472452','nguyenthib@gmail.com','HN'),
+		(9,1,'Trương Đình Nghệ','1986-06-07',1,'1312312313','0777472452','nguyenthib@gmail.com','HN'),
+		(10,1,'Trương Đình Nghệ','1986-02-07',1,'3453476741','0777472452','nguyenthib@gmail.com','HN'),
+		(12,1,'Trương Đình Nghệ','1985-01-07',1,'4542254545','0777472452','nguyenthib@gmail.com','HN');
+        
+        SET SQL_SAFE_UPDATES = 0;
+delete from customer where customer_name = 'Trương Đình Nghệ';
+
+select * from customer where customer_name like '%h%';
+
 
 create table `service_type`(
 `service_type_id` 	int 	not null primary key auto_increment,
@@ -132,8 +153,15 @@ create table `contract_detail`(
 	foreign key(`attach_service_id`)		references `attach_service`(`attach_service_id`)	on delete cascade
 );
 
+DELIMITER //
+create procedure search_customer_by_name(search varchar(45))
+begin
+select * from customer
+where customer_name like CONCAT('%', search, '%');
+end //
+DELIMITER ;
 
-
+call search_customer_by_name("h");
 
 
 

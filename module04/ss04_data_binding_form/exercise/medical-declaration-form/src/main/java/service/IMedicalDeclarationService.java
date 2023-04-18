@@ -1,11 +1,9 @@
-package com.codegym.service;
+package service;
 
-import com.codegym.model.ContactAddress;
-import com.codegym.model.Symptom;
-import com.codegym.model.UserInf;
 
-import java.util.ArrayList;
-import java.util.List;
+import org.example.model.ContactAddress;
+import org.example.model.Symptom;
+import org.example.model.UserInf;
 
 public interface IMedicalDeclarationService {
     UserInf findUserInf();

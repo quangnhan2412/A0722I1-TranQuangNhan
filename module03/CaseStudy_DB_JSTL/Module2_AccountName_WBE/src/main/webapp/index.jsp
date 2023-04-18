@@ -10,7 +10,6 @@
 <body>
 <div class="header">
     <div class="row bg-light">
-
         <div class="col-3">
             <a href="/" class="header_logo">
                 <img src="CSS_HomePage/img/Logo_furama.jpg" class="img-fluid" alt="logo" width="30%" height="100%">
@@ -85,6 +84,8 @@
         </div>
     </div>
 </div>
+
+
 <div class="footer">
     <!-- Footer -->
     <footer class="text-center text-lg-start bg-light text-muted">

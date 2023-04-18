@@ -10,6 +10,8 @@ import javax.servlet.annotation.*;
 import java.io.IOException;
 import java.sql.Date;
 import java.sql.SQLException;
+
+import java.util.ArrayList;
 import java.util.List;
 
 @WebServlet(name = "CustomerServlet", value = "/customers")
@@ -38,13 +40,71 @@ public class CustomerServlet extends HttpServlet {
                     throw new RuntimeException(e);
                 }
                 break;
+            case "deleteAll":
+                try {
+                    showDeleteALLCustomer(request, response);
+                } catch (SQLException e) {
+                    throw new RuntimeException(e);
+                }
+                break;
             case "update":
                 showUpdateFormCustomer(request, response);
+                break;
+                case "search":
+                showSearchFormCustomer(request, response);
+                break;
+                case "search2":
+                showOneSearchFormCustomer(request, response);
                 break;
             default:
                 listCustomer(request, response);
                 break;
         }
+    }
+
+    private void showOneSearchFormCustomer(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        String searchPhone = request.getParameter("searchABC");
+        List<Customer> customerList ;
+        customerList = customerService. searchThreeOne(searchPhone);
+        RequestDispatcher dispatcher;
+        request.setAttribute("customerList", customerList);
+        dispatcher = request.getRequestDispatcher("customer/list.jsp");
+        dispatcher.forward(request, response);
+    }
+
+    private void showSearchFormCustomer(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        String searchName = request.getParameter("searchName");
+        String searchIdCard = request.getParameter("searchIdCard");
+        String searchPhone = request.getParameter("searchPhone");
+
+        List<Customer> customerList ;
+        customerList = customerService.searchThree(searchName,searchIdCard,searchPhone);
+        RequestDispatcher dispatcher;
+        request.setAttribute("customerList", customerList);
+        dispatcher = request.getRequestDispatcher("customer/list.jsp");
+        dispatcher.forward(request, response);
+    }
+
+    private void showDeleteALLCustomer(HttpServletRequest request, HttpServletResponse response) throws SQLException, ServletException, IOException {
+        String[] selectedIds = request.getParameterValues("customerId");
+        List<Integer> customerIds = new ArrayList<>();
+        for (String selectedId : selectedIds) {
+            customerIds.add(Integer.parseInt(selectedId));
+        }
+            customerService.deleteCustomerStr(customerIds);
+            List<Customer> customerList = customerService.selectAllCustomer();
+            request.setAttribute("customerList", customerList);
+            RequestDispatcher dispatcher = request.getRequestDispatcher("customer/list.jsp");
+            dispatcher.forward(request, response);
+
+    }
+    private void showDeleteCustomer(HttpServletRequest request, HttpServletResponse response) throws SQLException, ServletException, IOException {
+        int id = Integer.parseInt(request.getParameter("id"));
+        customerService.deleteCustomer(id);
+        List<Customer> customerList = customerService.selectAllCustomer();
+        request.setAttribute("customerList", customerList);
+        RequestDispatcher dispatcher = request.getRequestDispatcher("customer/list.jsp");
+        dispatcher.forward(request, response);
     }
 
     private void showUpdateFormCustomer(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
@@ -56,15 +116,6 @@ public class CustomerServlet extends HttpServlet {
 
     }
 
-    private void showDeleteCustomer(HttpServletRequest request, HttpServletResponse response) throws SQLException, ServletException, IOException {
-        int id = Integer.parseInt(request.getParameter("id"));
-        customerService.deleteCustomer(id);
-
-        List<Customer> customerList = customerService.selectAllCustomer();
-        request.setAttribute("customerList", customerList);
-        RequestDispatcher dispatcher = request.getRequestDispatcher("customer/delete.jsp");
-        dispatcher.forward(request, response);
-    }
 
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
@@ -80,10 +131,9 @@ public class CustomerServlet extends HttpServlet {
                 case "update":
                     updateCustomer(request, response);
                     break;
-                case "search":
-                    searchCustomerById(request, response);
-                    break;
-
+//                case "search":
+//                    searchCustomerById(request, response);
+//                    break;
             }
         } catch (SQLException e) {
             throw new ServletException(e);
@@ -114,9 +164,9 @@ public class CustomerServlet extends HttpServlet {
 
         Customer customerUpdate = new Customer(fullName, idCard, dateOfBirth, phoneNumber, email, address, id, typeId, gender);
         customerService.updateCustomer(customerUpdate);
-        RequestDispatcher dispatcher = request.getRequestDispatcher("customer/update.jsp");
-        dispatcher.forward(request, response);
-
+//        RequestDispatcher dispatcher = request.getRequestDispatcher("customer/update.jsp");
+//        dispatcher.forward(request, response);
+        response.sendRedirect("customers");
 
     }
 
@@ -142,11 +192,16 @@ public class CustomerServlet extends HttpServlet {
     }
 
     private void listCustomer(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        List<Customer> customerList = customerService.selectAllCustomer();
+        String search = request.getParameter("search");
+        List<Customer> customerList;
+        if (search != null) {
+            customerList = customerService.searchCustomerByName(search);
+        } else {
+            customerList = customerService.selectAllCustomer();
+        }
         request.setAttribute("customerList", customerList);
         RequestDispatcher dispatcher = request.getRequestDispatcher("/customer/list.jsp");
         dispatcher.forward(request, response);
     }
-
 
 }
