@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="/home :: header">
+  <meta charset="UTF-8">
+  <title>Employee Create</title>
+</head>
+<body>
+<div th:replace="/home :: head"></div>
+<div th:replace="/home :: navbar"></div>
+
+<form   method="post" th:action="@{/employee/save}" th:object="${employee}">
+  <div class="container justify-content-center">
+    <label for="id">ID: <span style="color: red;"> *</span></label>
+    <div class="form-group">
+      <div class="form-line">
+        <input type="text" id="id" class="form-control"  placeholder="Employee ID" th:field="*{id}" readonly/>
+        <!--                <span th:if="${#fields.hasErrors('id')}" th:errors="*{id}"></span>-->
+      </div>
+    </div>
+  <div class="input-group" style="display: block" >
+    <label>Name</label>
+    <p class="input-group-text">
+      <input type="text" class="form-control" name="name" placeholder="Employee Name" th:field="*{name}"/>
+      <span th:if="${#fields.hasErrors('name')}" th:errors="*{name}" style="color: red"></span>
+    </p>
+  </div>
+  <div class="input-group" style="display: block">
+    <label>Date Of Birth</label>
+    <p class="input-group-text">
+      <input type="date" class="form-control"  name="dateOfBirth" placeholder="Date Of Birth" th:field="*{dateOfBirth}"/>
+                      <span th:if="${#fields.hasErrors('dateOfBirth')}" th:errors="*{dateOfBirth}"  style="color: red"></span>
+    </p>
+  </div>
+
+  <label>Education Degree</label>
+  <select  class="form-select form-select-lg mb-3"
+           aria-label=".form-select-lg example" th:field="*{educationDegree}">
+    <option th:each="item : ${educationDegreeList}"
+            th:text="${item.educationDegreeName}"
+            th:value="${item.educationDegreeId}"></option>
+  </select>
+
+  <div class="input-group" style="display: block">
+    <label>Address</label>
+    <p class="input-group-text">
+      <input type="text" class="form-control" name="address" placeholder="Address" th:field="*{address}" />
+    </p>
+  </div>
+
+  <label>Position</label>
+  <select  class="form-select form-select-lg mb-3"
+           aria-label=".form-select-lg example" th:field="*{position}">
+    <option th:each="item : ${positionList}"
+            th:text="${item.positionName}"
+            th:value="${item.positionId}"></option>
+  </select>
+
+  <div class="input-group" style="display: block">
+    <label>Id Card</label>
+    <p class="input-group-text">
+      <input type="text" class="form-control" name="id-card" placeholder="Id Card" th:field="*{idCard}"/>
+      <span th:if="${#fields.hasErrors('idCard')}" th:errors="*{idCard}"  style="color: red"></span>
+    </p>
+  </div>
+
+  <label>Division</label>
+  <select  class="form-select form-select-lg mb-3"
+           aria-label=".form-select-lg example" th:field="*{division}">
+    <option th:each="item : ${divisionList}"
+            th:text="${item.divisionName}"
+            th:value="${item.divisionId}"></option>
+  </select>
+
+  <div class="input-group" style="display: block">
+    <label>Phone number</label>
+    <p class="input-group-text">
+      <input type="text" class="form-control" name="phone" placeholder="Phone number" th:field="*{phoneNumber}"/>
+    </p>
+  </div>
+  <div class="input-group" style="display: block">
+    <label>Email</label>
+    <p class="input-group-text">
+      <input type="email" class="form-control" name="email" placeholder="Email" th:field="*{email}"/>
+    </p>
+  </div>
+  <div class="input-group" style="display: block">
+    <label>Salary</label>
+    <p class="input-group-text">
+      <input type="text" class="form-control" name="salary" placeholder="Salary" th:field="*{salary}"/>
+      <span th:if="${#fields.hasErrors('salary')}" th:errors="*{salary}"  style="color: red"></span>
+    </p>
+  </div>
+    <div class="input-group">
+      <input class="btn btn-success" type="submit" value="Save">
+    </div>
+  </div>
+</form>
+<p>
+  <a class="btn btn-success" th:href="@{/employee/list}">
+    Back to List Employee  </a>
+</p>
+
+
+
+<div th:replace="/home :: footer"></div>
+</body>
+</html>

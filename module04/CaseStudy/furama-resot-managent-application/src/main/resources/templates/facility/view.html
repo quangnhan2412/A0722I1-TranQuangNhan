@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>View Facility</title>
+</head>
+<body>
+<h1>Student detail</h1>
+<table border="1" th:object="${facility}">
+  <tr>
+    <td>ID</td>
+    <td th:text="${facility.id}"></td>
+  </tr>
+  <tr>
+    <td>Name</td>
+    <td th:text="*{name}"></td>
+  </tr>
+  <tr>
+    <td>Area</td>
+    <td th:text="*{area}"></td>
+  </tr>
+  <tr>
+    <td>Cost</td>
+    <td th:text="*{cost}"></td>
+  </tr><tr>
+  <td>Max people</td>
+  <td th:text="*{maxPeople}"></td>
+</tr><tr>
+  <td>Facility Type Name</td>
+  <td th:text="*{facilityTypes.name}"></td>
+</tr>
+</table>
+<a th:href="@{/facility/list}">Back to list</a>
+</body>
+</html>
