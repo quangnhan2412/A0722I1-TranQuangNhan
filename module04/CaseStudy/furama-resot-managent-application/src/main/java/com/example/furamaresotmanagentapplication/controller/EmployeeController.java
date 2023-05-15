@@ -80,6 +80,7 @@ public class EmployeeController {
             }
             return "/employee/create";
         }
+//        employee.setDateOfBirth();
         employeeService.save(employee);
         redirectAttributes.addFlashAttribute("success", "Thành công");
             return "redirect:/employee/list";
@@ -96,7 +97,7 @@ public class EmployeeController {
     }
 
     @GetMapping(value = "/deleteAll")
-    public String delete(@RequestParam("delete-idx") Integer[] ids, RedirectAttributes attributes) {
+    public String delete(@RequestParam(value = "delete-idx") Integer[] ids, RedirectAttributes attributes) {
         employeeService.deleteByAllId(ids);
         attributes.addFlashAttribute("success", "Xoá thành công");
         return "redirect:/employee/list";

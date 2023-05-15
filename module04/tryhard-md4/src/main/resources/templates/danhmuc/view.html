@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>View Tin Tức</title>
+</head>
+<body>
+<h1>Tin Tức detail</h1>
+<table border="1" th:object="${tinTuc}">
+  <tr>
+    <td>Tiêu Đề</td>
+    <td th:text="${tinTuc.tieuDe}"></td>
+  </tr>
+  <tr>
+    <td>Danh Mục</td>
+    <td th:text="*{danhMuc.danhMucName}"></td>
+  </tr>
+  <tr>
+    <td>Nội dung</td>
+    <td th:text="*{noiDung}"></td>
+  </tr>
+  <tr>
+    <td>Ngày Đăng Tin</td>
+    <td th:text="*{#dates.format(ngayDangTin,'dd/MM/yyyy')}"></td>
+  </tr><tr>
+  <td>Phóng Viên</td>
+  <td th:text="*{phongVien}"></td>
+</tr>
+</table>
+<a th:href="@{/danhmuc/list}">Back to list</a>
+</body>
+</html>
