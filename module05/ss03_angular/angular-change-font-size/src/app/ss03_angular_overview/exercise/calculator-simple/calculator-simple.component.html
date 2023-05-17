@@ -1,0 +1,25 @@
+<h1>Calculator</h1>
+
+
+<div class="input-group mb-3">
+  <label for="numberOne"></label>
+  <input #numberOne
+         type="number"
+         id="numberOne" class="form-control" placeholder="Number One" aria-describedby="helpId">
+</div>
+<div class="input-group mb-3">
+  <label for="numberTwo"></label>
+  <input #numberTwo
+         type="number"
+         id="numberTwo" class="form-control" placeholder="Number Two" aria-describedby="helpId">
+</div>
+<div>
+  <button type="button" class="btn btn-primary" (click)="sum(numberOne.value,numberTwo.value)">Plus</button>
+  <button type="button" class="btn btn-danger" (click)="minus(numberOne.value,numberTwo.value)">Minus</button>
+  <button type="button" class="btn btn-success" (click)="multiply(numberOne.value,numberTwo.value)">Multiply</button>
+  <button type="button" class="btn btn-dark" (click)="divide(numberOne.value,numberTwo.value)">Divide</button>
+
+</div>
+<br>
+<input type="color" [(ngModel)]="color">
+<h2 [style.color]="color">Result : {{result}}</h2>
