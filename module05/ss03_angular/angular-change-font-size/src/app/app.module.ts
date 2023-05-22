@@ -7,6 +7,10 @@ import {FormsModule} from '@angular/forms';
 import {PetComponent} from './ss03_angular_overview/practice/pet/pet.component';
 import { UseBtContructionDisplayListProductComponent } from './ss03_angular_overview/practice/use-bt-contruction-display-list-product/use-bt-contruction-display-list-product.component';
 import { CalculatorSimpleComponent } from './ss03_angular_overview/exercise/calculator-simple/calculator-simple.component';
+import { AngularHackernewsAppComponent } from './ss04_angular_component_and_template/practice/angular-hackernews-app/angular-hackernews-app.component';
+import { LikeComponent } from './ss04_angular_component_and_template/practice/like/like.component';
+import { NavbarComponent } from './ss04_angular_component_and_template/practice/navbar/navbar.component';
+import { FooterComponent } from './footer/footer.component';
 
 
 @NgModule({
@@ -16,7 +20,11 @@ import { CalculatorSimpleComponent } from './ss03_angular_overview/exercise/calc
     PetComponent,
     PetComponent,
     UseBtContructionDisplayListProductComponent,
-    CalculatorSimpleComponent
+    CalculatorSimpleComponent,
+    AngularHackernewsAppComponent,
+    LikeComponent,
+    NavbarComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
