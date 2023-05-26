@@ -10,7 +10,11 @@ import { CalculatorSimpleComponent } from './ss03_angular_overview/exercise/calc
 import { AngularHackernewsAppComponent } from './ss04_angular_component_and_template/practice/angular-hackernews-app/angular-hackernews-app.component';
 import { LikeComponent } from './ss04_angular_component_and_template/practice/like/like.component';
 import { NavbarComponent } from './ss04_angular_component_and_template/practice/navbar/navbar.component';
-import { FooterComponent } from './footer/footer.component';
+import { FooterComponent } from './ss04_angular_component_and_template/practice/footer/footer.component';
+import { AngularNameCardComponent } from './ss05_componets_interaction/practice/angular-name-card/angular-name-card.component';
+import { ProgressBarComponent } from './ss05_componets_interaction/practice/progress-bar/progress-bar.component';
+import { RatingBarComponent } from './ss05_componets_interaction/exercise/rating-bar/rating-bar.component';
+import { CountdownTimerComponent } from './ss05_componets_interaction/exercise/countdown-timer/countdown-timer.component';
 
 
 @NgModule({
@@ -24,7 +28,11 @@ import { FooterComponent } from './footer/footer.component';
     AngularHackernewsAppComponent,
     LikeComponent,
     NavbarComponent,
-    FooterComponent
+    FooterComponent,
+    AngularNameCardComponent,
+    ProgressBarComponent,
+    RatingBarComponent,
+    CountdownTimerComponent
   ],
   imports: [
     BrowserModule,
