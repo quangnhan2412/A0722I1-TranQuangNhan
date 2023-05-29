@@ -1,0 +1,46 @@
+<form [formGroup]="rfLogin"  (ngSubmit)="onSubmit()">
+  <div class="form-outline">
+    <input
+      type="email" id="emailAddress" class="form-control form-control-lg" formControlName="email"
+      [ngClass]="rfLogin.controls['email'].invalid?'is-invalid':'is-valid'">
+    <!--      ngClass nó dùng để flow theo dữ liệu validate T or F -->
+    <label class="form-label" for="emailAddress">Email</label>
+    <div class="invalid-feedback">
+      <div class="text-danger"
+           *ngIf="rfLogin.controls.email?.errors?.required && rfLogin.controls.email?.touched">Please provide a
+        email.
+      </div>
+      <div
+        *ngIf="rfLogin.controls['email'].errors?.email && rfLogin.controls.email?.touched">Email must be in the
+        correct format
+      </div>
+    </div>
+    <div class="valid-feedback">
+      Looks good!
+    </div>
+  </div>
+  <div class="mb-3">
+    <label class="form-label">Password</label>
+    <input type="text" class="form-control" formControlName="password" #password
+           [ngClass]="rfLogin.controls['password'].invalid?'is-invalid':'is-valid'">
+
+    <div class="invalid-feedback">
+      <div *ngIf="rfLogin.controls['password'].errors?.required && rfLogin.controls['password'].touched">
+        Please provide a password.
+      </div>
+
+      <div *ngIf="rfLogin.controls['password'].errors?.minlength && rfLogin.controls['password'].touched">
+        Please input Password min length >5.
+      </div>
+    </div>
+    <div class="valid-feedback">
+      Looks good!
+    </div>
+  </div>
+
+
+  <!-- Submit button -->
+  <button type="submit" class="btn btn-primary btn-block mb-4" [disabled]="!rfLogin.valid">Sign in</button>
+
+
+</form>
