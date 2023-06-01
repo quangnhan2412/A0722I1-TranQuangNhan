@@ -1,0 +1,27 @@
+<div class="container">
+  <div class="row">
+    <div class="col-6">
+      <div class="card border-primary">
+        <h3 class="card-header bg-primary">Dictionary</h3>
+        <div class="card-body">
+          <h4 class="card-title">Word List</h4>
+          <table class="table">
+            <tr>
+              <th>#</th>
+              <th>Word</th>
+            </tr>
+            <tr *ngFor="let item of wordList;">
+              <td>{{item.id}}</td>
+              <td>
+                <span>{{item.word}}</span>
+              </td>
+              <td>
+                <button type="button" [routerLink]="['/detail',item.id]" class="btn bg-primary bg-primary">Dịch</button>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

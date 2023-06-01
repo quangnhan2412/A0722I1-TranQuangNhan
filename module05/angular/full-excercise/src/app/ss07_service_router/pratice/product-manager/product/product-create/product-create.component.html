@@ -1,0 +1,22 @@
+<h1>Create Product new</h1>
+-<form [formGroup]="productForm" (ngSubmit)="submit()">
+  <div class="input-group">
+    <label for="productCode">Product Code</label>
+    <input formControlName="id" type="text" class="form-control" name="productCode" id="productCode" aria-describedby="helpId" placeholder="Product Code">
+  </div>
+  <div class="input-group">
+    <label for="productName">Product Name</label>
+    <input formControlName="name" type="text" class="form-control" name="productName" id="productName" aria-describedby="helpId" placeholder="Product Name">
+  </div>
+  <div class="input-group">
+    <label for="productPrice">Product Price</label>
+    <input formControlName="price" type="number" class="form-control" name="productPrice" id="productPrice" aria-describedby="helpId" placeholder="Product Price">
+  </div>
+  <div class="input-group">
+    <label for="productDescription">Product Description</label>
+    <input formControlName="description" type="text" class="form-control" name="productPrice" id="productDescription" aria-describedby="helpId" placeholder="Product Description">
+  </div>
+-
+  <button type="submit" class="btn btn-primary" >Submit</button>
+
+</form>

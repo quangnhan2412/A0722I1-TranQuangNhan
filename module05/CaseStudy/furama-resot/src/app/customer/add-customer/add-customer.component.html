@@ -1,0 +1,35 @@
+<div class="container">
+  <h1>Customer List</h1>
+  <div class="table-responsive">
+    <table class="table table-striped">
+      <thead>
+      <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Date of Birth</th>
+        <th>Gender</th>
+        <th>ID Card</th>
+        <th>Phone</th>
+        <th>Email</th>
+        <th>Address</th>
+        <th>Customer Type ID</th>
+        <th>Status</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr *ngFor="let customer of customers">
+        <td>{{ customer.id }}</td>
+        <td>{{ customer.name }}</td>
+        <td>{{ customer.dateOfBirth }}</td>
+        <td>{{ customer.gender }}</td>
+        <td>{{ customer.idCard }}</td>
+        <td>{{ customer.phone }}</td>
+        <td>{{ customer.email }}</td>
+        <td>{{ customer.address }}</td>
+        <td>{{ customer.customerTypeId }}</td>
+        <td>{{ customer.status }}</td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
