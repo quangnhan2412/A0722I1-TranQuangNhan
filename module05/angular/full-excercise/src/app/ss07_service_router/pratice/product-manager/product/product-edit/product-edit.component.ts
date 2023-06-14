@@ -25,8 +25,7 @@ export class ProductEditComponent implements OnInit {
         id: new FormControl(product.id),
         name: new FormControl(product.name),
         price: new FormControl(product.price),
-        description: new FormControl(product.description),
-
+        description: new FormControl(product.description)
       });
     });
   }

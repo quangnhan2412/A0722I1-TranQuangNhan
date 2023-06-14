@@ -1,0 +1,28 @@
+<p class="text-danger">Chào bạn: {{name}}</p>
+
+<a [href]="link" [style.color]="mau">facebook</a>
+
+
+<div class="input-group">
+  <label for="first-number">First Number</label>
+  <input #firstNumber
+    type="number"
+    class="form-control" id="first-number" >
+</div>
+
+
+<div class="input-group">
+  <label for="first-number">Second Number</label>
+  <input #secondNumber
+    type="number"
+    class="form-control" id="second-number" >
+</div>
+
+<button type="button" class="btn btn-primary"
+        (click)="sum(firstNumber.value, secondNumber.value)">SUM</button>
+
+<p>Kết quả: {{result}}</p>
+
+<input type="color" [(ngModel)]="color">
+{{name}}
+<p [style.color]="color">Lorem ipsum.</p>

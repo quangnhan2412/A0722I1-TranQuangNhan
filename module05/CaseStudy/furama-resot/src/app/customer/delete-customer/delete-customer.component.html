@@ -1,0 +1,144 @@
+<div class="container" style="border-style: inset">
+  <h1 style="font-weight: bold; font-family: 'Arial,sans-serif',serif;text-align: center">Customer Delete</h1>
+  <div class="table-responsive" *ngIf="customerForm">
+    <form [formGroup]="customerForm" (ngSubmit)="deleteProduct(id)">
+      <div class="mb-3">
+        <label for="id" class="form-label">ID</label>
+        <input formControlName="id" type="text" class="form-control" id="id" name="id"
+               [ngClass]="customerForm.controls.id?.invalid?'is-invalid':'is-valid'">
+        <div class="invalid-feedback">
+          <div class="text-danger"
+               *ngIf="customerForm.controls.id?.errors?.required && customerForm.controls.id?.touched">Please provide a
+            ID.
+          </div>
+          <div
+            *ngIf="customerForm.controls.id?.errors?.pattern && customerForm.controls.id?.touched">ID must be in the
+            correct format (KH-XXXX).
+          </div>
+        </div>
+        <div class="valid-feedback">
+          Looks good!
+        </div>
+      </div>
+      <div class="mb-3">
+        <label for="customerType" class="form-label">Customer Type</label>
+        <select formControlName="customerType" class="form-select" id="customerType" name="customerType">
+          <option [value]="cusType.id" *ngFor="let cusType of customerType">{{cusType.name}}</option>
+        </select>
+      </div>
+      <div class="mb-3">
+        <label for="fullName" class="form-label">Full Name</label>
+        <input formControlName="fullName" type="text" class="form-control" id="fullName" name="fullName"
+               [ngClass]="customerForm.controls.fullName?.invalid?'is-invalid':'is-valid'">
+        <div class="invalid-feedback">
+          <div class="text-danger"
+               *ngIf="customerForm.controls.fullName?.errors?.required && customerForm.controls.id?.touched">Please
+            provide a
+            Full Name.
+          </div>
+        </div>
+        <div class="valid-feedback">
+          Looks good!
+        </div>
+      </div>
+      <div class="mb-3">
+        <label for="dayOfBirth" class="form-label">Date Of Birth</label>
+        <input formControlName="dayOfBirth" type="date" class="form-control" id="dayOfBirth" name="dayOfBirth"
+               [ngClass]="customerForm.controls.dayOfBirth?.invalid?'is-invalid':'is-valid'">
+        <div class="invalid-feedback">
+          <div class="text-danger"
+               *ngIf="customerForm.controls.dayOfBirth?.errors?.required && customerForm.controls.dayOfBirth?.touched">
+            Please provide a
+            Day Of Birth.
+          </div>
+        </div>
+        <div class="valid-feedback">
+          Looks good!
+        </div>
+      </div>
+      <div class="mb-3">
+        <label for="CMND" class="form-label">CMND</label>
+        <input formControlName="CMND" type="text" class="form-control" id="CMND" name="CMND"
+               [ngClass]="customerForm.controls.CMND?.invalid?'is-invalid':'is-valid'">
+        <div class="invalid-feedback">
+          <div class="text-danger"
+               *ngIf="customerForm.controls.CMND?.errors?.required && customerForm.controls.CMND?.touched">Please
+            provide a
+            CMND.
+          </div>
+          <div class="text-danger"
+               *ngIf="customerForm.controls.CMND?.errors?.pattern && customerForm.controls.CMND?.touched">Please
+            provide a
+            CMND must be in the
+            correct format (XXXXXXXXX) X is num ber 0-9.
+          </div>
+        </div>
+
+        <div class="valid-feedback">
+          Looks good!
+        </div>
+      </div>
+      <div class="mb-3">
+        <label for="numberPhone" class="form-label">Number Phone</label>
+        <input formControlName="numberPhone" type="text" class="form-control" id="numberPhone" name="numberPhone"
+               [ngClass]="customerForm.controls.numberPhone?.invalid?'is-invalid':'is-valid'">
+        <div class="invalid-feedback">
+          <div
+            *ngIf="customerForm.controls?.numberPhone?.errors?.required && customerForm.controls.numberPhone?.touched">
+            Please provide a phone.
+          </div>
+
+          <div
+            *ngIf="customerForm.controls?.numberPhone?.errors?.pattern && customerForm.controls.numberPhone?.touched">
+            Phone must be in the correct format
+          </div>
+        </div>
+        <div class="valid-feedback">
+          Looks good!
+        </div>
+      </div>
+      <div class="mb-3">
+        <label for="email" class="form-label">Email</label>
+        <input formControlName="email" type="email" class="form-control" id="email" name="email"
+               [ngClass]="customerForm.controls.email?.invalid?'is-invalid':'is-valid'">
+        <div class="invalid-feedback">
+          <div class="text-danger"
+               *ngIf="customerForm.controls.email?.errors?.required && customerForm.controls.email?.touched">Please
+            provide a
+            email.
+          </div>
+          <div
+            *ngIf="customerForm.controls['email'].errors?.email && customerForm.controls.email?.touched">Email must be
+            in the
+            correct format
+          </div>
+        </div>
+        <div class="valid-feedback">
+          Looks good!
+        </div>
+      </div>
+      <div class="mb-3">
+        <label for="address" class="form-label">Address</label>
+        <input formControlName="address" type="text" class="form-control" id="address" name="address"
+               [ngClass]="customerForm.controls.address?.invalid?'is-invalid':'is-valid'">
+
+        <div class="invalid-feedback">
+          <div
+            *ngIf="customerForm.controls?.address?.errors?.required && customerForm.controls.address?.touched">
+            Please provide a phone.
+          </div>
+        </div>
+        <div class="valid-feedback">
+          Looks good!
+        </div>
+      </div>
+      <div class="text-center mt-5">
+        <button type="submit" class="btn btn-primary btn-lg" [disabled]="!customerForm.valid">Delete</button>
+      </div>
+
+    </form>
+
+  </div>
+</div>
+
+

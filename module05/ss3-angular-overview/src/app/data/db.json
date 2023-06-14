@@ -1,0 +1,56 @@
+{
+  "students": [
+    {
+      "id": 1,
+      "name": "Khánh",
+      "score": 8.6,
+      "like": 10
+    },
+    {
+      "id": 2,
+      "name": "Nhân",
+      "score": 6.6,
+      "like": 5
+    },
+    {
+      "id": 3,
+      "name": "Vân",
+      "score": 1,
+      "like": 6
+    },
+    {
+      "name": "Nguyễn Văn",
+      "score": 9.5,
+      "password": "",
+      "confirmPassword": "",
+      "id": 4
+    },
+    {
+      "name": "Nguyễn Vă",
+      "score": 9.6,
+      "password": "",
+      "confirmPassword": "",
+      "id": 5
+    },
+    {
+      "name": "Khánh 222",
+      "score": 8.66,
+      "like": 10,
+      "id": 6
+    },
+    {
+      "name": "Nguyễn V",
+      "score": 9.5,
+      "password": "",
+      "confirmPassword": "",
+      "id": 7
+    },
+    {
+      "name": "Nhân Nhân",
+      "score": 1.2,
+      "password": "",
+      "confirmPassword": "",
+      "id": 8
+    }
+  ]
+}

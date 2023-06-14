@@ -1,0 +1,48 @@
+<table class="table">
+  <thead>
+  <tr>
+    <th>No.</th>
+    <th>Name</th>
+    <th>Score</th>
+    <th>Xếp loại</th>
+    <th>Like</th>
+    <th>Chi tiết</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let student of students | paginate: { itemsPerPage: 1, currentPage: p }; index as i">
+    <td scope="row">{{i + 1}}</td>
+    <td>{{student.name}}</td>
+    <td>{{student.score}}</td>
+    <td>
+      <!--      <ng-container *ngIf="student-list.score < 5">-->
+      <!--        Rớt module-->
+      <!--      </ng-container>-->
+      <!--      <ng-container *ngIf="student-list.score < 7 && student-list.score >= 5 ">-->
+      <!--        Khá-->
+      <!--      </ng-container>-->
+      <!--      <ng-container *ngIf="student-list.score  >= 7">-->
+      <!--        Tốt-->
+      <!--      </ng-container>-->
+
+      <ng-container *ngIf="student.score < 5; else block">
+        Rớt module
+      </ng-container>
+      <ng-template #block>
+        Qua module
+      </ng-template>
+    </td>
+    <td>
+      <app-like [like]="student.like"></app-like>
+    </td>
+    <td>
+      <a type="button" class="btn btn-primary" routerLink="/student/detail/{{student.id}}">Chi tiết</a>
+    </td>
+  </tr>
+  </tbody>
+</table>
+
+<pagination-controls (pageChange)="p = $event"
+                     previousLabel="Trước"
+                     nextLabel="Sau"
+></pagination-controls>

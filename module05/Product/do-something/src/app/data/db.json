@@ -1,0 +1,110 @@
+{
+  "product": [
+    {
+      "id": 2,
+      "name": "Nutifood1",
+      "price": "20001",
+      "manufactureDate": "2023-06-13",
+      "expirationDate": "2023-06-13",
+      "description": "Vip1",
+      "category": {
+        "id": 2,
+        "name": "Platinum"
+      }
+    },
+    {
+      "id": 3,
+      "name": "Vinamilk ",
+      "price": 1000,
+      "manufactureDate": "2023-01-30",
+      "expirationDate": "2024-01-30",
+      "description": "ngon",
+      "category": {
+        "id": 1,
+        "name": "Diamond"
+      }
+    },
+    {
+      "id": 4,
+      "name": "Honilac",
+      "price": 1000,
+      "manufactureDate": "2023-01-30",
+      "expirationDate": "2024-01-30",
+      "description": "mlem",
+      "category": {
+        "id": 2,
+        "name": "Platinum"
+      }
+    },
+    {
+      "id": 5,
+      "name": "Colosbaby",
+      "price": 1000,
+      "manufactureDate": "2023-01-30",
+      "expirationDate": "2024-01-30",
+      "description": "mlem",
+      "category": {
+        "id": 1,
+        "name": "Diamond"
+      }
+    },
+    {
+      "id": 6,
+      "name": "Vinamilk Organic Gold.",
+      "price": 1000,
+      "manufactureDate": "2023-01-30",
+      "expirationDate": "2024-01-30",
+      "description": "mlem",
+      "category": {
+        "id": 1,
+        "name": "Diamond"
+      }
+    },
+    {
+      "id": 7,
+      "name": "Colosbaby",
+      "price": 1000,
+      "manufactureDate": "2023-01-30",
+      "expirationDate": "2024-01-30",
+      "description": "mlem",
+      "category": {
+        "id": 1,
+        "name": "Diamond"
+      }
+    },
+    {
+      "id": 8,
+      "name": "Colosbaby",
+      "price": 1000,
+      "manufactureDate": "2023-01-30",
+      "expirationDate": "2024-01-30",
+      "description": "mlem",
+      "category": {
+        "id": 1,
+        "name": "Diamond"
+      }
+    },
+    {
+      "id": "KH-0001",
+      "name": "Th-Milk",
+      "price": "155445",
+      "manufactureDate": "2023-06-12",
+      "expirationDate": "2023-06-12",
+      "description": "ádsadsad",
+      "category": {
+        "id": 2,
+        "name": "Platinum"
+      }
+    }
+  ],
+  "category": [
+    {
+      "id": 1,
+      "name": "Diamond"
+    },
+    {
+      "id": 2,
+      "name": "Platinum"
+    }
+  ]
+}

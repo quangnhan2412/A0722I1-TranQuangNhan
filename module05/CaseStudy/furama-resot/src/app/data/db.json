@@ -1,0 +1,124 @@
+{
+  "customers": [
+    {
+      "id": "KH-0002",
+      "customerType": {
+        "id": 4,
+        "name": "Silver"
+      },
+      "fullName": "Nguyen Le Khanh9",
+      "dayOfBirth": "1995-05-05",
+      "end": "1999-05-05",
+      "CMND": "201827779",
+      "numberPhone": "0909090909",
+      "email": "tutorCG9@codeGym.vn",
+      "address": "Quang Nam9"
+    },
+    {
+      "id": "KH-0003",
+      "customerType": {
+        "id": 3,
+        "name": "Gold"
+      },
+      "fullName": "Nguyen Huu Huy",
+      "dayOfBirth": "2002-01-01",
+      "end": "2005-01-01",
+      "CMND": "201827776",
+      "numberPhone": "0909090909",
+      "email": "tutorCG@codeGym.vn",
+      "address": "Da Nang"
+    },
+    {
+      "id": "KH-0004",
+      "customerType": {
+        "id": 4,
+        "name": "Silver"
+      },
+      "fullName": "Tu Dam Van Thien",
+      "dayOfBirth": "2002-03-03",
+      "end": "2009-03-03",
+      "CMND": "201827776",
+      "numberPhone": "0909090909",
+      "email": "tutorCG@codeGym.vn",
+      "address": "Da Nang"
+    },
+    {
+      "id": "KH-0005",
+      "customerType": {
+        "id": 5,
+        "name": "Member"
+      },
+      "fullName": "Nguyen Thi Van",
+      "dayOfBirth": "1999-06-06",
+      "end": "2015-06-06",
+      "CMND": "201827776",
+      "numberPhone": "0909090909",
+      "email": "tutorCG@codeGym.vn",
+      "address": "Gia Lai"
+    },
+    {
+      "id": "KH-0013",
+      "customerType": {
+        "id": 1,
+        "name": "Diamond"
+      },
+      "fullName": "Le Hong Nhat",
+      "dayOfBirth": "1993-01-30",
+      "end": "1995-01-30",
+      "CMND": "201827776",
+      "numberPhone": "0909090909",
+      "email": "tutorCG@codeGym.vn",
+      "address": "Da Nang"
+    },
+    {
+      "id": "KH-0011",
+      "customerType": {
+        "id": 1,
+        "name": "Diamond"
+      },
+      "fullName": "Trần Quang Nhân",
+      "dayOfBirth": "2023-06-07",
+      "end": "2023-06-07",
+      "CMND": "123213213123",
+      "numberPhone": "0909090909",
+      "email": "tranquangnhan24122000@gmail.com",
+      "address": "Đà Nẵng"
+    },
+    {
+      "id": "KH-0099",
+      "customerType": {
+        "id": 2,
+        "name": "Platinum"
+      },
+      "fullName": "Trần Quang Nhân",
+      "dayOfBirth": "2000-01-01",
+      "end": "2009-01-01",
+      "CMND": "207878989",
+      "numberPhone": "0909050505",
+      "email": "tranquangnhan24122000@gmail.com",
+      "address": "k696 Tôn Đản,phường Hòa Phát ,quận Cẩm Lệ,tp Đà Nẵng"
+    }
+  ],
+  "customerType": [
+    {
+      "id": 1,
+      "name": "Diamond"
+    },
+    {
+      "id": 2,
+      "name": "Platinum"
+    },
+    {
+      "id": 3,
+      "name": "Gold"
+    },
+    {
+      "id": 4,
+      "name": "Silver"
+    },
+    {
+      "id": 5,
+      "name": "Member"
+    }
+  ]
+}

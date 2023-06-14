@@ -1,0 +1,126 @@
+<div class="container" style="border-style: inset">
+  <h1 style="font-weight: bold; font-family: 'Arial,sans-serif',serif;text-align: center">Product Create</h1>
+  <div class="table-responsive">
+    <form [formGroup]="productForm" (ngSubmit)="submitUpdateProduct()">
+      <div class="mb-3">
+        <label for="id" class="form-label">ID</label>
+        <input formControlName="id" type="text" class="form-control" id="id"
+               [ngClass]="productForm.controls.id?.invalid?'is-invalid':'is-valid'">
+        <div class="invalid-feedback">
+          <div class="text-danger"
+               *ngIf="productForm.controls.id?.errors?.required && productForm.controls.id?.touched">Please provide a
+            ID.
+          </div>
+          <div
+            *ngIf="productForm.controls.id?.errors?.pattern && productForm.controls.id?.touched">ID must be in the
+            correct format (KH-XXXX).
+          </div>
+        </div>
+        <div class="valid-feedback">
+          Looks good!
+        </div>
+      </div>
+      <!--      name?: string;-->
+      <!--      price?: number;-->
+      <!--      manufactureDate?: string;-->
+      <!--      expirationDate?: string;-->
+      <!--      description?: string;-->
+      <!--      category?: ICategory;-->
+      <div class="mb-3">
+        <label for="name" class="form-label">Name Product</label>
+        <input formControlName="name" type="text" class="form-control" id="name"
+               [ngClass]="productForm.controls.name?.invalid?'is-invalid':'is-valid'">
+        <div class="invalid-feedback">
+          <div class="text-danger"
+               *ngIf="productForm.controls.name?.errors?.required && productForm.controls.name?.touched">Please provide a
+            name.
+          </div>
+          <div
+            *ngIf="productForm.controls.id?.errors?.pattern && productForm.controls.id?.touched">ID must be in the
+            correct format (KH-XXXX).
+          </div>
+        </div>
+        <div class="valid-feedback">
+          Looks good!
+        </div>
+      </div>
+      <div class="mb-3">
+        <label for="price" class="form-label">Price Product</label>
+        <input formControlName="price" type="text" class="form-control" id="price"
+               [ngClass]="productForm.controls.price?.invalid?'is-invalid':'is-valid'">
+        <div class="invalid-feedback">
+          <div class="text-danger"
+               *ngIf="productForm.controls.price?.errors?.required && productForm.controls.price?.touched">Please provide a
+            price.
+          </div>
+          <div
+            *ngIf="productForm.controls.id?.errors?.pattern && productForm.controls.id?.touched">ID must be in the
+            correct format (KH-XXXX).
+          </div>
+        </div>
+        <div class="valid-feedback">
+          Looks good!
+        </div>
+      </div>
+      <div class="mb-3">
+        <label for="manufactureDate" class="form-label">Manufacture Date</label>
+        <input formControlName="manufactureDate" type="date" class="form-control" id="manufactureDate"
+               [ngClass]="productForm.controls.manufactureDate?.invalid?'is-invalid':'is-valid'">
+        <div class="invalid-feedback">
+          <div class="text-danger"
+               *ngIf="productForm.controls.manufactureDate?.errors?.required && productForm.controls.manufactureDate?.touched">
+            Please provide a
+            manufactureDate.
+          </div>
+        </div>
+        <div class="valid-feedback">
+          Looks good!
+        </div>
+      </div>
+      <div class="mb-3">
+        <label for="expirationDate" class="form-label">Expiration Date</label>
+        <input formControlName="expirationDate" type="date" class="form-control" id="expirationDate"
+               [ngClass]="productForm.controls.expirationDate?.invalid?'is-invalid':'is-valid'">
+        <div class="invalid-feedback">
+          <div class="text-danger"
+               *ngIf="productForm.controls.expirationDate?.errors?.required && productForm.controls.expirationDate?.touched">
+            Please provide a
+            expirationDate.
+          </div>
+        </div>
+        <div class="valid-feedback">
+          Looks good!
+        </div>
+      </div>
+      <div class="mb-3">
+        <label for="description" class="form-label">Description</label>
+        <input formControlName="description" type="text" class="form-control" id="description"
+               [ngClass]="productForm.controls.description?.invalid?'is-invalid':'is-valid'">
+        <div class="invalid-feedback">
+          <div class="text-danger"
+               *ngIf="productForm.controls.description?.errors?.required && productForm.controls.description?.touched">Please provide a
+            description.
+          </div>
+          <div
+            *ngIf="productForm.controls.description?.errors?.pattern && productForm.controls.description?.touched">ID must be in the
+            correct format (KH-XXXX).
+          </div>
+        </div>
+        <div class="valid-feedback">
+          Looks good!
+        </div>
+      </div>
+      <div class="mb-3">
+        <label for="category" class="form-label">Category </label>
+        <select formControlName="category" class="form-select" id="category" >
+          <option [ngValue]="item.id"  *ngFor="let item of category">{{item.name}}</option>
+        </select>
+      </div>
+
+
+      <div class="text-center mt-5">
+        <button type="submit" class="btn btn-primary btn-lg" [disabled]="!productForm.valid">Save</button>
+      </div>
+    </form>
+  </div>
+</div>

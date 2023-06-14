@@ -1,0 +1,59 @@
+<main class="container-fluid">
+  <p id="message" class="text-danger text-center fs-2"></p>
+  <div class="container d-flex justify-content-between mt-2">
+    <button class="btn btn-primary save" routerLink="/facility/create">Add Facility <i
+      class="fas fa-plus-square"></i></button>
+<!--    <form >-->
+<!--      <div class="d-flex">-->
+<!--        <input class="form-control" type="text" name="name" placeholder="search name">-->
+<!--        <input class="form-control ms-2" type="text" name="email"-->
+<!--               placeholder="search email">-->
+<!--        <select class="form-select ms-2" >-->
+<!--          <option value="">Customer Type</option>-->
+<!--          <option></option>-->
+<!--        </select>-->
+<!--        <button class="btn btn-primary ms-2 form-control save">Search</button>-->
+<!--      </div>-->
+<!--    </form>-->
+  </div>
+  <p class="text-center fs-3 mt-2">LIST FACILITY</p>
+  <table class="table table-bordered table-striped">
+    <thead>
+    <tr>
+      <th>No.</th>
+      <th>Name</th>
+      <th>Cost</th>
+      <th>Area</th>
+      <th>Max People</th>
+      <th>Standard Room</th>
+      <th>Description</th>
+      <th>Pool Area</th>
+      <th>Number Of Floor</th>
+      <th>Facility Free</th>
+      <th>Rent Type</th>
+      <th>Facility Type</th>
+      <th>Action</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let f of facilityList,index as i">
+      <td>{{i + 1}}</td>
+      <td>{{f.name}}</td>
+      <td>{{f.cost}}</td>
+      <td>{{f.area}}</td>
+      <td>{{f.maxPeople}}</td>
+      <td>{{f.standardRoom}}</td>
+      <td>{{f.description}}</td>
+      <td>{{f.poolArea}}</td>
+      <td>{{f.numberOfFloor}}</td>
+      <td>{{f.facilityFree}}</td>
+      <td>{{f.rentType.name}}</td>
+      <td>{{f.facilityType.name}}</td>
+      <td>Delete</td>
+      <td>
+        <button class="btn btn-primary" routerLink="/facility/edit/{{f.id}}">Edit</button>
+      </td>
+    </tr>
+    </tbody>
+  </table>
+</main>

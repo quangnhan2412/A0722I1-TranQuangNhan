@@ -1,0 +1,62 @@
+<main>
+  <p class="text-center fs-3 fw-bold">Add Contract</p>
+  <div class="col-md-4 offset-md-4 mt-4 mb-4">
+    <div class="card">
+      <div class="card-body">
+        <form [formGroup]="contractCreateForm" (ngSubmit)="onSubmit()">
+          <div class="row">
+            <input id="idEdit" class="form-control" hidden>
+            <div class="mb-3">
+              <label class="form-label">Start Date</label>
+              <input type="date" class="form-control" formControlName="startDate">
+              <div *ngIf="startDateControl().invalid && startDateControl().dirty || startDateControl().touched"
+                   class="text-danger">
+                <div *ngIf="startDateControl().errors?.required">Start Date must be required</div>
+              </div>
+            </div>
+            <div class="mb-3">
+              <label class="form-label">End Date</label>
+              <input type="date" class="form-control" formControlName="endDate">
+              <div *ngIf="endDateControl().invalid && endDateControl().dirty || endDateControl().touched"
+                   class="text-danger">
+                <div *ngIf="endDateControl().errors?.required">End Date must be required</div>
+              </div>
+            </div>
+            <div class="mb-3">
+              <label class="form-label">Deposit</label>
+              <input type="number" class="form-control" disabled>
+            </div>
+            <div class="mb-3">
+              <label class="form-label">Total</label>
+              <input type="text" class="form-control" disabled>
+            </div>
+            <div class="mb-3">
+              <label class="form-label">Customer</label>
+              <select class="form-select" formControlName="customer">
+                <option [ngValue]="{}">Search Customer</option>
+                <option [ngValue]="item" *ngFor="let item of customerList">{{item.name}}</option>
+              </select>
+              <div *ngIf="customerControl().invalid && customerControl().dirty || customerControl().touched"
+                   class="text-danger">
+                <div *ngIf="customerControl().errors?.required">Customer must be required</div>
+              </div>
+            </div>
+            <div class="mb-3">
+              <label class="form-label">Facility</label>
+              <select class="form-select" formControlName="facility">
+                <option [ngValue]="{}">Search facility</option>
+                <option [ngValue]="f" *ngFor="let f of facilityList">{{f.name}}</option>
+              </select>
+              <div *ngIf="facilityControl().invalid && facilityControl().dirty || facilityControl().touched"
+                   class="text-danger">
+                <div *ngIf="facilityControl().errors?.required">Facility must be required</div>
+              </div>
+            </div>
+          </div>
+          <button type="button" class="btn btn-primary btn-md me-4" id="cancel">Cancel</button>
+          <button type="submit" class="btn btn-primary btn-md" [disabled]="contractCreateForm.invalid">Save</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</main>

@@ -1,0 +1,25 @@
+<form action="" [formGroup]="rfStudent" (ngSubmit)="addStudent()">
+  <div class="input-group">
+    <label for="name">Name</label>
+    <input #name
+           type="text"
+           class="form-control" id="name" formControlName="name">
+  </div>
+  <p class="text-danger" *ngIf="rfStudent.controls.name?.touched && rfStudent.controls.name?.errors?.required">touched => Tên bắt buộc nhập</p>
+  <p class="text-danger" *ngIf="rfStudent.controls.name?.untouched && rfStudent.controls.name?.errors?.required">untouched => Tên bắt buộc nhập</p>
+  <p class="text-danger" *ngIf="rfStudent.controls.name?.dirty && rfStudent.controls.name?.errors?.required">dirty => Tên bắt buộc nhập</p>
+  <p class="text-danger" *ngIf="rfStudent.controls.name?.pristine && rfStudent.controls.name?.errors?.required">pristine => Tên bắt buộc nhập</p>
+  <p class="text-danger" *ngIf="rfStudent.controls.name?.errors?.minlength">Tên phải >= 5 ký tự</p>
+  <p class="text-danger" *ngIf="rfStudent.controls.name?.errors?.maxlength">Tên phải <= 10 ký tự</p>
+  <p class="text-danger" *ngIf="rfStudent.controls.name?.errors?.pattern">Tên phải không được chưa số</p>
+
+  <div class="input-group">
+    <label for="score">Score</label>
+    <input #score
+           type="number"
+           class="form-control" id="score" formControlName="score">
+  </div>
+  <p class="text-danger" *ngIf="rfStudent.controls.score?.errors?.required">Điểm bắt buộc nhập</p>
+  <p class="text-danger" *ngIf="rfStudent.controls.score?.errors?.invalidScore">Điểm không hợp lệ</p>
+  <button [disabled]="rfStudent.invalid" type="submit" class="btn btn-primary">Save</button>
+</form>

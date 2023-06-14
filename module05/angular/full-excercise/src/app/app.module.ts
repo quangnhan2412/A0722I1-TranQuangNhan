@@ -33,6 +33,7 @@ import { DictionayPageComponent } from './ss07_service_router/exercise/dictionay
 import { DictionayDetailComponent } from './ss07_service_router/exercise/dictionay-detail/dictionay-detail.component';
 import { ProductEditComponent } from './ss07_service_router/pratice/product-manager/product/product-edit/product-edit.component';
 import { ProductDeleteComponent } from './ss07_service_router/pratice/product-manager/product/product-delete/product-delete.component';
+import {HttpClientModule} from '@angular/common/http';
 
 
 @NgModule({
@@ -69,7 +70,8 @@ import { ProductDeleteComponent } from './ss07_service_router/pratice/product-ma
     FormsModule,
     ReactiveFormsModule,
     RouterModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

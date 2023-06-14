@@ -18,6 +18,6 @@ export class TimelinesAppComponent implements OnInit {
 
 
   onChange(value: string) {
-    this.output = this.dateUtilService.ffToNow(value)
+    this.output = this.dateUtilService.ffToNow(value);
   }
 }
