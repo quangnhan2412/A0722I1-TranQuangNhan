@@ -4,7 +4,7 @@
     <form [formGroup]="productForm" (ngSubmit)="submitAddProduct()">
       <div class="mb-3">
         <label for="id" class="form-label">ID</label>
-        <input formControlName="id" type="text" class="form-control" id="id"
+        <input formControlName="id" type="hidden" class="form-control" id="id"
                [ngClass]="productForm.controls.id?.invalid?'is-invalid':'is-valid'">
         <div class="invalid-feedback">
           <div class="text-danger"

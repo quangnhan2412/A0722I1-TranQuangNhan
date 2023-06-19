@@ -12,6 +12,8 @@ import {NgxPaginationModule} from 'ngx-pagination';
 import { ProductCreateComponent } from './product/product-create/product-create.component';
 import {ReactiveFormsModule} from '@angular/forms';
 import { ProductUpdateComponent } from './product/product-update/product-update.component';
+import { BenhAnListComponent } from './benh-vien/benh-an-list/benh-an-list.component';
+import { BenhAnUpdateComponent } from './benh-vien/benh-an-update/benh-an-update.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +23,8 @@ import { ProductUpdateComponent } from './product/product-update/product-update.
     ProductListComponent,
     ProductCreateComponent,
     ProductUpdateComponent,
+    BenhAnListComponent,
+    BenhAnUpdateComponent,
   ],
   imports: [
     BrowserModule,

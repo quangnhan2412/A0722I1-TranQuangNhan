@@ -1,0 +1,34 @@
+{
+  "IBenhAn": [
+    {
+      "id": "BA-444",
+      "maBenhNhan": {
+        "id": "BN-153",
+        "name": "Don Thi E"
+      },
+      "ngayNhapVien": "2017-01-30",
+      "ngayRaVien": "2018-01-30",
+      "lyDoNhapVien": "Covid-2019",
+      "phuongPhapDieuTri": "ung thu giai doan cuoi",
+      "bacSiDieuTri": "Le Van B"
+    }
+  ],
+  "IBenhNhan": [
+    {
+      "id": "BN-435",
+      "name": "Nguyen Van A"
+    },
+    {
+      "id": "BN-123",
+      "name": "Nguyen Van C"
+    },
+    {
+      "id": "BN-984",
+      "name": "Ton Van C"
+    },
+    {
+      "id": "BN-153",
+      "name": "Doan Thi E"
+    }
+  ]
+}
