@@ -4,7 +4,6 @@ import com.example.furamaresotmanagentapplication.entity.employee.Division;
 import com.example.furamaresotmanagentapplication.entity.employee.EducationDegree;
 import com.example.furamaresotmanagentapplication.entity.employee.Employee;
 import com.example.furamaresotmanagentapplication.entity.employee.Position;
-import com.example.furamaresotmanagentapplication.entity.facility.Facility;
 import com.example.furamaresotmanagentapplication.service.employee.DivisionService;
 import com.example.furamaresotmanagentapplication.service.employee.EducationDegreeService;
 import com.example.furamaresotmanagentapplication.service.employee.EmployeeService;

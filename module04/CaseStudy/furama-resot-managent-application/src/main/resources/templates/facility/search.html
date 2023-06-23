@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table class="table table-striped table-bordered" id="facilities">
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script type="text/javascript"></script>
+  <div th:replace="/home :: head"></div>
+  <div th:replace="/home :: navbar"></div>
+  <h1>Search All</h1>
+  <thead>
+  <tr class="bg-success">
+    <th><input type="checkbox"/></th>
+    <td>ID</td>
+    <td>Name</td>
+    <td>Area</td>
+    <td>Cost</td>
+    <td>Max People</td>
+    <td>Rent Type</td>
+    <td>Facility Type</td>
+    <td>Standard Room</td>
+    <td>Action</td>
+
+  </tr>
+  </thead>
+  <tbody >
+  <tr th:each="row,rowStat : ${facilityList}" th:object="${row}"  >
+    <td><input type="checkbox" th:value="*{id}" name="idx">
+      <!--                <input type="hidden"  th:value="*{name}" id="delAll" >-->
+    </td>
+    <td th:text="${row.id}"></td>
+    <td th:text="${row.name}"></td>
+    <td th:text="${row.getArea()}"></td>
+    <td th:text="${row.getCost()}"></td>
+    <td th:text="${row.getMaxPeople()}"></td>
+    <td th:text="${row.rentTypes.name}"></td>
+    <td th:text="${row.facilityTypes.name}"></td>
+    <td th:text="${row.standardRoom}"></td>
+    <td>    <a th:href="@{/facility/edit/{id}(id=${row.id})}">Update</a>
+      <button id="dataIdBtn" th:attr="data-name=${row.name}, data-id=${row.id}" th:value="${row.id}" onclick="objDelete()" data-toggle="modal1" data-target="#exampleModal">Delete</button>
+      <a th:href="@{/facility/view/{id}(id=${row.id})}">View</a>
+    </td>
+
+  </tr>
+  </tbody>
+</table>
+<!--phân trang-->
+<div>
+    <span>
+    <a th:if="${facilityList.hasPrevious()}" th:href="@{/facility/search(page=${facilityList.number - 1}, searchAll=${searchAll})}" >
+        Previous
+    </a>
+</span>
+  <span>
+    <a  th:if="${facilityList.hasNext()}" th:href="@{/facility/search(page=${facilityList.number + 1}, searchAll=${searchAll})} ">
+        Next
+    </a>
+</span>
+  <span th:each="pageNo : ${#numbers.sequence(0,facilityList.totalPages  - 1) }">
+        <a th:href="@{/facility/search(page= ${pageNo}, searchAll=${searchAll})}" th:text="${pageNo}" ></a>
+    </span>
+</div>
+
+<p>
+  <a class="btn btn-success" th:href="@{/facility/list}">
+Back to List Facility  </a>
+</p>
+<div th:replace="/home :: footer"></div>
+</body>
+</html>

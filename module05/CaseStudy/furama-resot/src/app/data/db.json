@@ -1,20 +1,6 @@
 {
   "customers": [
     {
-      "id": "KH-0002",
-      "customerType": {
-        "id": 4,
-        "name": "Silver"
-      },
-      "fullName": "Nguyen Le Khanh9",
-      "dayOfBirth": "1995-05-05",
-      "end": "1999-05-05",
-      "CMND": "201827779",
-      "numberPhone": "0909090909",
-      "email": "tutorCG9@codeGym.vn",
-      "address": "Quang Nam9"
-    },
-    {
       "id": "KH-0003",
       "customerType": {
         "id": 3,

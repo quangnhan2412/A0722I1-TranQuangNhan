@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="/home :: header">
+  <meta charset="UTF-8">
+  <title>Tin Tức Create</title>
+</head>
+<body>
+<div th:replace="/home :: head"></div>
+<div th:replace="/home :: navbar"></div>
+
+<form method="post" th:action="@{/danhmuc/save}" th:object="${tinTuc}">
+  <div class="container justify-content-center">
+    <label for="id">ID: <span style="color: red;"> *</span></label>
+    <div class="form-group">
+      <div class="form-line">
+        <input type="text" id="id" class="form-control"  placeholder="ID" th:field="*{id}" readonly/>
+                        <span th:if="${#fields.hasErrors('id')}" th:errors="*{id}"></span>
+      </div>
+    </div>
+
+
+  <div class="input-group" style="display: block" >
+    <label>Tiêu Đề</label>
+    <p class="input-group-text">
+      <input type="text" class="form-control" name="tieuDe" placeholder="Tiêu Đề" th:field="*{tieuDe}"/>
+      <span th:if="${#fields.hasErrors('tieuDe')}" th:errors="*{tieuDe}" style="color: red"></span>
+    </p>
+  </div>
+    <label>Danh Mục</label>
+    <select  class="form-select form-select-lg mb-3"
+             aria-label=".form-select-lg example" th:field="*{danhMuc}">
+      <option th:each="item : ${danhMuc}"
+              th:text="${item.danhMucName}"
+              th:value="${item.id}"></option>
+    </select>
+    <div class="input-group" style="display: block" >
+      <label>Nội Dung</label>
+      <p class="input-group-text">
+        <input type="text" class="form-control" name="noiDung" placeholder="Nội Dung" th:field="*{noiDung}"/>
+        <span th:if="${#fields.hasErrors('noiDung')}" th:errors="*{noiDung}" style="color: red"></span>
+      </p>
+    </div>
+
+    <div class="input-group" style="display: block">
+    <label>Ngày đăng tin</label>
+    <p class="input-group-text">
+      <input type="date" class="form-control"  name="ngayDangTin" placeholder="Ngày đăng tin" th:field="*{ngayDangTin}"/>
+                      <span th:if="${#fields.hasErrors('ngayDangTin')}" th:errors="*{ngayDangTin}"  style="color: red"></span>
+    </p>
+  </div>
+
+
+  <div class="input-group" style="display: block">
+    <label>Phóng Viên</label>
+    <p class="input-group-text">
+      <input type="text" class="form-control" name="phongVien" placeholder="Phóng Viên" th:field="*{phongVien}" />
+      <span th:if="${#fields.hasErrors('phongVien')}" th:errors="*{phongVien}" style="color: red"></span>
+
+    </p>
+  </div>
+  </div>
+    <div class="input-group">
+      <input class="btn btn-success" type="submit" value="Save">
+    </div>
+  </div>
+</form>
+<p>
+  <a class="btn btn-success" th:href="@{/danhsach/list}">
+    Back to List   </a>
+</p>
+<div th:replace="/home :: footer"></div>
+</body>
+</html>

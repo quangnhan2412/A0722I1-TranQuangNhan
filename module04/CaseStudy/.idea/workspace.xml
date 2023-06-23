@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="bed4ff32-c4d5-4345-baa7-8f5c50d6417d" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../off-md4/src/main/java/com/example/offmd4/entity/Company.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../off-md4/src/main/java/com/example/offmd4/entity/DuAn.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../thi_md4/src/main/java/com/example/thi_md4/entity/Company.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../thi_md4/src/main/java/com/example/thi_md4/entity/Project.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../tryhard-md4/src/main/java/com/example/tryhardmd4/controller/TinTucController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../tryhard-md4/src/main/java/com/example/tryhardmd4/entity/DanhMuc.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../tryhard-md4/src/main/java/com/example/tryhardmd4/entity/TinTuc.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../tryhard-md4/src/main/resources/templates/danhmuc/view.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Inter/tonghong_admin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Inter/tonghop_web" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/furama-resot-managent-application/src/main/java/com/example/furamaresotmanagentapplication/controller/EmployeeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/furama-resot-managent-application/src/main/java/com/example/furamaresotmanagentapplication/controller/EmployeeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/furama-resot-managent-application/src/main/java/com/example/furamaresotmanagentapplication/validate/FacilityValidate.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/furama-resot-managent-application/src/main/resources/templates/employee/list.html" beforeDir="false" afterPath="$PROJECT_DIR$/furama-resot-managent-application/src/main/resources/templates/employee/list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/furama-resot-managent-application/src/main/resources/templates/facility/list.html" beforeDir="false" afterPath="$PROJECT_DIR$/furama-resot-managent-application/src/main/resources/templates/facility/list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss02_spring_controller/pratice/customer_list_management_ application" beforeDir="false" afterPath="$PROJECT_DIR$/../ss02_spring_controller/pratice/customer_list_management_ application" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectId" id="2O0Mf2DGBjhrReqxP4RWkurEnT4" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "D:/CodeGym/Source Code/A0722I1-TranQuangNhan/module04/CaseStudy/furama-resot-managent-application",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="bed4ff32-c4d5-4345-baa7-8f5c50d6417d" name="Changes" comment="" />
+      <created>1680693145981</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1680693145981</updated>
+      <workItem from="1680693147726" duration="182000" />
+      <workItem from="1682218092406" duration="516000" />
+      <workItem from="1683543641414" duration="2760000" />
+      <workItem from="1683909798175" duration="31000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

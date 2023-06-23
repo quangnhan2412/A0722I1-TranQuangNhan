@@ -1,0 +1,133 @@
+<div class="container" style="border-style: inset">
+  <h1 style="font-weight: bold; font-family: 'Arial,sans-serif',serif;text-align: center">Product Create</h1>
+  <div class="table-responsive" *ngIf="benhAnForm">
+    <form [formGroup]="benhAnForm" (ngSubmit)="updateBenhAn()">
+      <div class="mb-3">
+        <label for="id" class="form-label">Mã Bệnh Án</label>
+        <input formControlName="id" type="text" class="form-control" id="id"
+               [ngClass]="benhAnForm.controls.id?.invalid?'is-invalid':'is-valid'" readonly>
+        <div class="invalid-feedback">
+          <div class="text-danger"
+               *ngIf="benhAnForm.controls.id?.errors?.required && benhAnForm.controls.id?.touched">Please provide a
+            ID.
+          </div>
+          <div
+            *ngIf="benhAnForm.controls.id?.errors?.pattern && benhAnForm.controls.id?.touched">ID must be in the
+            correct format (BA-XXX).
+          </div>
+        </div>
+        <div class="valid-feedback">
+          Looks good!
+        </div>
+      </div>
+      <div class="mb-3">
+        <label for="maBenhNhan" class="form-label">Mã Bệnh Nhân</label>
+        <input formControlName="maBenhNhan" type="text" class="form-control" id="maBenhNhan"
+               [ngClass]="benhAnForm.controls.maBenhNhan?.invalid?'is-invalid':'is-valid'" readonly>
+        <div class="invalid-feedback">
+          <div class="text-danger"
+               *ngIf="benhAnForm.controls.maBenhNhan?.errors?.required && benhAnForm.controls.maBenhNhan?.touched">Please provide a
+            ID.
+          </div>
+          <div
+            *ngIf="benhAnForm.controls.maBenhNhan?.errors?.pattern && benhAnForm.controls.maBenhNhan?.touched">ID must be in the
+            correct format (BN-XXX).
+          </div>
+        </div>
+        <div class="valid-feedback">
+          Looks good!
+        </div>
+      </div>
+
+      <div class="mb-3">
+        <label for="tenBenhNhan" class="form-label">Tên Bệnh Nhân</label>
+        <input formControlName="tenBenhNhan" type="text" class="form-control" id="tenBenhNhan"
+               [ngClass]="benhAnForm.controls.tenBenhNhan?.invalid?'is-invalid':'is-valid'" >
+        <div class="invalid-feedback">
+          <div class="text-danger"
+               *ngIf="benhAnForm.controls.tenBenhNhan?.errors?.required && benhAnForm.controls.tenBenhNhan?.touched">Vui lòng cung cấp tên
+          </div>
+        </div>
+        <div class="valid-feedback">
+          Looks good!
+        </div>
+      </div>
+      <div class="mb-3">
+        <label for="ngayNhapVien" class="form-label">Ngày nhập viện</label>
+        <input formControlName="ngayNhapVien" type="date" class="form-control" id="ngayNhapVien"
+               [ngClass]="benhAnForm.controls.ngayNhapVien?.invalid?'is-invalid':'is-valid'">
+        <div class="invalid-feedback">
+          <div class="text-danger"
+               *ngIf="benhAnForm.controls.ngayNhapVien?.errors?.required && benhAnForm.controls.ngayNhapVien?.touched">
+            Lòng cung cấp
+            ngày nhậo viện
+          </div>
+        </div>
+        <div class="valid-feedback">
+          Looks good!
+        </div>
+      </div>
+      <div class="mb-3">
+        <label for="ngayRaVien" class="form-label">Ngày ra viện</label>
+        <input formControlName="ngayRaVien" type="date" class="form-control" id="ngayRaVien"
+               [ngClass]="benhAnForm.controls.ngayRaVien?.invalid?'is-invalid':'is-valid'">
+        <div class="invalid-feedback">
+          <div class="text-danger"
+               *ngIf="benhAnForm.controls.ngayRaVien?.errors?.required && benhAnForm.controls.ngayNhapVien?.touched">
+            Lòng cung cấp
+            ngày ra viện
+          </div>
+        </div>
+        <div class="valid-feedback">
+          Looks good!
+        </div>
+      </div>
+
+      <div class="mb-3">
+        <label for="lyDoNhapVien" class="form-label">Lý do Nhập viện</label>
+        <input formControlName="lyDoNhapVien" type="text" class="form-control" id="lyDoNhapVien"
+               [ngClass]="benhAnForm.controls.lyDoNhapVien?.invalid?'is-invalid':'is-valid'">
+        <div class="invalid-feedback">
+          <div class="text-danger"
+               *ngIf="benhAnForm.controls.lyDoNhapVien?.errors?.required && benhAnForm.controls.lyDoNhapVien?.touched">Vui lòng cung cấp lý do nhập viện
+          </div>
+        </div>
+        <div class="valid-feedback">
+          Looks good!
+        </div>
+      </div>
+      <div class="mb-3">
+        <label for="phuongPhapDieuTri" class="form-label">Phương pháp điều trị</label>
+        <input formControlName="phuongPhapDieuTri" type="text" class="form-control" id="phuongPhapDieuTri"
+               [ngClass]="benhAnForm.controls.phuongPhapDieuTri?.invalid?'is-invalid':'is-valid'">
+        <div class="invalid-feedback">
+          <div class="text-danger"
+               *ngIf="benhAnForm.controls.phuongPhapDieuTri?.errors?.required && benhAnForm.controls.phuongPhapDieuTri?.touched">Vui lòng cung cấp lý do phuương pháp điều trị
+          </div>
+        </div>
+        <div class="valid-feedback">
+          Looks good!
+        </div>
+      </div>
+      <div class="mb-3">
+        <label for="bacSiDieuTri" class="form-label">Bác sĩ điều trị</label>
+        <input formControlName="bacSiDieuTri" type="text" class="form-control" id="bacSiDieuTri"
+               [ngClass]="benhAnForm.controls.bacSiDieuTri?.invalid?'is-invalid':'is-valid'">
+        <div class="invalid-feedback">
+          <div class="text-danger"
+               *ngIf="benhAnForm.controls.bacSiDieuTri?.errors?.required && benhAnForm.controls.bacSiDieuTri?.touched">Vui lòng cung cấp lý do phuương pháp điều trị
+          </div>
+        </div>
+        <div class="valid-feedback">
+          Looks good!
+        </div>
+      </div>
+
+
+
+      <div class="text-center mt-5">
+        <button type="submit" class="btn btn-primary btn-lg" [disabled]="!benhAnForm.valid">Save</button>
+      </div>
+    </form>
+  </div>
+</div>

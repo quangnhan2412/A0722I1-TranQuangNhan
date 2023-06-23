@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="e8a41265-22a3-402f-a7b1-172f249e648e" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../../module04/ss05_operation_csdl_orm/pratice/customer-management/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module04/ss05_operation_csdl_orm/pratice/customer-management/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module04/ss05_operation_csdl_orm/pratice/customer-management/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module04/ss05_operation_csdl_orm/pratice/customer-management/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module04/ss05_operation_csdl_orm/pratice/customer-management/src/main/java/org/example/config/AppConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module04/ss05_operation_csdl_orm/pratice/customer-management/src/main/java/org/example/config/AppInitializer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module04/ss05_operation_csdl_orm/pratice/customer-management/src/main/java/org/example/controller/CustomerController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module04/ss05_operation_csdl_orm/pratice/customer-management/src/main/java/org/example/model/Customer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module04/ss05_operation_csdl_orm/pratice/customer-management/src/main/java/org/example/service/CustomerService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module04/ss05_operation_csdl_orm/pratice/customer-management/src/main/java/org/example/service/ICustomerService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module04/ss05_operation_csdl_orm/pratice/customer-management/src/main/webapp/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Inter/intern_out/demo/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Inter/intern_out/demo/src/main/java/Controller/ProductServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Inter/intern_out/demo/src/main/java/bean/model/Product.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Inter/intern_out/demo/src/main/java/bean/repository/ProductRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Inter/intern_out/demo/src/main/java/bean/repository/ProductRepositoryImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Inter/intern_out/demo/src/main/java/bean/service/ProductService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Inter/intern_out/demo/src/main/java/bean/service/ProductServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Inter/intern_out/demo/src/main/java/service.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Inter/intern_out/demo/src/main/webapp/product/create.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Inter/intern_out/demo/src/main/webapp/product/list.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Inter/intern_out/demo/src/main/webapp/product/update.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module03/CaseStudy_DB_JSTL/Module2_AccountName_WBE/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../../module03/CaseStudy_DB_JSTL/Module2_AccountName_WBE/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module03/CaseStudy_DB_JSTL/Module2_AccountName_WBE/src/main/java/Controller/CustomerServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../module03/CaseStudy_DB_JSTL/Module2_AccountName_WBE/src/main/java/Controller/CustomerServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module03/CaseStudy_DB_JSTL/Module2_AccountName_WBE/src/main/java/bean/repository/person/CustomerRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../module03/CaseStudy_DB_JSTL/Module2_AccountName_WBE/src/main/java/bean/repository/person/CustomerRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module03/CaseStudy_DB_JSTL/Module2_AccountName_WBE/src/main/java/bean/repository/person/CustomerRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../module03/CaseStudy_DB_JSTL/Module2_AccountName_WBE/src/main/java/bean/repository/person/CustomerRepositoryImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module03/CaseStudy_DB_JSTL/Module2_AccountName_WBE/src/main/java/bean/service/CustomerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../module03/CaseStudy_DB_JSTL/Module2_AccountName_WBE/src/main/java/bean/service/CustomerService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module03/CaseStudy_DB_JSTL/Module2_AccountName_WBE/src/main/java/bean/service/CustomerServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../module03/CaseStudy_DB_JSTL/Module2_AccountName_WBE/src/main/java/bean/service/CustomerServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module03/CaseStudy_DB_JSTL/Module2_AccountName_WBE/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../module03/CaseStudy_DB_JSTL/Module2_AccountName_WBE/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module03/CaseStudy_DB_JSTL/Module2_AccountName_WBE/src/main/webapp/customer/list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../../module03/CaseStudy_DB_JSTL/Module2_AccountName_WBE/src/main/webapp/customer/list.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module03/CaseStudy_DB_JSTL/Module2_AccountName_WBE/src/main/webapp/customer/update.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../../module03/CaseStudy_DB_JSTL/Module2_AccountName_WBE/src/main/webapp/customer/update.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module03/CaseStudy_DB_JSTL/Module2_AccountName_WBE/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../../module03/CaseStudy_DB_JSTL/Module2_AccountName_WBE/src/main/webapp/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module03/CaseStudy_DB_JSTL/create_db_furama_jstl.sql" beforeDir="false" afterPath="$PROJECT_DIR$/../../module03/CaseStudy_DB_JSTL/create_db_furama_jstl.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module03/off_module3/baithimodule3/src/main/java/Controller/TComplexServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../module03/off_module3/baithimodule3/src/main/java/Controller/TComplexServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module03/off_module3/baithimodule3/src/main/java/bean/model/ToaNhaTComplex.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../module03/off_module3/baithimodule3/src/main/java/bean/model/ToaNhaTComplex.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module03/off_module3/baithimodule3/src/main/java/bean/repository/ToaNhaRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../module03/off_module3/baithimodule3/src/main/java/bean/repository/ToaNhaRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module03/off_module3/baithimodule3/src/main/java/bean/repository/ToaNhaRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../module03/off_module3/baithimodule3/src/main/java/bean/repository/ToaNhaRepositoryImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module03/off_module3/baithimodule3/src/main/java/bean/service/ToaNhaService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../module03/off_module3/baithimodule3/src/main/java/bean/service/ToaNhaService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module03/off_module3/baithimodule3/src/main/java/bean/service/ToaNhaServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../module03/off_module3/baithimodule3/src/main/java/bean/service/ToaNhaServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module03/off_module3/baithimodule3/src/main/webapp/toanha/create.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../../module03/off_module3/baithimodule3/src/main/webapp/toanha/create.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module03/off_module3/baithimodule3/src/main/webapp/toanha/list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../../module03/off_module3/baithimodule3/src/main/webapp/toanha/list.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module03/ss12_JDBC_CRUD/practice/user-manager/src/main/java/config/CharsetFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../module03/ss12_JDBC_CRUD/practice/user-manager/src/main/java/config/CharsetFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module04/ss03_views_thymeleaf/exercise/product-management/.gradle/7.5.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../module04/ss03_views_thymeleaf/exercise/product-management/.gradle/7.5.1/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module04/ss03_views_thymeleaf/exercise/product-management/.gradle/7.5.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../module04/ss03_views_thymeleaf/exercise/product-management/.gradle/7.5.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module04/ss03_views_thymeleaf/exercise/product-management/.gradle/7.5.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../module04/ss03_views_thymeleaf/exercise/product-management/.gradle/7.5.1/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module04/ss03_views_thymeleaf/exercise/product-management/.gradle/7.5.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../module04/ss03_views_thymeleaf/exercise/product-management/.gradle/7.5.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module04/ss03_views_thymeleaf/exercise/product-management/.gradle/7.5.1/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../module04/ss03_views_thymeleaf/exercise/product-management/.gradle/7.5.1/fileHashes/resourceHashesCache.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module04/ss03_views_thymeleaf/exercise/product-management/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../module04/ss03_views_thymeleaf/exercise/product-management/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module04/ss03_views_thymeleaf/exercise/product-management/build/classes/java/main/org/example/service/ProductService.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../module04/ss03_views_thymeleaf/exercise/product-management/build/classes/java/main/org/example/service/ProductService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module04/ss03_views_thymeleaf/exercise/product-management/build/libs/product-management-1.0-SNAPSHOT.war" beforeDir="false" afterPath="$PROJECT_DIR$/../../module04/ss03_views_thymeleaf/exercise/product-management/build/libs/product-management-1.0-SNAPSHOT.war" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module04/ss03_views_thymeleaf/exercise/product-management/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../module04/ss03_views_thymeleaf/exercise/product-management/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module04/ss2_spring_controller/demo/StudentController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module04/ss2_spring_controller/exercise/calculate-personal/.gradle/7.5.1/checksums/checksums.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module04/ss2_spring_controller/exercise/calculate-personal/.gradle/7.5.1/dependencies-accessors/dependencies-accessors.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module04/ss2_spring_controller/exercise/calculate-personal/.gradle/7.5.1/dependencies-accessors/gc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module04/ss2_spring_controller/exercise/calculate-personal/.gradle/7.5.1/executionHistory/executionHistory.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module04/ss2_spring_controller/exercise/calculate-personal/.gradle/7.5.1/executionHistory/executionHistory.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module04/ss2_spring_controller/exercise/calculate-personal/.gradle/7.5.1/fileChanges/last-build.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module04/ss2_spring_controller/exercise/calculate-personal/.gradle/7.5.1/fileHashes/fileHashes.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module04/ss2_spring_controller/exercise/calculate-personal/.gradle/7.5.1/fileHashes/fileHashes.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module04/ss2_spring_controller/exercise/calculate-personal/.gradle/7.5.1/fileHashes/resourceHashesCache.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module04/ss2_spring_controller/exercise/calculate-personal/.gradle/7.5.1/gc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module04/ss2_spring_controller/exercise/calculate-personal/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module04/ss2_spring_controller/exercise/calculate-personal/.gradle/buildOutputCleanup/cache.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module04/ss2_spring_controller/exercise/calculate-personal/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module04/ss2_spring_controller/exercise/calculate-personal/.gradle/file-system.probe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module04/ss2_spring_controller/exercise/calculate-personal/.gradle/vcs-1/gc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module04/ss2_spring_controller/exercise/calculate-personal/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module04/ss2_spring_controller/exercise/calculate-personal/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module04/ss2_spring_controller/exercise/calculate-personal/.idea/gradle.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module04/ss2_spring_controller/exercise/calculate-personal/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module04/ss2_spring_controller/exercise/calculate-personal/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module04/ss2_spring_controller/exercise/calculate-personal/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module04/ss2_spring_controller/exercise/calculate-personal/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module04/ss2_spring_controller/exercise/calculate-personal/build/classes/java/main/org/example/config/AppConfiguration.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module04/ss2_spring_controller/exercise/calculate-personal/build/classes/java/main/org/example/config/AppInitializer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module04/ss2_spring_controller/exercise/calculate-personal/build/classes/java/main/org/example/config/controller/CalculatorController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module04/ss2_spring_controller/exercise/calculate-personal/build/libs/calculate-personal-1.0-SNAPSHOT.war" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module04/ss2_spring_controller/exercise/calculate-personal/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module04/ss2_spring_controller/exercise/calculate-personal/build/tmp/war/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module04/ss2_spring_controller/exercise/calculate-personal/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module04/ss2_spring_controller/exercise/calculate-personal/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module04/ss2_spring_controller/exercise/calculate-personal/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module04/ss2_spring_controller/exercise/calculate-personal/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module04/ss2_spring_controller/exercise/calculate-personal/settings.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module04/ss2_spring_controller/exercise/calculate-personal/src/main/java/org/example/config/AppConfiguration.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module04/ss2_spring_controller/exercise/calculate-personal/src/main/java/org/example/config/AppInitializer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module04/ss2_spring_controller/exercise/calculate-personal/src/main/java/org/example/config/controller/CalculatorController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module04/ss2_spring_controller/exercise/calculate-personal/src/main/webapp/WEB-INF/view/calculator/calculator_home.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module04/ss2_spring_controller/exercise/displays_seasoning_sandwich/.gradle/7.5.1/checksums/checksums.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module04/ss2_spring_controller/exercise/displays_seasoning_sandwich/.gradle/7.5.1/dependencies-accessors/dependencies-accessors.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module04/ss2_spring_controller/exercise/displays_seasoning_sandwich/.gradle/7.5.1/dependencies-accessors/gc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module04/ss2_spring_controller/exercise/displays_seasoning_sandwich/.gradle/7.5.1/executionHistory/executionHistory.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module04/ss2_spring_controller/exercise/displays_seasoning_sandwich/.gradle/7.5.1/executionHistory/executionHistory.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module04/ss2_spring_controller/exercise/displays_seasoning_sandwich/.gradle/7.5.1/fileChanges/last-build.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module04/ss2_spring_controller/exercise/displays_seasoning_sandwich/.gradle/7.5.1/fileHashes/fileHashes.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module04/ss2_spring_controller/exercise/displays_seasoning_sandwich/.gradle/7.5.1/fileHashes/fileHashes.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module04/ss2_spring_controller/exercise/displays_seasoning_sandwich/.gradle/7.5.1/fileHashes/resourceHashesCache.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module04/ss2_spring_controller/exercise/displays_seasoning_sandwich/.gradle/7.5.1/gc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module04/ss2_spring_controller/exercise/displays_seasoning_sandwich/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module04/ss2_spring_controller/exercise/displays_seasoning_sandwich/.gradle/buildOutputCleanup/cache.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module04/ss2_spring_controller/exercise/displays_seasoning_sandwich/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module04/ss2_spring_controller/exercise/displays_seasoning_sandwich/.gradle/file-system.probe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module04/ss2_spring_controller/exercise/displays_seasoning_sandwich/.gradle/vcs-1/gc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module04/ss2_spring_controller/exercise/displays_seasoning_sandwich/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module04/ss2_spring_controller/exercise/displays_seasoning_sandwich/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module04/ss2_spring_controller/exercise/displays_seasoning_sandwich/.idea/gradle.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module04/ss2_spring_controller/exercise/displays_seasoning_sandwich/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module04/ss2_spring_controller/exercise/displays_seasoning_sandwich/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module04/ss2_spring_controller/exercise/displays_seasoning_sandwich/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module04/ss2_spring_controller/exercise/displays_seasoning_sandwich/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module04/ss2_spring_controller/exercise/displays_seasoning_sandwich/build/classes/java/main/org/example/config/AppConfiguration.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module04/ss2_spring_controller/exercise/displays_seasoning_sandwich/build/classes/java/main/org/example/config/AppInitializer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module04/ss2_spring_controller/exercise/displays_seasoning_sandwich/build/classes/java/main/org/example/controller/SandwichController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module04/ss2_spring_controller/exercise/displays_seasoning_sandwich/build/libs/displays_seasoning_sandwich-1.0-SNAPSHOT.war" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module04/ss2_spring_controller/exercise/displays_seasoning_sandwich/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module04/ss2_spring_controller/exercise/displays_seasoning_sandwich/build/tmp/war/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module04/ss2_spring_controller/exercise/displays_seasoning_sandwich/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module04/ss2_spring_controller/exercise/displays_seasoning_sandwich/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module04/ss2_spring_controller/exercise/displays_seasoning_sandwich/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module04/ss2_spring_controller/exercise/displays_seasoning_sandwich/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module04/ss2_spring_controller/exercise/displays_seasoning_sandwich/settings.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module04/ss2_spring_controller/exercise/displays_seasoning_sandwich/src/main/java/org/example/config/AppConfiguration.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module04/ss2_spring_controller/exercise/displays_seasoning_sandwich/src/main/java/org/example/config/AppInitializer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module04/ss2_spring_controller/exercise/displays_seasoning_sandwich/src/main/java/org/example/controller/SandwichController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module04/ss2_spring_controller/exercise/displays_seasoning_sandwich/src/main/webapp/WEB-INF/views/sandwich.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module04/ss2_spring_controller/exercise/displays_seasoning_sandwich/src/main/webapp/index.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module04/ss2_spring_controller/pratice/city_time/.gradle/7.5.1/checksums/checksums.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module04/ss2_spring_controller/pratice/city_time/.gradle/7.5.1/dependencies-accessors/dependencies-accessors.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module04/ss2_spring_controller/pratice/city_time/.gradle/7.5.1/dependencies-accessors/gc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module04/ss2_spring_controller/pratice/city_time/.gradle/7.5.1/executionHistory/executionHistory.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module04/ss2_spring_controller/pratice/city_time/.gradle/7.5.1/executionHistory/executionHistory.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module04/ss2_spring_controller/pratice/city_time/.gradle/7.5.1/fileChanges/last-build.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module04/ss2_spring_controller/pratice/city_time/.gradle/7.5.1/fileHashes/fileHashes.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module04/ss2_spring_controller/pratice/city_time/.gradle/7.5.1/fileHashes/fileHashes.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module04/ss2_spring_controller/pratice/city_time/.gradle/7.5.1/fileHashes/resourceHashesCache.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module04/ss2_spring_controller/pratice/city_time/.gradle/7.5.1/gc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module04/ss2_spring_controller/pratice/city_time/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module04/ss2_spring_controller/pratice/city_time/.gradle/buildOutputCleanup/cache.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module04/ss2_spring_controller/pratice/city_time/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module04/ss2_spring_controller/pratice/city_time/.gradle/file-system.probe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module04/ss2_spring_controller/pratice/city_time/.gradle/vcs-1/gc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module04/ss2_spring_controller/pratice/city_time/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module04/ss2_spring_controller/pratice/city_time/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module04/ss2_spring_controller/pratice/city_time/.idea/gradle.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module04/ss2_spring_controller/pratice/city_time/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module04/ss2_spring_controller/pratice/city_time/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module04/ss2_spring_controller/pratice/city_time/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module04/ss2_spring_controller/pratice/city_time/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module04/ss2_spring_controller/pratice/city_time/build/classes/java/main/org/example/config/AppConfiguration.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module04/ss2_spring_controller/pratice/city_time/build/classes/java/main/org/example/config/AppInitializer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module04/ss2_spring_controller/pratice/city_time/build/classes/java/main/org/example/config/controller/TimeController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module04/ss2_spring_controller/pratice/city_time/build/libs/city_time-1.0-SNAPSHOT.war" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module04/ss2_spring_controller/pratice/city_time/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module04/ss2_spring_controller/pratice/city_time/build/tmp/war/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module04/ss2_spring_controller/pratice/city_time/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module04/ss2_spring_controller/pratice/city_time/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module04/ss2_spring_controller/pratice/city_time/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module04/ss2_spring_controller/pratice/city_time/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module04/ss2_spring_controller/pratice/city_time/settings.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module04/ss2_spring_controller/pratice/city_time/src/main/java/org/example/config/AppConfiguration.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module04/ss2_spring_controller/pratice/city_time/src/main/java/org/example/config/AppInitializer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module04/ss2_spring_controller/pratice/city_time/src/main/java/org/example/config/controller/TimeController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module04/ss2_spring_controller/pratice/city_time/src/main/webapp/WEB-INF/view/time.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module04/ss2_spring_controller/pratice/city_time/src/main/webapp/index.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module04/ss2_spring_controller/pratice/customer_list_management_ application/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module04/ss2_spring_controller/pratice/customer_list_management_ application/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module04/ss2_spring_controller/pratice/customer_list_management_ application/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module04/ss2_spring_controller/pratice/customer_list_management_ application/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module04/ss2_spring_controller/pratice/customer_list_management_ application/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module04/ss2_spring_controller/pratice/customer_list_management_ application/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module04/ss2_spring_controller/pratice/customer_list_management_ application/settings.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module04/ss2_spring_controller/pratice/customer_list_management_ application/src/main/java/cg/wbd/grandemonstration/AppConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module04/ss2_spring_controller/pratice/customer_list_management_ application/src/main/java/cg/wbd/grandemonstration/AppInit.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module04/ss2_spring_controller/pratice/customer_list_management_ application/src/main/java/cg/wbd/grandemonstration/controller/CustomerController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module04/ss2_spring_controller/pratice/customer_list_management_ application/src/main/java/cg/wbd/grandemonstration/model/Customer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module04/ss2_spring_controller/pratice/customer_list_management_ application/src/main/java/cg/wbd/grandemonstration/service/CustomerService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module04/ss2_spring_controller/pratice/customer_list_management_ application/src/main/java/cg/wbd/grandemonstration/service/impl/HibernateCustomerServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module04/ss2_spring_controller/pratice/customer_list_management_ application/src/main/java/cg/wbd/grandemonstration/service/impl/SimpleCustomerServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module04/ss2_spring_controller/pratice/customer_list_management_ application/src/main/resources/hibernate.conf.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module04/ss2_spring_controller/pratice/customer_list_management_ application/src/main/webapp/WEB-INF/templates/customers/info.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module04/ss2_spring_controller/pratice/customer_list_management_ application/src/main/webapp/WEB-INF/templates/customers/list.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module04/ss2_spring_controller/pratice/email-validate-maven/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module04/ss2_spring_controller/pratice/email-validate/.gradle/7.5.1/checksums/checksums.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module04/ss2_spring_controller/pratice/email-validate/.gradle/7.5.1/dependencies-accessors/dependencies-accessors.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module04/ss2_spring_controller/pratice/email-validate/.gradle/7.5.1/dependencies-accessors/gc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module04/ss2_spring_controller/pratice/email-validate/.gradle/7.5.1/executionHistory/executionHistory.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module04/ss2_spring_controller/pratice/email-validate/.gradle/7.5.1/executionHistory/executionHistory.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module04/ss2_spring_controller/pratice/email-validate/.gradle/7.5.1/fileChanges/last-build.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module04/ss2_spring_controller/pratice/email-validate/.gradle/7.5.1/fileHashes/fileHashes.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module04/ss2_spring_controller/pratice/email-validate/.gradle/7.5.1/fileHashes/fileHashes.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module04/ss2_spring_controller/pratice/email-validate/.gradle/7.5.1/fileHashes/resourceHashesCache.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module04/ss2_spring_controller/pratice/email-validate/.gradle/7.5.1/gc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module04/ss2_spring_controller/pratice/email-validate/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module04/ss2_spring_controller/pratice/email-validate/.gradle/buildOutputCleanup/cache.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module04/ss2_spring_controller/pratice/email-validate/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module04/ss2_spring_controller/pratice/email-validate/.gradle/file-system.probe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module04/ss2_spring_controller/pratice/email-validate/.gradle/vcs-1/gc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module04/ss2_spring_controller/pratice/email-validate/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module04/ss2_spring_controller/pratice/email-validate/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module04/ss2_spring_controller/pratice/email-validate/.idea/gradle.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module04/ss2_spring_controller/pratice/email-validate/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module04/ss2_spring_controller/pratice/email-validate/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module04/ss2_spring_controller/pratice/email-validate/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module04/ss2_spring_controller/pratice/email-validate/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module04/ss2_spring_controller/pratice/email-validate/build/classes/java/main/org/example/config/AppConfiguration.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module04/ss2_spring_controller/pratice/email-validate/build/classes/java/main/org/example/config/AppInitializer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module04/ss2_spring_controller/pratice/email-validate/build/classes/java/main/org/example/controller/HomeController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module04/ss2_spring_controller/pratice/email-validate/build/libs/email-validate-1.0-SNAPSHOT.war" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module04/ss2_spring_controller/pratice/email-validate/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module04/ss2_spring_controller/pratice/email-validate/build/tmp/war/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module04/ss2_spring_controller/pratice/email-validate/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module04/ss2_spring_controller/pratice/email-validate/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module04/ss2_spring_controller/pratice/email-validate/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module04/ss2_spring_controller/pratice/email-validate/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module04/ss2_spring_controller/pratice/email-validate/settings.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module04/ss2_spring_controller/pratice/email-validate/src/main/java/org/example/config/AppConfiguration.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module04/ss2_spring_controller/pratice/email-validate/src/main/java/org/example/config/AppInitializer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module04/ss2_spring_controller/pratice/email-validate/src/main/java/org/example/controller/HomeController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module04/ss2_spring_controller/pratice/email-validate/src/main/webapp/WEB-INF/view/home.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module04/ss2_spring_controller/pratice/email-validate/src/main/webapp/WEB-INF/view/success.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module04/ss2_spring_controller/pratice/email-validate/src/main/webapp/index.jsp" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectId" id="2NBsAhH2ZMnmWpGSfHYinnS4SsU" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "D:/CodeGym/Web Trắc Nghiệm/Webquiz",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e8a41265-22a3-402f-a7b1-172f249e648e" name="Changes" comment="" />
+      <created>1679148668137</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1679148668137</updated>
+      <workItem from="1679148669359" duration="10000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
