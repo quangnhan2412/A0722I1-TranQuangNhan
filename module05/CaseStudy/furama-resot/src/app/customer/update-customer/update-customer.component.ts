@@ -18,6 +18,9 @@ export class UpdateCustomerComponent implements OnInit {
   customer: Customer;
   customerType: CustomerType[];
 
+
+
+
   constructor(private customerService: CustomerService,
               private customerTypeService: CustomerTypeService,
               private activatedRoute: ActivatedRoute,

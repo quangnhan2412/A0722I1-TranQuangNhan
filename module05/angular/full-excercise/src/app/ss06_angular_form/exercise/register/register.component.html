@@ -79,7 +79,6 @@
       <label class="form-label">Age</label>
       <input type="date" class="form-control" formControlName="age"
              [ngClass]="rfRegister.controls['age'].invalid?'is-invalid':'is-valid'">
-
       <div class="invalid-feedback">
         <div *ngIf="rfRegister.controls.age?.errors?.required && rfRegister.controls.age.touched">
           Please provide a age.

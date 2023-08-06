@@ -5,21 +5,349 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bed4ff32-c4d5-4345-baa7-8f5c50d6417d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../off-md4/src/main/java/com/example/offmd4/entity/Company.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../off-md4/src/main/java/com/example/offmd4/entity/DuAn.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../thi_md4/src/main/java/com/example/thi_md4/entity/Company.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../thi_md4/src/main/java/com/example/thi_md4/entity/Project.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../tryhard-md4/src/main/java/com/example/tryhardmd4/controller/TinTucController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../tryhard-md4/src/main/java/com/example/tryhardmd4/entity/DanhMuc.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../tryhard-md4/src/main/java/com/example/tryhardmd4/entity/TinTuc.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../tryhard-md4/src/main/resources/templates/danhmuc/view.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Inter/tonghong_admin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Inter/tonghop_web" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/furama-resot-managent-application/src/main/java/com/example/furamaresotmanagentapplication/controller/EmployeeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/furama-resot-managent-application/src/main/java/com/example/furamaresotmanagentapplication/controller/EmployeeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/furama-resot-managent-application/src/main/java/com/example/furamaresotmanagentapplication/validate/FacilityValidate.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/furama-resot-managent-application/src/main/resources/templates/employee/list.html" beforeDir="false" afterPath="$PROJECT_DIR$/furama-resot-managent-application/src/main/resources/templates/employee/list.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/furama-resot-managent-application/src/main/resources/templates/facility/list.html" beforeDir="false" afterPath="$PROJECT_DIR$/furama-resot-managent-application/src/main/resources/templates/facility/list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module01/project-a07/form-update.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module01/project-a07/prototype-additional/page.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module01/project-a07/prototype/test2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module01/project-a07/prototype/upload-img.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module01/project-a07/tets.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module06/medical-supplies-website/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module06/medical-supplies-website/alonhan.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module06/medical-supplies-website/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module06/medical-supplies-website/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module06/medical-supplies-website/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module06/medical-supplies-website/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module06/medical-supplies-website/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module06/medical-supplies-website/settings.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module06/medical-supplies-website/src/main/java/com/example/medicalsupplieswebsite/MedicalSuppliesWebsiteApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module06/medical-supplies-website/src/main/java/com/example/medicalsupplieswebsite/entity/AccountRole.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module06/medical-supplies-website/src/main/java/com/example/medicalsupplieswebsite/entity/Role.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module06/medical-supplies-website/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module06/medical-supplies-website/src/test/java/com/example/medicalsupplieswebsite/MedicalSuppliesWebsiteApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module01/1.HTML/ABC_123/Tài liệu khoá luận/CÂU-HỎI-SCRUM (1).docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module01/1.HTML/ABC_123/Tài liệu khoá luận/CÂU-HỎI-SCRUM.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module01/1.HTML/ABC_123/Tài liệu khoá luận/Nội-dung-cho-báo-cáo.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module01/1.HTML/ABC_123/Tài liệu khoá luận/TÀI LIỆU-20230525T103753Z-001.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module01/1.HTML/ABC_123/Tài liệu khoá luận/TÀI LIỆU/Bìa tài liệu tóm tắt khóa luận tốt nghiệp.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module01/1.HTML/ABC_123/Tài liệu khoá luận/TÀI LIỆU/KLTN-SE.03.Bia Sprint Backlog.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module01/1.HTML/ABC_123/Tài liệu khoá luận/TÀI LIỆU/KLTN-SE.03.Bia Test Sprint Backlog.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module01/1.HTML/ABC_123/Tài liệu khoá luận/TÀI LIỆU/KLTN-SE.03.Database Design.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module01/1.HTML/ABC_123/Tài liệu khoá luận/TÀI LIỆU/KLTN-SE.03.Meeting Report.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module01/1.HTML/ABC_123/Tài liệu khoá luận/TÀI LIỆU/KLTN-SE.03.Product Backlog.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module01/1.HTML/ABC_123/Tài liệu khoá luận/TÀI LIỆU/KLTN-SE.03.Product Proposal.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module01/1.HTML/ABC_123/Tài liệu khoá luận/TÀI LIỆU/KLTN-SE.03.Project Plan.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module01/1.HTML/ABC_123/Tài liệu khoá luận/TÀI LIỆU/KLTN-SE.03.Project Sprint Backlog.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module01/1.HTML/ABC_123/Tài liệu khoá luận/TÀI LIỆU/KLTN-SE.03.Project Test Plan.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module01/1.HTML/ABC_123/Tài liệu khoá luận/TÀI LIỆU/KLTN-SE.03.Project Test Report.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module01/1.HTML/ABC_123/Tài liệu khoá luận/TÀI LIỆU/KLTN-SE.03.Reflection Document.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module01/1.HTML/ABC_123/Tài liệu khoá luận/TÀI LIỆU/KLTN-SE.03.Test Sprint 1 Backlog.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module01/1.HTML/ABC_123/Tài liệu khoá luận/TÀI LIỆU/KLTN-SE.03.Test Sprint 2 Backlog.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module01/1.HTML/ABC_123/Tài liệu khoá luận/TÀI LIỆU/KLTN-SE.03.User Interface Design.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module01/1.HTML/ABC_123/Tài liệu khoá luận/TÀI LIỆU/KLTN-SE.03.User Story.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module01/1.HTML/ABC_123/Tài liệu khoá luận/TÀI LIỆU/TÀI LIỆU TÓM TẮT KHÓA LUẬN TỐT NGHIỆP.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module01/1.HTML/ABC_123/Tài liệu khoá luận/[4] Bộ câu hỏi phỏng vấn module 4 JAVA.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module01/1.HTML/ABC_123/quiz_web.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module01/1.HTML/ABC_123/web_trac_nghiem.rar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module01/1.HTML/ABC_123/web_trac_nghiem/KhoaLuanDTU/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module01/1.HTML/ABC_123/web_trac_nghiem/KhoaLuanDTU/Webquiz/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module01/1.HTML/ABC_123/web_trac_nghiem/KhoaLuanDTU/Webquiz/.idea/codeStyles/Project.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module01/1.HTML/ABC_123/web_trac_nghiem/KhoaLuanDTU/Webquiz/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module01/1.HTML/ABC_123/web_trac_nghiem/KhoaLuanDTU/Webquiz/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module01/1.HTML/ABC_123/web_trac_nghiem/KhoaLuanDTU/Webquiz/.idea/dataSources.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module01/1.HTML/ABC_123/web_trac_nghiem/KhoaLuanDTU/Webquiz/.idea/dictionaries/nhacp.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module01/1.HTML/ABC_123/web_trac_nghiem/KhoaLuanDTU/Webquiz/.idea/gradle.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module01/1.HTML/ABC_123/web_trac_nghiem/KhoaLuanDTU/Webquiz/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module01/1.HTML/ABC_123/web_trac_nghiem/KhoaLuanDTU/Webquiz/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module01/1.HTML/ABC_123/web_trac_nghiem/KhoaLuanDTU/Webquiz/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module01/1.HTML/ABC_123/web_trac_nghiem/KhoaLuanDTU/Webquiz/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module01/1.HTML/ABC_123/web_trac_nghiem/KhoaLuanDTU/Webquiz/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module01/1.HTML/ABC_123/web_trac_nghiem/KhoaLuanDTU/Webquiz/.idea/webContexts.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module01/1.HTML/ABC_123/web_trac_nghiem/KhoaLuanDTU/Webquiz/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module01/1.HTML/ABC_123/web_trac_nghiem/KhoaLuanDTU/Webquiz/build/classes/java/main/controller/ExamQuestionServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module01/1.HTML/ABC_123/web_trac_nghiem/KhoaLuanDTU/Webquiz/build/classes/java/main/controller/ExamQuestionServletTeacher.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module01/1.HTML/ABC_123/web_trac_nghiem/KhoaLuanDTU/Webquiz/build/classes/java/main/controller/ExamServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module01/1.HTML/ABC_123/web_trac_nghiem/KhoaLuanDTU/Webquiz/build/classes/java/main/controller/ExamServletTeacher.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module01/1.HTML/ABC_123/web_trac_nghiem/KhoaLuanDTU/Webquiz/build/classes/java/main/controller/ExamViewServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module01/1.HTML/ABC_123/web_trac_nghiem/KhoaLuanDTU/Webquiz/build/classes/java/main/controller/ExamViewServletTeacher.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module01/1.HTML/ABC_123/web_trac_nghiem/KhoaLuanDTU/Webquiz/build/classes/java/main/controller/ForgotPassword$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module01/1.HTML/ABC_123/web_trac_nghiem/KhoaLuanDTU/Webquiz/build/classes/java/main/controller/ForgotPassword.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module01/1.HTML/ABC_123/web_trac_nghiem/KhoaLuanDTU/Webquiz/build/classes/java/main/controller/HomeServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module01/1.HTML/ABC_123/web_trac_nghiem/KhoaLuanDTU/Webquiz/build/classes/java/main/controller/MemberServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module01/1.HTML/ABC_123/web_trac_nghiem/KhoaLuanDTU/Webquiz/build/classes/java/main/controller/NewPassword.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module01/1.HTML/ABC_123/web_trac_nghiem/KhoaLuanDTU/Webquiz/build/classes/java/main/controller/QuestionServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module01/1.HTML/ABC_123/web_trac_nghiem/KhoaLuanDTU/Webquiz/build/classes/java/main/controller/QuestionServletTeacher.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module01/1.HTML/ABC_123/web_trac_nghiem/KhoaLuanDTU/Webquiz/build/classes/java/main/controller/SubjectServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module01/1.HTML/ABC_123/web_trac_nghiem/KhoaLuanDTU/Webquiz/build/classes/java/main/controller/UserServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module01/1.HTML/ABC_123/web_trac_nghiem/KhoaLuanDTU/Webquiz/build/classes/java/main/controller/ValidateOtp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module01/1.HTML/ABC_123/web_trac_nghiem/KhoaLuanDTU/Webquiz/build/classes/java/main/model/Account.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module01/1.HTML/ABC_123/web_trac_nghiem/KhoaLuanDTU/Webquiz/build/classes/java/main/model/Exam.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module01/1.HTML/ABC_123/web_trac_nghiem/KhoaLuanDTU/Webquiz/build/classes/java/main/model/ExamHistory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module01/1.HTML/ABC_123/web_trac_nghiem/KhoaLuanDTU/Webquiz/build/classes/java/main/model/ExamQuestion.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module01/1.HTML/ABC_123/web_trac_nghiem/KhoaLuanDTU/Webquiz/build/classes/java/main/model/ExamQuestions.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module01/1.HTML/ABC_123/web_trac_nghiem/KhoaLuanDTU/Webquiz/build/classes/java/main/model/Member.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module01/1.HTML/ABC_123/web_trac_nghiem/KhoaLuanDTU/Webquiz/build/classes/java/main/model/Question.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module01/1.HTML/ABC_123/web_trac_nghiem/KhoaLuanDTU/Webquiz/build/classes/java/main/model/Subject.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module01/1.HTML/ABC_123/web_trac_nghiem/KhoaLuanDTU/Webquiz/build/classes/java/main/model/User.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module01/1.HTML/ABC_123/web_trac_nghiem/KhoaLuanDTU/Webquiz/build/classes/java/main/repository/AccountRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module01/1.HTML/ABC_123/web_trac_nghiem/KhoaLuanDTU/Webquiz/build/classes/java/main/repository/BaseRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module01/1.HTML/ABC_123/web_trac_nghiem/KhoaLuanDTU/Webquiz/build/classes/java/main/repository/ExamQuestionsRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module01/1.HTML/ABC_123/web_trac_nghiem/KhoaLuanDTU/Webquiz/build/classes/java/main/repository/ExamRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module01/1.HTML/ABC_123/web_trac_nghiem/KhoaLuanDTU/Webquiz/build/classes/java/main/repository/ExamViewRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module01/1.HTML/ABC_123/web_trac_nghiem/KhoaLuanDTU/Webquiz/build/classes/java/main/repository/MemberRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module01/1.HTML/ABC_123/web_trac_nghiem/KhoaLuanDTU/Webquiz/build/classes/java/main/repository/QuestionRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module01/1.HTML/ABC_123/web_trac_nghiem/KhoaLuanDTU/Webquiz/build/classes/java/main/repository/SubjectRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module01/1.HTML/ABC_123/web_trac_nghiem/KhoaLuanDTU/Webquiz/build/classes/java/main/repository/UserRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module01/1.HTML/ABC_123/web_trac_nghiem/KhoaLuanDTU/Webquiz/build/classes/java/main/service/AccountService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module01/1.HTML/ABC_123/web_trac_nghiem/KhoaLuanDTU/Webquiz/build/classes/java/main/service/ExamQuestionsService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module01/1.HTML/ABC_123/web_trac_nghiem/KhoaLuanDTU/Webquiz/build/classes/java/main/service/ExamService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module01/1.HTML/ABC_123/web_trac_nghiem/KhoaLuanDTU/Webquiz/build/classes/java/main/service/ExamViewService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module01/1.HTML/ABC_123/web_trac_nghiem/KhoaLuanDTU/Webquiz/build/classes/java/main/service/MemberService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module01/1.HTML/ABC_123/web_trac_nghiem/KhoaLuanDTU/Webquiz/build/classes/java/main/service/QuestionService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module01/1.HTML/ABC_123/web_trac_nghiem/KhoaLuanDTU/Webquiz/build/classes/java/main/service/SubjectService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module01/1.HTML/ABC_123/web_trac_nghiem/KhoaLuanDTU/Webquiz/build/classes/java/main/service/UserService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module01/1.HTML/ABC_123/web_trac_nghiem/KhoaLuanDTU/Webquiz/build/classes/java/main/service/impl/AccountServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module01/1.HTML/ABC_123/web_trac_nghiem/KhoaLuanDTU/Webquiz/build/classes/java/main/service/impl/ExamQuestionsServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module01/1.HTML/ABC_123/web_trac_nghiem/KhoaLuanDTU/Webquiz/build/classes/java/main/service/impl/ExamServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module01/1.HTML/ABC_123/web_trac_nghiem/KhoaLuanDTU/Webquiz/build/classes/java/main/service/impl/ExamViewServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module01/1.HTML/ABC_123/web_trac_nghiem/KhoaLuanDTU/Webquiz/build/classes/java/main/service/impl/MemberServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module01/1.HTML/ABC_123/web_trac_nghiem/KhoaLuanDTU/Webquiz/build/classes/java/main/service/impl/QuestionServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module01/1.HTML/ABC_123/web_trac_nghiem/KhoaLuanDTU/Webquiz/build/classes/java/main/service/impl/SubjectServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module01/1.HTML/ABC_123/web_trac_nghiem/KhoaLuanDTU/Webquiz/build/classes/java/main/service/impl/UserServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module01/1.HTML/ABC_123/web_trac_nghiem/KhoaLuanDTU/Webquiz/build/classes/java/main/util/HandleString.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module01/1.HTML/ABC_123/web_trac_nghiem/KhoaLuanDTU/Webquiz/build/classes/java/main/util/PasswordEncryption.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module01/1.HTML/ABC_123/web_trac_nghiem/KhoaLuanDTU/Webquiz/build/classes/java/main/util/ReadFile.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module01/1.HTML/ABC_123/web_trac_nghiem/KhoaLuanDTU/Webquiz/build/tmp/war/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module01/1.HTML/ABC_123/web_trac_nghiem/KhoaLuanDTU/Webquiz/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module01/1.HTML/ABC_123/web_trac_nghiem/KhoaLuanDTU/Webquiz/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module01/1.HTML/ABC_123/web_trac_nghiem/KhoaLuanDTU/Webquiz/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module01/1.HTML/ABC_123/web_trac_nghiem/KhoaLuanDTU/Webquiz/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module01/1.HTML/ABC_123/web_trac_nghiem/KhoaLuanDTU/Webquiz/settings.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module01/1.HTML/ABC_123/web_trac_nghiem/KhoaLuanDTU/Webquiz/src/main/java/controller/ExamQuestionServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module01/1.HTML/ABC_123/web_trac_nghiem/KhoaLuanDTU/Webquiz/src/main/java/controller/ExamQuestionServletTeacher.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module01/1.HTML/ABC_123/web_trac_nghiem/KhoaLuanDTU/Webquiz/src/main/java/controller/ExamServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module01/1.HTML/ABC_123/web_trac_nghiem/KhoaLuanDTU/Webquiz/src/main/java/controller/ExamServletTeacher.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module01/1.HTML/ABC_123/web_trac_nghiem/KhoaLuanDTU/Webquiz/src/main/java/controller/ExamViewServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module01/1.HTML/ABC_123/web_trac_nghiem/KhoaLuanDTU/Webquiz/src/main/java/controller/ExamViewServletTeacher.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module01/1.HTML/ABC_123/web_trac_nghiem/KhoaLuanDTU/Webquiz/src/main/java/controller/ForgotPassword.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module01/1.HTML/ABC_123/web_trac_nghiem/KhoaLuanDTU/Webquiz/src/main/java/controller/HomeServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module01/1.HTML/ABC_123/web_trac_nghiem/KhoaLuanDTU/Webquiz/src/main/java/controller/MemberServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module01/1.HTML/ABC_123/web_trac_nghiem/KhoaLuanDTU/Webquiz/src/main/java/controller/NewPassword.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module01/1.HTML/ABC_123/web_trac_nghiem/KhoaLuanDTU/Webquiz/src/main/java/controller/QuestionServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module01/1.HTML/ABC_123/web_trac_nghiem/KhoaLuanDTU/Webquiz/src/main/java/controller/QuestionServletTeacher.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module01/1.HTML/ABC_123/web_trac_nghiem/KhoaLuanDTU/Webquiz/src/main/java/controller/SubjectServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module01/1.HTML/ABC_123/web_trac_nghiem/KhoaLuanDTU/Webquiz/src/main/java/controller/UserServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module01/1.HTML/ABC_123/web_trac_nghiem/KhoaLuanDTU/Webquiz/src/main/java/controller/ValidateOtp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module01/1.HTML/ABC_123/web_trac_nghiem/KhoaLuanDTU/Webquiz/src/main/java/model/Account.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module01/1.HTML/ABC_123/web_trac_nghiem/KhoaLuanDTU/Webquiz/src/main/java/model/Exam.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module01/1.HTML/ABC_123/web_trac_nghiem/KhoaLuanDTU/Webquiz/src/main/java/model/ExamHistory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module01/1.HTML/ABC_123/web_trac_nghiem/KhoaLuanDTU/Webquiz/src/main/java/model/ExamQuestion.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module01/1.HTML/ABC_123/web_trac_nghiem/KhoaLuanDTU/Webquiz/src/main/java/model/ExamQuestions.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module01/1.HTML/ABC_123/web_trac_nghiem/KhoaLuanDTU/Webquiz/src/main/java/model/Member.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module01/1.HTML/ABC_123/web_trac_nghiem/KhoaLuanDTU/Webquiz/src/main/java/model/Question.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module01/1.HTML/ABC_123/web_trac_nghiem/KhoaLuanDTU/Webquiz/src/main/java/model/Subject.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module01/1.HTML/ABC_123/web_trac_nghiem/KhoaLuanDTU/Webquiz/src/main/java/model/User.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module01/1.HTML/ABC_123/web_trac_nghiem/KhoaLuanDTU/Webquiz/src/main/java/repository/AccountRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module01/1.HTML/ABC_123/web_trac_nghiem/KhoaLuanDTU/Webquiz/src/main/java/repository/BaseRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module01/1.HTML/ABC_123/web_trac_nghiem/KhoaLuanDTU/Webquiz/src/main/java/repository/ExamQuestionsRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module01/1.HTML/ABC_123/web_trac_nghiem/KhoaLuanDTU/Webquiz/src/main/java/repository/ExamRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module01/1.HTML/ABC_123/web_trac_nghiem/KhoaLuanDTU/Webquiz/src/main/java/repository/ExamViewRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module01/1.HTML/ABC_123/web_trac_nghiem/KhoaLuanDTU/Webquiz/src/main/java/repository/MemberRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module01/1.HTML/ABC_123/web_trac_nghiem/KhoaLuanDTU/Webquiz/src/main/java/repository/QuestionRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module01/1.HTML/ABC_123/web_trac_nghiem/KhoaLuanDTU/Webquiz/src/main/java/repository/SubjectRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module01/1.HTML/ABC_123/web_trac_nghiem/KhoaLuanDTU/Webquiz/src/main/java/repository/UserRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module01/1.HTML/ABC_123/web_trac_nghiem/KhoaLuanDTU/Webquiz/src/main/java/service/AccountService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module01/1.HTML/ABC_123/web_trac_nghiem/KhoaLuanDTU/Webquiz/src/main/java/service/ExamQuestionsService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module01/1.HTML/ABC_123/web_trac_nghiem/KhoaLuanDTU/Webquiz/src/main/java/service/ExamService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module01/1.HTML/ABC_123/web_trac_nghiem/KhoaLuanDTU/Webquiz/src/main/java/service/ExamViewService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module01/1.HTML/ABC_123/web_trac_nghiem/KhoaLuanDTU/Webquiz/src/main/java/service/MemberService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module01/1.HTML/ABC_123/web_trac_nghiem/KhoaLuanDTU/Webquiz/src/main/java/service/QuestionService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module01/1.HTML/ABC_123/web_trac_nghiem/KhoaLuanDTU/Webquiz/src/main/java/service/SubjectService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module01/1.HTML/ABC_123/web_trac_nghiem/KhoaLuanDTU/Webquiz/src/main/java/service/UserService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module01/1.HTML/ABC_123/web_trac_nghiem/KhoaLuanDTU/Webquiz/src/main/java/service/impl/AccountServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module01/1.HTML/ABC_123/web_trac_nghiem/KhoaLuanDTU/Webquiz/src/main/java/service/impl/ExamQuestionsServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module01/1.HTML/ABC_123/web_trac_nghiem/KhoaLuanDTU/Webquiz/src/main/java/service/impl/ExamServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module01/1.HTML/ABC_123/web_trac_nghiem/KhoaLuanDTU/Webquiz/src/main/java/service/impl/ExamViewServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module01/1.HTML/ABC_123/web_trac_nghiem/KhoaLuanDTU/Webquiz/src/main/java/service/impl/MemberServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module01/1.HTML/ABC_123/web_trac_nghiem/KhoaLuanDTU/Webquiz/src/main/java/service/impl/QuestionServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module01/1.HTML/ABC_123/web_trac_nghiem/KhoaLuanDTU/Webquiz/src/main/java/service/impl/SubjectServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module01/1.HTML/ABC_123/web_trac_nghiem/KhoaLuanDTU/Webquiz/src/main/java/service/impl/UserServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module01/1.HTML/ABC_123/web_trac_nghiem/KhoaLuanDTU/Webquiz/src/main/java/util/HandleString.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module01/1.HTML/ABC_123/web_trac_nghiem/KhoaLuanDTU/Webquiz/src/main/java/util/PasswordEncryption.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module01/1.HTML/ABC_123/web_trac_nghiem/KhoaLuanDTU/Webquiz/src/main/java/util/ReadFile.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module01/1.HTML/ABC_123/web_trac_nghiem/KhoaLuanDTU/Webquiz/src/main/webapp/admin/DanhSachDe.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module01/1.HTML/ABC_123/web_trac_nghiem/KhoaLuanDTU/Webquiz/src/main/webapp/admin/exam-list.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module01/1.HTML/ABC_123/web_trac_nghiem/KhoaLuanDTU/Webquiz/src/main/webapp/admin/exam-view.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module01/1.HTML/ABC_123/web_trac_nghiem/KhoaLuanDTU/Webquiz/src/main/webapp/admin/index.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module01/1.HTML/ABC_123/web_trac_nghiem/KhoaLuanDTU/Webquiz/src/main/webapp/admin/manage-user.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module01/1.HTML/ABC_123/web_trac_nghiem/KhoaLuanDTU/Webquiz/src/main/webapp/admin/question-bank.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module01/1.HTML/ABC_123/web_trac_nghiem/KhoaLuanDTU/Webquiz/src/main/webapp/admin/view/head.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module01/1.HTML/ABC_123/web_trac_nghiem/KhoaLuanDTU/Webquiz/src/main/webapp/admin/view/header.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module01/1.HTML/ABC_123/web_trac_nghiem/KhoaLuanDTU/Webquiz/src/main/webapp/admin/view/left_navbar.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module01/1.HTML/ABC_123/web_trac_nghiem/KhoaLuanDTU/Webquiz/src/main/webapp/exam/exam-question.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module01/1.HTML/ABC_123/web_trac_nghiem/KhoaLuanDTU/Webquiz/src/main/webapp/exam/exam.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module01/1.HTML/ABC_123/web_trac_nghiem/KhoaLuanDTU/Webquiz/src/main/webapp/exam/exam_result.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module01/1.HTML/ABC_123/web_trac_nghiem/KhoaLuanDTU/Webquiz/src/main/webapp/exam/start_exam.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module01/1.HTML/ABC_123/web_trac_nghiem/KhoaLuanDTU/Webquiz/src/main/webapp/icon/IT.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module01/1.HTML/ABC_123/web_trac_nghiem/KhoaLuanDTU/Webquiz/src/main/webapp/icon/IconIndex.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module01/1.HTML/ABC_123/web_trac_nghiem/KhoaLuanDTU/Webquiz/src/main/webapp/icon/abc.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module01/1.HTML/ABC_123/web_trac_nghiem/KhoaLuanDTU/Webquiz/src/main/webapp/icon/blx.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module01/1.HTML/ABC_123/web_trac_nghiem/KhoaLuanDTU/Webquiz/src/main/webapp/icon/dialy.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module01/1.HTML/ABC_123/web_trac_nghiem/KhoaLuanDTU/Webquiz/src/main/webapp/icon/it.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module01/1.HTML/ABC_123/web_trac_nghiem/KhoaLuanDTU/Webquiz/src/main/webapp/icon/lichsu.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module01/1.HTML/ABC_123/web_trac_nghiem/KhoaLuanDTU/Webquiz/src/main/webapp/icon/logo-QUIZGYM.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module01/1.HTML/ABC_123/web_trac_nghiem/KhoaLuanDTU/Webquiz/src/main/webapp/icon/logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module01/1.HTML/ABC_123/web_trac_nghiem/KhoaLuanDTU/Webquiz/src/main/webapp/icon/logoEnglish.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module01/1.HTML/ABC_123/web_trac_nghiem/KhoaLuanDTU/Webquiz/src/main/webapp/icon/logoQ.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module01/1.HTML/ABC_123/web_trac_nghiem/KhoaLuanDTU/Webquiz/src/main/webapp/icon/logoWeb.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module01/1.HTML/ABC_123/web_trac_nghiem/KhoaLuanDTU/Webquiz/src/main/webapp/icon/ly.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module01/1.HTML/ABC_123/web_trac_nghiem/KhoaLuanDTU/Webquiz/src/main/webapp/icon/nguvan.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module01/1.HTML/ABC_123/web_trac_nghiem/KhoaLuanDTU/Webquiz/src/main/webapp/icon/sinhhoc.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module01/1.HTML/ABC_123/web_trac_nghiem/KhoaLuanDTU/Webquiz/src/main/webapp/icon/toan.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module01/1.HTML/ABC_123/web_trac_nghiem/KhoaLuanDTU/Webquiz/src/main/webapp/icon/toan.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module01/1.HTML/ABC_123/web_trac_nghiem/KhoaLuanDTU/Webquiz/src/main/webapp/image/bg.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module01/1.HTML/ABC_123/web_trac_nghiem/KhoaLuanDTU/Webquiz/src/main/webapp/image/bg1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module01/1.HTML/ABC_123/web_trac_nghiem/KhoaLuanDTU/Webquiz/src/main/webapp/image/bg2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module01/1.HTML/ABC_123/web_trac_nghiem/KhoaLuanDTU/Webquiz/src/main/webapp/image/bg3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module01/1.HTML/ABC_123/web_trac_nghiem/KhoaLuanDTU/Webquiz/src/main/webapp/image/bg4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module01/1.HTML/ABC_123/web_trac_nghiem/KhoaLuanDTU/Webquiz/src/main/webapp/image/girl.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module01/1.HTML/ABC_123/web_trac_nghiem/KhoaLuanDTU/Webquiz/src/main/webapp/image/leaf_01.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module01/1.HTML/ABC_123/web_trac_nghiem/KhoaLuanDTU/Webquiz/src/main/webapp/image/leaf_02.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module01/1.HTML/ABC_123/web_trac_nghiem/KhoaLuanDTU/Webquiz/src/main/webapp/image/leaf_03.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module01/1.HTML/ABC_123/web_trac_nghiem/KhoaLuanDTU/Webquiz/src/main/webapp/image/leaf_04.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module01/1.HTML/ABC_123/web_trac_nghiem/KhoaLuanDTU/Webquiz/src/main/webapp/image/lv1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module01/1.HTML/ABC_123/web_trac_nghiem/KhoaLuanDTU/Webquiz/src/main/webapp/image/trees.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module01/1.HTML/ABC_123/web_trac_nghiem/KhoaLuanDTU/Webquiz/src/main/webapp/index.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module01/1.HTML/ABC_123/web_trac_nghiem/KhoaLuanDTU/Webquiz/src/main/webapp/question/create.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module01/1.HTML/ABC_123/web_trac_nghiem/KhoaLuanDTU/Webquiz/src/main/webapp/question/edit.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module01/1.HTML/ABC_123/web_trac_nghiem/KhoaLuanDTU/Webquiz/src/main/webapp/question/list.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module01/1.HTML/ABC_123/web_trac_nghiem/KhoaLuanDTU/Webquiz/src/main/webapp/static/css/DangNhapDangKi.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module01/1.HTML/ABC_123/web_trac_nghiem/KhoaLuanDTU/Webquiz/src/main/webapp/static/css/TrangCaNhan.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module01/1.HTML/ABC_123/web_trac_nghiem/KhoaLuanDTU/Webquiz/src/main/webapp/static/css/Trangchinhsua.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module01/1.HTML/ABC_123/web_trac_nghiem/KhoaLuanDTU/Webquiz/src/main/webapp/static/css/Trangchu.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module01/1.HTML/ABC_123/web_trac_nghiem/KhoaLuanDTU/Webquiz/src/main/webapp/static/css/bootstrap-grid.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module01/1.HTML/ABC_123/web_trac_nghiem/KhoaLuanDTU/Webquiz/src/main/webapp/static/css/bootstrap-grid.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module01/1.HTML/ABC_123/web_trac_nghiem/KhoaLuanDTU/Webquiz/src/main/webapp/static/css/bootstrap-grid.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module01/1.HTML/ABC_123/web_trac_nghiem/KhoaLuanDTU/Webquiz/src/main/webapp/static/css/bootstrap-grid.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module01/1.HTML/ABC_123/web_trac_nghiem/KhoaLuanDTU/Webquiz/src/main/webapp/static/css/bootstrap-reboot.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module01/1.HTML/ABC_123/web_trac_nghiem/KhoaLuanDTU/Webquiz/src/main/webapp/static/css/bootstrap-reboot.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module01/1.HTML/ABC_123/web_trac_nghiem/KhoaLuanDTU/Webquiz/src/main/webapp/static/css/bootstrap-reboot.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module01/1.HTML/ABC_123/web_trac_nghiem/KhoaLuanDTU/Webquiz/src/main/webapp/static/css/bootstrap-reboot.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module01/1.HTML/ABC_123/web_trac_nghiem/KhoaLuanDTU/Webquiz/src/main/webapp/static/css/bootstrap.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module01/1.HTML/ABC_123/web_trac_nghiem/KhoaLuanDTU/Webquiz/src/main/webapp/static/css/bootstrap.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module01/1.HTML/ABC_123/web_trac_nghiem/KhoaLuanDTU/Webquiz/src/main/webapp/static/css/bootstrap.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module01/1.HTML/ABC_123/web_trac_nghiem/KhoaLuanDTU/Webquiz/src/main/webapp/static/css/bootstrap.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module01/1.HTML/ABC_123/web_trac_nghiem/KhoaLuanDTU/Webquiz/src/main/webapp/static/css/danhSachDe.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module01/1.HTML/ABC_123/web_trac_nghiem/KhoaLuanDTU/Webquiz/src/main/webapp/static/css/exam-list.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module01/1.HTML/ABC_123/web_trac_nghiem/KhoaLuanDTU/Webquiz/src/main/webapp/static/css/exam-view.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module01/1.HTML/ABC_123/web_trac_nghiem/KhoaLuanDTU/Webquiz/src/main/webapp/static/css/index.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module01/1.HTML/ABC_123/web_trac_nghiem/KhoaLuanDTU/Webquiz/src/main/webapp/static/css/main.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module01/1.HTML/ABC_123/web_trac_nghiem/KhoaLuanDTU/Webquiz/src/main/webapp/static/css/question-bank.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module01/1.HTML/ABC_123/web_trac_nghiem/KhoaLuanDTU/Webquiz/src/main/webapp/static/img/3f93ae2b0df0b7a875bdca9b6bbcef20.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module01/1.HTML/ABC_123/web_trac_nghiem/KhoaLuanDTU/Webquiz/src/main/webapp/static/img/500-mau-cau-tieng-anh-giao-tiep-hay-dung-nhat-phan-1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module01/1.HTML/ABC_123/web_trac_nghiem/KhoaLuanDTU/Webquiz/src/main/webapp/static/img/Books-2-icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module01/1.HTML/ABC_123/web_trac_nghiem/KhoaLuanDTU/Webquiz/src/main/webapp/static/img/Network-Globe-Disconnected-icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module01/1.HTML/ABC_123/web_trac_nghiem/KhoaLuanDTU/Webquiz/src/main/webapp/static/img/Thiết-kế-không-tên-1-1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module01/1.HTML/ABC_123/web_trac_nghiem/KhoaLuanDTU/Webquiz/src/main/webapp/static/img/Toan.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module01/1.HTML/ABC_123/web_trac_nghiem/KhoaLuanDTU/Webquiz/src/main/webapp/static/img/User-Interface-Login-icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module01/1.HTML/ABC_123/web_trac_nghiem/KhoaLuanDTU/Webquiz/src/main/webapp/static/img/admin_profile.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module01/1.HTML/ABC_123/web_trac_nghiem/KhoaLuanDTU/Webquiz/src/main/webapp/static/img/banner.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module01/1.HTML/ABC_123/web_trac_nghiem/KhoaLuanDTU/Webquiz/src/main/webapp/static/img/banner1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module01/1.HTML/ABC_123/web_trac_nghiem/KhoaLuanDTU/Webquiz/src/main/webapp/static/img/banner2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module01/1.HTML/ABC_123/web_trac_nghiem/KhoaLuanDTU/Webquiz/src/main/webapp/static/img/bannertracnghiem.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module01/1.HTML/ABC_123/web_trac_nghiem/KhoaLuanDTU/Webquiz/src/main/webapp/static/img/bằng_lái_xe.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module01/1.HTML/ABC_123/web_trac_nghiem/KhoaLuanDTU/Webquiz/src/main/webapp/static/img/codegym-logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module01/1.HTML/ABC_123/web_trac_nghiem/KhoaLuanDTU/Webquiz/src/main/webapp/static/img/de_mon_ly.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module01/1.HTML/ABC_123/web_trac_nghiem/KhoaLuanDTU/Webquiz/src/main/webapp/static/img/de_mon_van.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module01/1.HTML/ABC_123/web_trac_nghiem/KhoaLuanDTU/Webquiz/src/main/webapp/static/img/denn-mark-cypher-full.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module01/1.HTML/ABC_123/web_trac_nghiem/KhoaLuanDTU/Webquiz/src/main/webapp/static/img/hoa-hoc.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module01/1.HTML/ABC_123/web_trac_nghiem/KhoaLuanDTU/Webquiz/src/main/webapp/static/img/home-icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module01/1.HTML/ABC_123/web_trac_nghiem/KhoaLuanDTU/Webquiz/src/main/webapp/static/img/hóa.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module01/1.HTML/ABC_123/web_trac_nghiem/KhoaLuanDTU/Webquiz/src/main/webapp/static/img/lap-trinh-vien.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module01/1.HTML/ABC_123/web_trac_nghiem/KhoaLuanDTU/Webquiz/src/main/webapp/static/img/like-2-icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module01/1.HTML/ABC_123/web_trac_nghiem/KhoaLuanDTU/Webquiz/src/main/webapp/static/img/logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module01/1.HTML/ABC_123/web_trac_nghiem/KhoaLuanDTU/Webquiz/src/main/webapp/static/img/logoQuizgym.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module01/1.HTML/ABC_123/web_trac_nghiem/KhoaLuanDTU/Webquiz/src/main/webapp/static/img/lý.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module01/1.HTML/ABC_123/web_trac_nghiem/KhoaLuanDTU/Webquiz/src/main/webapp/static/img/ngôn ngữ lập trình.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module01/1.HTML/ABC_123/web_trac_nghiem/KhoaLuanDTU/Webquiz/src/main/webapp/static/img/phan-mem-thi-trac-nghiem-online-1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module01/1.HTML/ABC_123/web_trac_nghiem/KhoaLuanDTU/Webquiz/src/main/webapp/static/img/post-thumb-ngon-ngu-lap-trinh.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module01/1.HTML/ABC_123/web_trac_nghiem/KhoaLuanDTU/Webquiz/src/main/webapp/static/img/quy-dinh-thi-bang-lai-xe-may.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module01/1.HTML/ABC_123/web_trac_nghiem/KhoaLuanDTU/Webquiz/src/main/webapp/static/img/sach-hay-ve-vat-ly-cover-780x470.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module01/1.HTML/ABC_123/web_trac_nghiem/KhoaLuanDTU/Webquiz/src/main/webapp/static/img/settings-3-icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module01/1.HTML/ABC_123/web_trac_nghiem/KhoaLuanDTU/Webquiz/src/main/webapp/static/img/tiếng_anh.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module01/1.HTML/ABC_123/web_trac_nghiem/KhoaLuanDTU/Webquiz/src/main/webapp/static/img/toan-logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module01/1.HTML/ABC_123/web_trac_nghiem/KhoaLuanDTU/Webquiz/src/main/webapp/static/img/tracnghemtructuyen.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module01/1.HTML/ABC_123/web_trac_nghiem/KhoaLuanDTU/Webquiz/src/main/webapp/static/img/user-icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module01/1.HTML/ABC_123/web_trac_nghiem/KhoaLuanDTU/Webquiz/src/main/webapp/static/img/vai-tro-cua-hoa-hoc-lop-8_3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module01/1.HTML/ABC_123/web_trac_nghiem/KhoaLuanDTU/Webquiz/src/main/webapp/static/img/vat-ly-logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module01/1.HTML/ABC_123/web_trac_nghiem/KhoaLuanDTU/Webquiz/src/main/webapp/static/img/zoom-search-2-icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module01/1.HTML/ABC_123/web_trac_nghiem/KhoaLuanDTU/Webquiz/src/main/webapp/static/js/TrangCaNhan.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module01/1.HTML/ABC_123/web_trac_nghiem/KhoaLuanDTU/Webquiz/src/main/webapp/static/js/bootstrap.bundle.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module01/1.HTML/ABC_123/web_trac_nghiem/KhoaLuanDTU/Webquiz/src/main/webapp/static/js/bootstrap.bundle.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module01/1.HTML/ABC_123/web_trac_nghiem/KhoaLuanDTU/Webquiz/src/main/webapp/static/js/bootstrap.bundle.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module01/1.HTML/ABC_123/web_trac_nghiem/KhoaLuanDTU/Webquiz/src/main/webapp/static/js/bootstrap.bundle.min.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module01/1.HTML/ABC_123/web_trac_nghiem/KhoaLuanDTU/Webquiz/src/main/webapp/static/js/bootstrap.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module01/1.HTML/ABC_123/web_trac_nghiem/KhoaLuanDTU/Webquiz/src/main/webapp/static/js/bootstrap.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module01/1.HTML/ABC_123/web_trac_nghiem/KhoaLuanDTU/Webquiz/src/main/webapp/static/js/bootstrap.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module01/1.HTML/ABC_123/web_trac_nghiem/KhoaLuanDTU/Webquiz/src/main/webapp/static/js/bootstrap.min.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module01/1.HTML/ABC_123/web_trac_nghiem/KhoaLuanDTU/Webquiz/src/main/webapp/static/js/script.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module01/1.HTML/ABC_123/web_trac_nghiem/KhoaLuanDTU/Webquiz/src/main/webapp/subject/create.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module01/1.HTML/ABC_123/web_trac_nghiem/KhoaLuanDTU/Webquiz/src/main/webapp/subject/edit.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module01/1.HTML/ABC_123/web_trac_nghiem/KhoaLuanDTU/Webquiz/src/main/webapp/subject/list.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module01/1.HTML/ABC_123/web_trac_nghiem/KhoaLuanDTU/Webquiz/src/main/webapp/teacher/DanhSachDe.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module01/1.HTML/ABC_123/web_trac_nghiem/KhoaLuanDTU/Webquiz/src/main/webapp/teacher/exam-list.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module01/1.HTML/ABC_123/web_trac_nghiem/KhoaLuanDTU/Webquiz/src/main/webapp/teacher/exam-view.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module01/1.HTML/ABC_123/web_trac_nghiem/KhoaLuanDTU/Webquiz/src/main/webapp/teacher/index.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module01/1.HTML/ABC_123/web_trac_nghiem/KhoaLuanDTU/Webquiz/src/main/webapp/teacher/question-bank.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module01/1.HTML/ABC_123/web_trac_nghiem/KhoaLuanDTU/Webquiz/src/main/webapp/teacher/view/head.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module01/1.HTML/ABC_123/web_trac_nghiem/KhoaLuanDTU/Webquiz/src/main/webapp/teacher/view/header.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module01/1.HTML/ABC_123/web_trac_nghiem/KhoaLuanDTU/Webquiz/src/main/webapp/teacher/view/left_navbar.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module01/1.HTML/ABC_123/web_trac_nghiem/KhoaLuanDTU/Webquiz/src/main/webapp/uploads/nhac1banner.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module01/1.HTML/ABC_123/web_trac_nghiem/KhoaLuanDTU/Webquiz/src/main/webapp/user/DangNhapDangKi.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module01/1.HTML/ABC_123/web_trac_nghiem/KhoaLuanDTU/Webquiz/src/main/webapp/user/EnterOtp.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module01/1.HTML/ABC_123/web_trac_nghiem/KhoaLuanDTU/Webquiz/src/main/webapp/user/TrangCaNhan.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module01/1.HTML/ABC_123/web_trac_nghiem/KhoaLuanDTU/Webquiz/src/main/webapp/user/forgotPassword.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module01/1.HTML/ABC_123/web_trac_nghiem/KhoaLuanDTU/Webquiz/src/main/webapp/user/newPassword.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module01/1.HTML/ABC_123/web_trac_nghiem/KhoaLuanDTU/Webquiz/src/main/webapp/view/error.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module01/1.HTML/ABC_123/web_trac_nghiem/KhoaLuanDTU/Webquiz/src/main/webapp/view/error403.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module01/1.HTML/ABC_123/web_trac_nghiem/KhoaLuanDTU/Webquiz/src/main/webapp/view/footer.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module01/1.HTML/ABC_123/web_trac_nghiem/KhoaLuanDTU/Webquiz/src/main/webapp/view/head.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module01/1.HTML/ABC_123/web_trac_nghiem/KhoaLuanDTU/Webquiz/src/main/webapp/view/header.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module01/1.HTML/ABC_123/web_trac_nghiem/KhoaLuanDTU/Webquiz/src/main/webapp/view/messenger.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module01/1.HTML/ABC_123/web_trac_nghiem/KhoaLuanDTU/database/4-5-data/sql.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module01/1.HTML/ABC_123/web_trac_nghiem/KhoaLuanDTU/database/data21-04/quiz_web_account.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module01/1.HTML/ABC_123/web_trac_nghiem/KhoaLuanDTU/database/data21-04/quiz_web_accumulated_point.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module01/1.HTML/ABC_123/web_trac_nghiem/KhoaLuanDTU/database/data21-04/quiz_web_assignment.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module01/1.HTML/ABC_123/web_trac_nghiem/KhoaLuanDTU/database/data21-04/quiz_web_exam.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module01/1.HTML/ABC_123/web_trac_nghiem/KhoaLuanDTU/database/data21-04/quiz_web_exam_question.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module01/1.HTML/ABC_123/web_trac_nghiem/KhoaLuanDTU/database/data21-04/quiz_web_question.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module01/1.HTML/ABC_123/web_trac_nghiem/KhoaLuanDTU/database/data21-04/quiz_web_role.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module01/1.HTML/ABC_123/web_trac_nghiem/KhoaLuanDTU/database/data21-04/quiz_web_subject.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module01/1.HTML/ABC_123/web_trac_nghiem/KhoaLuanDTU/database/data21-04/quiz_web_user.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module01/1.HTML/ABC_123/web_trac_nghiem/KhoaLuanDTU/database/data21-04/quiz_web_user_role.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module01/1.HTML/ABC_123/web_trac_nghiem/KhoaLuanDTU/database/data_quiz_web.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module01/1.HTML/ABC_123/web_trac_nghiem/KhoaLuanDTU/database/data_quizgym_1504.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module01/1.HTML/ABC_123/web_trac_nghiem/KhoaLuanDTU/database/data_user.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module01/1.HTML/ABC_123/web_trac_nghiem/KhoaLuanDTU/database/quiz_UD.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module01/1.HTML/ABC_123/web_trac_nghiem/KhoaLuanDTU/database/quiz_web.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module01/1.HTML/ABC_123/web_trac_nghiem/KhoaLuanDTU/database/quiz_web_db_updated.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module01/1.HTML/ABC_123/web_trac_nghiem/KhoaLuanDTU/de_dia_ly_12.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module01/1.HTML/ABC_123/web_trac_nghiem/KhoaLuanDTU/de_hoa_12.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module01/1.HTML/ABC_123/web_trac_nghiem/KhoaLuanDTU/de_lich_su_12.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module01/1.HTML/ABC_123/web_trac_nghiem/KhoaLuanDTU/de_ly_12.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module01/1.HTML/ABC_123/web_trac_nghiem/KhoaLuanDTU/de_ngu_van_12.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module01/1.HTML/ABC_123/web_trac_nghiem/KhoaLuanDTU/de_sinh_hoc_12.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module01/1.HTML/ABC_123/web_trac_nghiem/KhoaLuanDTU/de_tin_12.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module01/1.HTML/ABC_123/web_trac_nghiem/KhoaLuanDTU/de_toan_12.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module01/1.HTML/ABC_123/web_trac_nghiem/KhoaLuanDTU/fileQuestion/de_dia_ly_12.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module01/1.HTML/ABC_123/web_trac_nghiem/KhoaLuanDTU/fileQuestion/de_ngu_van_12.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module01/1.HTML/ABC_123/web_trac_nghiem/KhoaLuanDTU/fileQuestion/de_tieng_anh_12.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module01/1.HTML/ABC_123/web_trac_nghiem/KhoaLuanDTU/fileQuestion/de_toan_12.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module01/1.HTML/ABC_123/web_trac_nghiem/KhoaLuanDTU/procedures.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../ss02_spring_controller/pratice/customer_list_management_ application" beforeDir="false" afterPath="$PROJECT_DIR$/../ss02_spring_controller/pratice/customer_list_management_ application" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss07_spring_data_repository/pratice/paging-and-sorting" beforeDir="false" afterPath="$PROJECT_DIR$/../ss07_spring_data_repository/pratice/paging-and-sorting" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss11_webservice_restful/pratice/managent-customer-restful/src/main/java/com/example/managentcustomerrestful/service/CustomerImplService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ss11_webservice_restful/pratice/managent-customer-restful/src/main/java/com/example/managentcustomerrestful/service/CustomerImplService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../nhandep/a.txt" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,6 +356,9 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2O0Mf2DGBjhrReqxP4RWkurEnT4" />
   <component name="ProjectViewState">
@@ -44,6 +375,7 @@
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -59,6 +391,7 @@
       <workItem from="1682218092406" duration="516000" />
       <workItem from="1683543641414" duration="2760000" />
       <workItem from="1683909798175" duration="31000" />
+      <workItem from="1689774157600" duration="659000" />
     </task>
     <servers />
   </component>
